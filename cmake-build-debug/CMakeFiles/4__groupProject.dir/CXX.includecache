@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.cpp
+Weapon.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
+iostream
+-
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
+string
+-
+
