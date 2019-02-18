@@ -83,19 +83,49 @@ CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.cpp" -o CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.s
 
+CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o: CMakeFiles/4__groupProject.dir/flags.make
+CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o: ../Movement/MoveHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o -c "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp"
+
+CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp" > CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.i
+
+CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp" -o CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s
+
+CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o: CMakeFiles/4__groupProject.dir/flags.make
+CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o: ../Combat/CombatHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o -c "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp"
+
+CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp" > CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.i
+
+CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp" -o CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s
+
 # Object files for target 4__groupProject
 4__groupProject_OBJECTS = \
 "CMakeFiles/4__groupProject.dir/main.cpp.o" \
-"CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.o"
+"CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.o" \
+"CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o" \
+"CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o"
 
 # External object files for target 4__groupProject
 4__groupProject_EXTERNAL_OBJECTS =
 
 4__groupProject: CMakeFiles/4__groupProject.dir/main.cpp.o
 4__groupProject: CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.o
+4__groupProject: CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o
+4__groupProject: CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o
 4__groupProject: CMakeFiles/4__groupProject.dir/build.make
 4__groupProject: CMakeFiles/4__groupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable 4__groupProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable 4__groupProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/4__groupProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

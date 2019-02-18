@@ -123,6 +123,60 @@ depend:
 	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/build
 .PHONY : 4__groupProject/fast
 
+Combat/CombatHandler.o: Combat/CombatHandler.cpp.o
+
+.PHONY : Combat/CombatHandler.o
+
+# target to build an object file
+Combat/CombatHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o
+.PHONY : Combat/CombatHandler.cpp.o
+
+Combat/CombatHandler.i: Combat/CombatHandler.cpp.i
+
+.PHONY : Combat/CombatHandler.i
+
+# target to preprocess a source file
+Combat/CombatHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.i
+.PHONY : Combat/CombatHandler.cpp.i
+
+Combat/CombatHandler.s: Combat/CombatHandler.cpp.s
+
+.PHONY : Combat/CombatHandler.s
+
+# target to generate assembly for a file
+Combat/CombatHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s
+.PHONY : Combat/CombatHandler.cpp.s
+
+Movement/MoveHandler.o: Movement/MoveHandler.cpp.o
+
+.PHONY : Movement/MoveHandler.o
+
+# target to build an object file
+Movement/MoveHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o
+.PHONY : Movement/MoveHandler.cpp.o
+
+Movement/MoveHandler.i: Movement/MoveHandler.cpp.i
+
+.PHONY : Movement/MoveHandler.i
+
+# target to preprocess a source file
+Movement/MoveHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.i
+.PHONY : Movement/MoveHandler.cpp.i
+
+Movement/MoveHandler.s: Movement/MoveHandler.cpp.s
+
+.PHONY : Movement/MoveHandler.s
+
+# target to generate assembly for a file
+Movement/MoveHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s
+.PHONY : Movement/MoveHandler.cpp.s
+
 Weapons/Weapon.o: Weapons/Weapon.cpp.o
 
 .PHONY : Weapons/Weapon.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 4__groupProject"
+	@echo "... Combat/CombatHandler.o"
+	@echo "... Combat/CombatHandler.i"
+	@echo "... Combat/CombatHandler.s"
+	@echo "... Movement/MoveHandler.o"
+	@echo "... Movement/MoveHandler.i"
+	@echo "... Movement/MoveHandler.s"
 	@echo "... Weapons/Weapon.o"
 	@echo "... Weapons/Weapon.i"
 	@echo "... Weapons/Weapon.s"
