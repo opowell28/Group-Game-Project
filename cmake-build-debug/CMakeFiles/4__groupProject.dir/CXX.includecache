@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp
+CombatHandler.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp
+MoveHandler.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.h
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.h
+
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.cpp
 Weapon.h
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
@@ -15,4 +27,10 @@ iostream
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
 string
 -
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/main.cpp
+iostream
+-
+Weapons/Weapon.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
 
