@@ -1,4 +1,6 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject"
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\pwr2s\CLionProjects\Group-Game-Project
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.13 or higher is required.  You are running version 3.12.0
+
+
+-- Configuring incomplete, errors occurred!
