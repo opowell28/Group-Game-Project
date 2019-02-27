@@ -9,13 +9,13 @@ using namespace std;
 
 //empty player object
 Player::Player() {
-    this->name = "";
+    this->playerName = "";
     this->health = 0;
 }
 
 //player object with user input variables
 Player::Player(std::string name, int health) {
-    this->name = name;
+    this->playerName = playerName;
     this->health = health;
 }
 
@@ -23,6 +23,17 @@ Player::Player(std::string name, int health) {
 //TODO: generate random damage on a range of small numbers
 int Player::damaged(int i) {
     this->health -= i;
+}
+
+
+Enemy::Enemy() {
+    this->enemyName = "";
+    this->health = 0;
+}
+
+Enemy::Enemy(std::string name, int health) {
+    this->enemyName = enemyName;
+    this->health = health;
 }
 
 
