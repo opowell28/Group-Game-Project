@@ -21,7 +21,7 @@ Player::Player(std::string name, int health) {
 
 //damage function which lowers players health
 //TODO: generate random damage on a range of small numbers
-int Player::damaged(int i) {
+int Player::playerDamaged(int i) {
     this->health -= i;
 }
 
@@ -43,7 +43,7 @@ Attack::Attack() {
     this->atkStrength = "";
 }
 
-//attack object with unser input variables
+//attack object with user input variables
 Attack::Attack(std::string atkStrength) {
     this->atkStrength = atkStrength;
 }
