@@ -9,24 +9,39 @@
 
 class Player {
 protected:
-    std::string name = "";
+    std::string playerName = "";
     int health = 0;
 
 public:
     Player();
     Player(std::string name, int health);
-    int damaged (int i);                     //function that depletes health when player is hit
+//function that depletes health when player is hit
+    int playerDamaged (int i);
 
 };
 
+
+class Enemy {
+protected:
+    std::string enemyName = "";
+    int health = 0;
+
+public:
+    Enemy();
+    Enemy(std::string name, int health);
+};
+
+
 class Attack {
 protected:
-    std::string atkStrength = "";                     //holds strength of attack, either "light" or "heavy"
+//holds strength of attack, either "light" or "heavy"
+    std::string atkStrength = "";
 
 public:
     Attack();
     Attack(std::string atkStrength);
-    std::string atkRequest();                             //ask user what type of attack to perform when in a combat situation
+//ask user what type of attack to perform when in a combat situation
+    std::string atkRequest();
     int attack();
 };
 
