@@ -55,8 +55,7 @@ std::string Attack::atkRequest() {
 }
 
 //attack function which lowers enemy health by a randomly generated number
-/*TODO: add random number generator and enemy health depletion function once
-TODO: enemies are implemented*/
-int Attack::attack() {
-
+int Attack::attack(int atkStrength) {
+    //generate random number between 2 and 9 for damage
+    atkStrength = rand() % 9 + 2;
 }

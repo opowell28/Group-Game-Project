@@ -42,7 +42,7 @@ public:
     Attack(std::string atkStrength);
 //ask user what type of attack to perform when in a combat situation
     std::string atkRequest();
-    int attack();
+    int attack(int atkDamage);
 };
 
 
