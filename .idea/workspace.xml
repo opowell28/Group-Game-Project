@@ -11,11 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a81ce186-e444-438e-8874-16701259600e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Combat/CombatHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Combat/CombatHandler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Combat/CombatHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Combat/CombatHandler.h" afterDir="false" />
-    </list>
+    <list default="true" id="a81ce186-e444-438e-8874-16701259600e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,18 +122,34 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="706" />
-    <option name="y" value="23" />
-    <option name="width" value="734" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Combat" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -194,7 +206,7 @@
       <workItem from="1551305905163" duration="1474000" />
       <workItem from="1551466943142" duration="222000" />
       <workItem from="1551583585274" duration="239000" />
-      <workItem from="1552054376319" duration="264000" />
+      <workItem from="1552054376319" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit, no changes made, just keeping a couple files up to date.">
       <created>1550107732941</created>
@@ -245,16 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1551310301505</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added a damage randomizer function in the combat handler.">
+      <created>1552054668783</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552054668783</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9738000" />
+    <option name="totallyTimeSpent" value="9784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="706" y="23" width="734" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22254336" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22254336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,7 +304,8 @@
     <MESSAGE value="Added Attack and Player classes to combat handler. Gave both classes variables and functions and defined both in CombatHandler.cpp. Added some TODO's to be addressed as progress is made." />
     <MESSAGE value="Added enemy class and gave it functions in CombatHandler.cpp" />
     <MESSAGE value="Updated name of damaged function to playerDamaged to make its purpose clear." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated name of damaged function to playerDamaged to make its purpose clear." />
+    <MESSAGE value="Added a damage randomizer function in the combat handler." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a damage randomizer function in the combat handler." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../Classwork/ClassesPractice/CMakeLists.txt">
