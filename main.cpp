@@ -9,8 +9,5 @@ using namespace std;
 
 int main() {
 
-//just testing 
-
-
     return 0;
 }
