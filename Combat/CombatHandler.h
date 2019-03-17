@@ -16,7 +16,7 @@ public:
     Player();
     Player(std::string name, int health);
 //function that depletes health when player is hit
-    int playerDamaged (int i);
+    int playerDamaged (int playerDamage);
 
 };
 

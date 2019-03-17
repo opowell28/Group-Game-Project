@@ -20,9 +20,13 @@ Player::Player(std::string name, int health) {
 }
 
 //damage function which lowers players health
-//TODO: generate random damage on a range of small numbers
-int Player::playerDamaged(int i) {
-    this->health -= i;
+int Player::playerDamaged(int playerDamage) {
+    //removes between 1 and 10 from player's health
+    srand((unsigned)time(0));
+    for(int index = 0; index < 1; index++) {
+        playerDamage = (rand() % 10) + 1;
+        return playerDamage;
+    }
 }
 
 
@@ -50,12 +54,26 @@ Attack::Attack(std::string atkStrength) {
 
 //ask user what strength of attack to perform
 std::string Attack::atkRequest() {
-    cout << "Heavy or light attack? " << endl;
+    cout << "Heavy or light attack? Enter 'heavy' or 'light' " << endl;
     getline(cin, this->atkStrength);
 }
 
 //attack function which lowers enemy health by a randomly generated number
-int Attack::attack(int atkStrength) {
-    //generate random number between 2 and 9 for damage
-    atkStrength = rand() % 9 + 2;
+int Attack::attack(int atkDamage) {
+    //generate random number between 6 and 10 for heavy damage
+    if (atkStrength == "heavy" || atkStrength == "Heavy") {
+        srand((unsigned)time(0));
+        for(int index = 0; index < 1; index++) {
+            atkDamage = (rand() % 10) + 6;
+            return atkDamage;
+        }
+    }
+    //generate number between 1 and 5 for light damage
+    else if (atkStrength == "light" || atkStrength == "Light") {
+        srand((unsigned)time(0));
+        for(int index = 0; index < 1; index++) {
+            atkDamage = (rand() % 5) + 1;
+            return atkDamage;
+        }
+    }
 }
