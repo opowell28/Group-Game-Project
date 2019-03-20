@@ -3,6 +3,8 @@
 //
 
 #include "MoveHandler.h"
+//include CombatHandler.h
+#include "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h"
 #include <iostream>
 
 using namespace std;
@@ -71,6 +73,10 @@ void Room::runRoomEvents() {
     // functions from here. We could also print out story elements which
     // are connected to certain rooms from here.
 
-    /*TODO: #include movehandler.h to access functions there to call them in the
-     * runRoomEvents function. Use ifs to call functions when in a certain room.*/
+    /*TODO: see if there is a more efficient way to call actions for each room,
+     * there is going to be a lot of rooms. Maybe switch?*/
+
+    if (xcoordinate == 14 && ycoordinate == 24) {
+        //something
+    }
 }
