@@ -39,3 +39,10 @@ int Weapon::use() {
 void Weapon::lowerDurability(int i) {
     this->durability -= i;
 }
+
+//TODO: add if statement comparing max weight to current invetory weight
+void Weapon::pickUp() {
+    if (currentWeight > maxWeight) {
+        cout << "You cannot carry any more. " << endl;
+    }
+}

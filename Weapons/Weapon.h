@@ -7,7 +7,16 @@
 
 #include <string>
 
-class Weapon {
+
+class Inventory {
+protected:
+    //max carry weight
+    double maxWeight;
+    //current carry weight
+    double currentWeight;
+};
+
+class Weapon: public Inventory {
 protected:
     int defaultDamage;
     std::string name;
@@ -19,8 +28,7 @@ public:
     ~Weapon();
     int use();
     void lowerDurability(int i);
-
+    void pickUp();
 };
-
 
 #endif //INC_4_GROUPPROJECT_WEAPON_H

@@ -13,7 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a81ce186-e444-438e-8874-16701259600e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movement/MoveHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Movement/MoveHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Combat/CombatHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Combat/CombatHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weapons/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Weapons/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weapons/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Weapons/Weapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/4__groupProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4__groupProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -49,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Weapons/Weapon.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="662">
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -61,17 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Weapons/Weapon.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
               <folding>
                 <element signature="e#48#72#0" expanded="true" />
               </folding>
@@ -91,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="795">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#48#74#0" expanded="true" />
               </folding>
@@ -103,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+            <state>
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -119,13 +128,14 @@
       <list>
         <option value="$PROJECT_DIR$/Weapon.h" />
         <option value="$PROJECT_DIR$/Weapon.cpp" />
-        <option value="$PROJECT_DIR$/Weapons/Weapon.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Movement/MoveHandler.h" />
-        <option value="$PROJECT_DIR$/Combat/CombatHandler.h" />
-        <option value="$PROJECT_DIR$/Combat/CombatHandler.cpp" />
         <option value="$PROJECT_DIR$/Movement/MoveHandler.cpp" />
+        <option value="$PROJECT_DIR$/Combat/CombatHandler.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Weapons/Weapon.h" />
+        <option value="$PROJECT_DIR$/Weapons/Weapon.cpp" />
+        <option value="$PROJECT_DIR$/Combat/CombatHandler.h" />
       </list>
     </option>
   </component>
@@ -141,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,7 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,8 +217,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Build All" />
       <item itemvalue="Application.4__groupProject" />
+      <item itemvalue="Application.Build All" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -240,7 +250,8 @@
       <workItem from="1552826667037" duration="286000" />
       <workItem from="1552827298585" duration="569000" />
       <workItem from="1552856451983" duration="4000" />
-      <workItem from="1553117171504" duration="258000" />
+      <workItem from="1553117171504" duration="297000" />
+      <workItem from="1553120196074" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit, no changes made, just keeping a couple files up to date.">
       <created>1550107732941</created>
@@ -305,17 +316,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552827843820</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added a TODO in MoveHandler.cpp.">
+      <created>1553117474171</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553117474171</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21884000" />
+    <option name="totallyTimeSpent" value="23501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="706" y="23" width="734" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22254336" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.33381504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,7 +366,8 @@
     <MESSAGE value="Updated name of damaged function to playerDamaged to make its purpose clear." />
     <MESSAGE value="Added a damage randomizer function in the combat handler." />
     <MESSAGE value="Added functions to generate random damage for heavy and light attacks from the player, as well as a function to generate random damage on the player." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functions to generate random damage for heavy and light attacks from the player, as well as a function to generate random damage on the player." />
+    <MESSAGE value="Added a TODO in MoveHandler.cpp." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a TODO in MoveHandler.cpp." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Classwork/ClassesPractice/CMakeLists.txt" />
@@ -365,46 +384,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Weapons/Weapon.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Weapons/Weapon.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        <state relative-caret-position="662">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
             <element signature="e#48#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Weapons/Weapon.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#48#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -416,12 +408,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#48#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+        <state relative-caret-position="1125">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
           <folding>
             <element signature="e#48#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

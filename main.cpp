@@ -9,5 +9,9 @@ using namespace std;
 
 int main() {
 
+    //start story here
+    cout << "Some location description here" << endl;
+
+
     return 0;
 }

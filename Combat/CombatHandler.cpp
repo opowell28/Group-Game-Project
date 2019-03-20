@@ -60,20 +60,21 @@ std::string Attack::atkRequest() {
 
 //attack function which lowers enemy health by a randomly generated number
 int Attack::attack(int atkDamage) {
-    //generate random number between 6 and 10 for heavy damage
-    if (atkStrength == "heavy" || atkStrength == "Heavy") {
-        srand((unsigned)time(0));
-        for(int index = 0; index < 1; index++) {
-            atkDamage = (rand() % 10) + 6;
-            return atkDamage;
-        }
-    }
     //generate number between 1 and 5 for light damage
-    else if (atkStrength == "light" || atkStrength == "Light") {
+    if (atkStrength == "light" || atkStrength == "Light") {
         srand((unsigned)time(0));
         for(int index = 0; index < 1; index++) {
             atkDamage = (rand() % 5) + 1;
             return atkDamage;
         }
     }
+    //generate random number between 6 and 10 for heavy damage
+    else if (atkStrength == "heavy" || atkStrength == "Heavy") {
+        srand((unsigned)time(0));
+        for(int index = 0; index < 1; index++) {
+            atkDamage = (rand() % 10) + 6;
+            return atkDamage;
+        }
+    }
+
 }
