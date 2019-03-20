@@ -58,7 +58,7 @@ void Map::movePlayerDown() {
 }
 
 //room object with variables
-Room::Room(int x, int y, string roomName, bool visitedBefore) {
+Room::Room(int x, int y, string roomName, bool isEmpty, bool visitedBefore) {
     this->xcoordinate = x;
     this->ycoordinate = y;
     this->roomName = roomName;

@@ -35,7 +35,7 @@ protected:
     bool visitedBefore;
 
 public:
-    Room(int x, int y, std::string roomName, bool visitedBefore);
+    Room(int x, int y, std::string roomName, bool isEmpty, bool visitedBefore);
     //run any events for the room
     void runRoomEvents();
 };
