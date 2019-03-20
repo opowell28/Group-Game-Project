@@ -70,4 +70,7 @@ void Room::runRoomEvents() {
     // pick up an item, or something else, we could call the necessary
     // functions from here. We could also print out story elements which
     // are connected to certain rooms from here.
+
+    /*TODO: #include movehandler.h to access functions there to call them in the
+     * runRoomEvents function. Use ifs to call functions when in a certain room.*/
 }
