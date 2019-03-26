@@ -7,6 +7,7 @@
 
 #include <string>
 
+//TODO: set maxX and maxY, initialize xcoord and ycoord to 0
 class Map {
 private:
     int XCoordinate;
@@ -32,6 +33,7 @@ protected:
     std::string roomName = "";
     int xcoordinate;
     int ycoordinate;
+    bool isEmpty;
     bool visitedBefore;
 
 public:

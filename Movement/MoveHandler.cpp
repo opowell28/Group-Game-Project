@@ -20,7 +20,6 @@ Map::Map(int X, int Y, int startingX, int startingY) {
     this->maxY = Y;
     this->XCoordinate = startingX;
     this->YCoordinate = startingY;
-
 }
 
 //move player to room to the right by adding 1 to x coordinate
@@ -64,6 +63,7 @@ Room::Room(int x, int y, string roomName, bool isEmpty, bool visitedBefore) {
     this->xcoordinate = x;
     this->ycoordinate = y;
     this->roomName = roomName;
+    this->isEmpty = isEmpty;
     this->visitedBefore = visitedBefore;
 }
 
@@ -73,10 +73,16 @@ void Room::runRoomEvents() {
     // functions from here. We could also print out story elements which
     // are connected to certain rooms from here.
 
-    /*TODO: see if there is a more efficient way to call actions for each room,
-     * there is going to be a lot of rooms. Maybe switch?*/
 
-    if (xcoordinate == 14 && ycoordinate == 24) {
-        //something
+    if (isEmpty == false && visitedBefore == false) {
+        if(xcoordinate > 0 && ycoordinate > 0) {
+            visitedBefore = true;
+        }
+    }
+    else if(isEmpty == true) {
+        cout << "This room is empty" << endl;
+    }
+    else if(visitedBefore == true) {
+        cout << "You have already visited this room" << endl;
     }
 }
