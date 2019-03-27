@@ -5,12 +5,13 @@
 #ifndef UNTITLED_CHARACTER_H
 #define UNTITLED_CHARACTER_H
 
+#include <iostream>
 
 class Character {
 private:
     int health;
-    string equippedItem;
-    string equippedWeapon;
+    std::string equippedItem;
+    std::string equippedWeapon;
 
 public:
     virtual int getHealth(int health);
