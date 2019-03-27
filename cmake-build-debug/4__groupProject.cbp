@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.cpp">
+			<Option target="4__groupProject"/>
+		</Unit>
+		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.h">
+			<Option target="4__groupProject"/>
+		</Unit>
 		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>

@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/build
 .PHONY : 4__groupProject/fast
 
+Character/Character.o: Character/Character.cpp.o
+
+.PHONY : Character/Character.o
+
+# target to build an object file
+Character/Character.cpp.o:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Character/Character.cpp.o
+.PHONY : Character/Character.cpp.o
+
+Character/Character.i: Character/Character.cpp.i
+
+.PHONY : Character/Character.i
+
+# target to preprocess a source file
+Character/Character.cpp.i:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Character/Character.cpp.i
+.PHONY : Character/Character.cpp.i
+
+Character/Character.s: Character/Character.cpp.s
+
+.PHONY : Character/Character.s
+
+# target to generate assembly for a file
+Character/Character.cpp.s:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Character/Character.cpp.s
+.PHONY : Character/Character.cpp.s
+
 Combat/CombatHandler.o: Combat/CombatHandler.cpp.o
 
 .PHONY : Combat/CombatHandler.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 4__groupProject"
+	@echo "... Character/Character.o"
+	@echo "... Character/Character.i"
+	@echo "... Character/Character.s"
 	@echo "... Combat/CombatHandler.o"
 	@echo "... Combat/CombatHandler.i"
 	@echo "... Combat/CombatHandler.s"

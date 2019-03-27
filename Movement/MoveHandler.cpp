@@ -25,6 +25,25 @@ void MoveHandler::makeMap(int X, int Y, int startingX, int startingY) {
     this->YCoordinate = startingY;
 }
 
+//TODO: add an end condition, e.g. killing a boss or escaping
+void MoveHandler::getDirectionInput() {
+
+    while (true) {
+        getline(cin, directionInput);
+        if (directionInput == "north") {
+            movePlayerUp();
+        } else if (directionInput == "south") {
+            movePlayerDown();
+        } else if (directionInput == "east") {
+            movePlayerRight();
+        } else if (directionInput == "west") {
+            movePlayerLeft();
+        } else {
+            cout << "Please enter a direction: either north, south, east, or west" << endl;
+        }
+    }
+}
+
 //move player to room to the right by adding 1 to x coordinate
 void MoveHandler::movePlayerRight() {
     if (this->XCoordinate != this->maxX) {
@@ -80,6 +99,7 @@ void Room::runRoomEvents() {
     if (isEmpty == false && visitedBefore == false) {
         if(xcoordinate > 0 && ycoordinate > 0) {
             visitedBefore = true;
+            //call other functions here
         }
     }
     else if(isEmpty == true) {
