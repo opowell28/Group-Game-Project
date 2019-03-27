@@ -9,7 +9,8 @@ using namespace std;
 
 int main() {
 
-    Map World = Map(5,10,0,2); //5 by 10 map and player starts at 0,2 (middle of 1st row)
+    MoveHandler MoveHdlr;
+    MoveHdlr.makeMap(5,10,0,2); //5 by 10 map and player starts at 0,2 (middle of 1st row)
 
     //start story here
     cout << "Some location description here" << endl;

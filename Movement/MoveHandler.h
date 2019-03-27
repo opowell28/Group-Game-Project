@@ -8,7 +8,7 @@
 #include <string>
 
 //TODO: set maxX and maxY, initialize xcoord and ycoord to 0
-class Map {
+class MoveHandler {
 private:
     int XCoordinate;
     int YCoordinate;
@@ -16,7 +16,9 @@ private:
     int maxY;
 
 public:
-    Map(int X, int Y, int startingX, int startingY);
+    MoveHandler();
+
+    void makeMap(int X, int Y, int startingX, int startingY);
 
     //functions move player to adjacent rooms
     void movePlayerRight();
