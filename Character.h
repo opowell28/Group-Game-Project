@@ -8,13 +8,15 @@
 
 class Character {
 private:
-    int health;
+    int health, damage;
     string equippedItem;
     string equippedWeapon;
 
 public:
-    virtual int getHealth(int health);
-    virtual int Attack(int damage, int opponentHealth);
+    virtual int GetHealth(int health);
+    virtual int GetDamage(int damage);
+    virtual int SetDamage(int damage);
+    virtual int Attack(int opponentHealth);
     virtual int Heal(int health);
 
 };

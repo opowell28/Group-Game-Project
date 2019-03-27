@@ -4,13 +4,22 @@
 
 #include "Character.h"
 
-int Character::getHealth(int health) {
+int Character::GetHealth(int health) {
     health = this->health;
     return health;
 }
 
-int Character::Attack(int damage, int opponentHealth) {
-    opponentHealth -= damage;
+int Character::GetDamage(int damage) {
+    damage = this->damage;
+    return damage;
+}
+
+void Character::SetDamage(int damage) {
+    this->damage = damage;
+}
+
+int Character::Attack(int opponentHealth) {
+    opponentHealth -= this->damage;
     return opponentHealth;
 }
 
