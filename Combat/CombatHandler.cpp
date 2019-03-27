@@ -76,5 +76,4 @@ int Attack::attack(int atkDamage) {
             return atkDamage;
         }
     }
-
 }

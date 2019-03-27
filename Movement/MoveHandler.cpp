@@ -4,7 +4,7 @@
 
 #include "MoveHandler.h"
 //include CombatHandler.h
-#include "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h"
+#include "../Combat/CombatHandler.h"
 #include <iostream>
 
 using namespace std;
