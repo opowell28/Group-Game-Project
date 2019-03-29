@@ -17,6 +17,7 @@ public:
     virtual int getHealth(int health);
     virtual int Attack(int damage, int opponentHealth);
     virtual int Heal(int health);
+    virtual int Damaged(int health);
 
 };
 

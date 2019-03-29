@@ -5,6 +5,7 @@
 #ifndef UNTITLED_PLAYER_H
 #define UNTITLED_PLAYER_H
 
+#include "../Character/Character.h"
 
 class Player : public Character{
 private:

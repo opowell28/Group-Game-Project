@@ -15,8 +15,6 @@ protected:
 public:
     Player();
     Player(std::string name, int health);
-//function that depletes health when player is hit
-    int playerDamaged (int playerDamage);
 
 };
 

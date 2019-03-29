@@ -204,6 +204,33 @@ Movement/MoveHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s
 .PHONY : Movement/MoveHandler.cpp.s
 
+Player/Player.o: Player/Player.cpp.o
+
+.PHONY : Player/Player.o
+
+# target to build an object file
+Player/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Player/Player.cpp.o
+.PHONY : Player/Player.cpp.o
+
+Player/Player.i: Player/Player.cpp.i
+
+.PHONY : Player/Player.i
+
+# target to preprocess a source file
+Player/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Player/Player.cpp.i
+.PHONY : Player/Player.cpp.i
+
+Player/Player.s: Player/Player.cpp.s
+
+.PHONY : Player/Player.s
+
+# target to generate assembly for a file
+Player/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Player/Player.cpp.s
+.PHONY : Player/Player.cpp.s
+
 Weapons/Weapon.o: Weapons/Weapon.cpp.o
 
 .PHONY : Weapons/Weapon.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Movement/MoveHandler.o"
 	@echo "... Movement/MoveHandler.i"
 	@echo "... Movement/MoveHandler.s"
+	@echo "... Player/Player.o"
+	@echo "... Player/Player.i"
+	@echo "... Player/Player.s"
 	@echo "... Weapons/Weapon.o"
 	@echo "... Weapons/Weapon.i"
 	@echo "... Weapons/Weapon.s"
