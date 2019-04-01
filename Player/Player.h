@@ -7,14 +7,20 @@
 
 #include "../Character/Character.h"
 
-class Player : public Character{
-private:
+class Player: public Character {
+protected:
+    std::string playerName = "";
+    int playerHealth = 0;
     double carryCapacity;
-
+    std::string atkStrength;
 
 public:
     Player();
+    Player(std::string playerName, int playerHealth);
     double GetCarryCapacity(double carryCapacity);
+    int attack(int atkDamage);
+    std::string atkRequest();
+    int playerDamaged(int playerDamage);
 };
 
 
