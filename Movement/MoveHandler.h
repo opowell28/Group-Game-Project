@@ -6,6 +6,7 @@
 #define INC_4_GROUPPROJECT_MOVEHANDLER_H
 
 #include <string>
+#include <vector>
 
 //TODO: set maxX and maxY, initialize xcoord and ycoord to 0
 class MoveHandler {
@@ -15,6 +16,11 @@ private:
     int maxX;
     int maxY;
     std::string directionInput; //gets user input for direction
+    struct room {
+        int x;
+        int y;
+    };
+    std::vector<room> visitedRooms;
 
 public:
     MoveHandler();
@@ -28,6 +34,11 @@ public:
     void movePlayerLeft();
     void movePlayerUp();
     void movePlayerDown();
+
+
+    void RunStoryEvent(int x, int y);
+    void addToVisitedVector(int x, int y);
+    bool checkIfVisitedBefore(int x, int y);
 
 };
 

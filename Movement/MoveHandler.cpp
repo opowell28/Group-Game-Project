@@ -80,7 +80,7 @@ void MoveHandler::movePlayerRight() {
     if (this->XCoordinate != this->maxX) {
         this->XCoordinate += 1;
     } else {
-        //something
+        cout << "You can't go this way." << endl;
     }
 }
 
@@ -89,7 +89,7 @@ void MoveHandler::movePlayerLeft() {
     if (this->XCoordinate != 0) {
         this->XCoordinate -= 1;
     } else {
-        //something
+        cout << "You can't go this way." << endl;
     }
 }
 
@@ -98,7 +98,7 @@ void MoveHandler::movePlayerUp() {
     if (this->YCoordinate != this->maxY) {
         this->YCoordinate += 1;
     } else {
-        //something
+        cout << "You can't go this way." << endl;
     }
 }
 
@@ -107,9 +107,52 @@ void MoveHandler::movePlayerDown() {
     if (this->YCoordinate != 0) {
         this->YCoordinate -= 1;
     } else {
-        //something
+        cout << "You can't go this way." << endl;
     }
 }
+
+//function adds a coordinate to vector of rooms that have been visited before
+void MoveHandler::addToVisitedVector(int xCoordinate, int yCoordinate) {
+    room r;
+    r.x = xCoordinate;
+    r.y = yCoordinate;
+    visitedRooms.push_back(r);
+}
+
+//function to see if a room has been visited
+bool MoveHandler::checkIfVisitedBefore(int x, int y) {
+    for (int i = 0; i <= visitedRooms.size(); i++) {
+        if ((visitedRooms[i].x == x) && (visitedRooms[i].y == y)) {
+            return true; //return true if it has been visited
+        }
+    }
+    return false;        //return false otherwise
+}
+
+//function contains list of story events for each room coordinate that has a story event
+void MoveHandler::RunStoryEvent(int x, int y) {
+
+    //TODO: make more if statements like this for every room we want something to happen in
+    if ((x == 0) && (y == 0)) {
+        //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
+        if (checkIfVisitedBefore(x, y) == false) {
+            cout << "[room story element]";
+
+            //add to visited rooms vector now that story events are over
+            addToVisitedVector(x, y);
+        }
+
+    } else if ((x == 0) && (y == -1)) {
+
+    }
+}
+
+
+
+
+
+
+
 
 //room object with variables
 Room::Room(int x, int y, string roomName, bool isEmpty, bool visitedBefore) {

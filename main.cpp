@@ -16,9 +16,16 @@ int main() {
     cout << "Controls: " << '\n' <<
     "To move in a direction, type a direction, e.g. 'north' or 'south'" << endl;
 
-    //call function to take directional input
-    MoveHdlr.getDirectionInputAndMovePlayer();
+    int playerXLocation = 2;
+    int playerYLocation = 0;
 
+    //main game loop
+    while(true) {
+        MoveHdlr.RunStoryEvent(playerXLocation, playerYLocation);
+
+        //call function to take directional input
+        MoveHdlr.getDirectionInputAndMovePlayer();
+    }
 
     return 0;
 }
