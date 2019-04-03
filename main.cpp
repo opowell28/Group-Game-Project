@@ -17,7 +17,7 @@ int main() {
     "To move in a direction, type a direction, e.g. 'north' or 'south'" << endl;
 
     //call function to take directional input
-    MoveHdlr.getDirectionInput();
+    MoveHdlr.getDirectionInputAndMovePlayer();
 
 
     return 0;

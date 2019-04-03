@@ -25,21 +25,52 @@ void MoveHandler::makeMap(int X, int Y, int startingX, int startingY) {
     this->YCoordinate = startingY;
 }
 
-//TODO: add an end condition, e.g. killing a boss or escaping
-void MoveHandler::getDirectionInput() {
+//function takes a line of input and sees if a direction is in it. If so, it moves the player in that direction
+//input such as 'move east' will work just as much as 'east'
+void MoveHandler::getDirectionInputAndMovePlayer() {
 
-    while (true) {
+    bool moved = false;
+
+    //TODO: maybe add more possible inputs so that inputs like 'up' and 'left' work too
+    while (!moved) {
+
         getline(cin, directionInput);
-        if (directionInput == "north") {
-            movePlayerUp();
-        } else if (directionInput == "south") {
-            movePlayerDown();
-        } else if (directionInput == "east") {
-            movePlayerRight();
-        } else if (directionInput == "west") {
-            movePlayerLeft();
-        } else {
-            cout << "Please enter a direction: either north, south, east, or west" << endl;
+
+        for (int i : directionInput) {
+
+            if ((directionInput[i] == 'n') && (directionInput[i+1] == 'o')
+            && (directionInput[i+2] == 'r') && (directionInput[i+3] == 't')
+            && (directionInput[i+4] == 't')) {
+
+                movePlayerUp();
+                moved = true;
+
+            } else if ((directionInput[i] == 's') && (directionInput[i+1] == 'o')
+            && (directionInput[i+2] == 'u') && (directionInput[i+3] == 't')
+            && (directionInput[i+4] == 't')) {
+
+                movePlayerDown();
+                moved = true;
+
+            } else if ((directionInput[i] == 'e') && (directionInput[i+1] == 'a')
+                        && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+
+                movePlayerRight();
+                moved = true;
+
+            } else if ((directionInput[i] == 'w') && (directionInput[i+1] == 'e')
+                      && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+
+                movePlayerLeft();
+                moved = true;
+
+            }
+
+        }
+
+        if (!moved) {
+            cin.clear();
+            cout << endl << "Invalid input. Please enter a direction: either north, south, east, or west" << endl;
         }
     }
 }

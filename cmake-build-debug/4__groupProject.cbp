@@ -8,112 +8,112 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug"/>
+				<Option working_dir="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug"/>
+				<Option working_dir="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="4__groupProject">
-				<Option output="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/4__groupProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug"/>
+				<Option output="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/4__groupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 4__groupProject"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 4__groupProject"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="4__groupProject/fast">
-				<Option output="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/4__groupProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug"/>
+				<Option output="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/4__groupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 4__groupProject/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/owen/Documents/AdvancedCandC++/Projects/4)\ GroupProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 4__groupProject/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.cpp">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Character/Character.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.h">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Character/Character.h">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Combat/CombatHandler.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Combat/CombatHandler.h">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.h">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.h">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Player/Player.cpp">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Player/Player.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Player/Player.h">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Player/Player.h">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.cpp">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Weapons/Weapon.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/Weapons/Weapon.h">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/main.cpp">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/main.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
-		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/CMakeLists.txt">
+		<Unit filename="C:/Users/pwr2s/CLionProjects/Group-Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

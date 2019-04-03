@@ -21,7 +21,7 @@ public:
 
     void makeMap(int X, int Y, int startingX, int startingY);
 
-    void getDirectionInput(); //handles user input and controls directional movement
+    void getDirectionInputAndMovePlayer(); //handles user input and controls directional movement
 
     //functions move player to adjacent rooms
     void movePlayerRight();

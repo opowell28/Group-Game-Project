@@ -6,39 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.cpp
-Character.h
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.h
-
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.h
-
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
+C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.h
 string
 -
 
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp
-MoveHandler.h
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.h
-../Combat/CombatHandler.h
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
+C:/Users/pwr2s/CLionProjects/Group-Project/main.cpp
 iostream
 -
-
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.h
-string
--
-
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
-string
--
-
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/main.cpp
-iostream
--
-Weapons/Weapon.h
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
 Movement/MoveHandler.h
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.h
-Combat/CombatHandler.h
-/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
+C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.h
 
