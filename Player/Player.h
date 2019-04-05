@@ -2,8 +2,8 @@
 // Created by agreene17021 on 3/27/2019.
 //
 
-#ifndef UNTITLED_PLAYER_H
-#define UNTITLED_PLAYER_H
+#ifndef INC_4_GROUPPROJECT_PLAYER_H
+#define INC_4_GROUPPROJECT_PLAYER_H
 
 #include "../Character/Character.h"
 
@@ -24,4 +24,4 @@ public:
 };
 
 
-#endif //UNTITLED_PLAYER_H
+#endif //INC_4_GROUPPROJECT_PLAYER_H

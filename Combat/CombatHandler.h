@@ -7,12 +7,14 @@
 
 #include <string>
 
-class combatSituation {
+class CombatSituation {
 protected:
-
+    std::string combatCommands;
 
 public:
     void inCombat();
+    void playerActions();
+    void enemyActions();
 };
 
 #endif //INC_4_GROUPPROJECT_COMBATHANDLER_H

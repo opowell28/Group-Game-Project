@@ -7,7 +7,20 @@
 #include "CombatHandler.h"
 #include <iostream>
 
-void combatSituation::inCombat() {
-    //TODO: add functions from player and character to run when entering a
-    // combat situation
+//call this function when entering a combat situation in a room in moveHandler
+void CombatSituation::inCombat() {
+
+    //create a combat situation
+    CombatSituation combat;
+
+    CombatSituation::playerActions();
+    CombatSituation::enemyActions();
+}
+
+void CombatSituation::playerActions() {
+
+}
+
+void CombatSituation::enemyActions() {
+
 }

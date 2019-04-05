@@ -2,13 +2,13 @@
 // Created by agreene17021 on 3/27/2019.
 //
 
-#ifndef UNTITLED_CHARACTER_H
-#define UNTITLED_CHARACTER_H
+#ifndef INC_4_GROUPPROJECT_CHARACTER_H
+#define INC_4_GROUPPROJECT_CHARACTER_H
 
 #include <iostream>
 
 class Character {
-private:
+protected:
     int health;
     std::string equippedItem;
     std::string equippedWeapon;
@@ -22,4 +22,4 @@ public:
 };
 
 
-#endif //UNTITLED_CHARACTER_H
+#endif //INC_4_GROUPPROJECT_CHARACTER_H
