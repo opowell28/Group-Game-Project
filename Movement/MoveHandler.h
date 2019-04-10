@@ -45,6 +45,8 @@ private:
 
 public:
     MoveHandler();
+    int getX();
+    int getY();
 
     void makeMap(int X, int Y, int startingX, int startingY);
 

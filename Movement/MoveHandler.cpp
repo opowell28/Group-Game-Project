@@ -15,6 +15,14 @@ using namespace std;
 //MoveHandler constructor
 MoveHandler::MoveHandler() {}
 
+int MoveHandler::getX() {
+    return XCoordinate;
+}
+
+int MoveHandler::getY() {
+    return YCoordinate;
+}
+
 //this would be created once at the beginning of the program and it would set where
 //the player starts and how many rooms there are in the world. Each coordinate is
 //supposed to represent an individual room and from each room you can get to the 4
