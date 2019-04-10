@@ -2,9 +2,9 @@
 #include "Weapons/Weapon.h"
 #include "Movement/MoveHandler.h"
 #include "Combat/CombatHandler.h"
+#include "Player/Player.h"
 
 using namespace std;
-
 
 
 int main() {
@@ -13,10 +13,6 @@ int main() {
     CombatSituation CombatHdlr;
 
     MoveHdlr.makeMap(5,10,0,2); //5 by 10 map and player starts at 0,2 (middle of 1st row)
-
-    //add any necessary controls here
-    cout << "Controls: " << '\n' <<
-    "To move in a direction, type a direction, e.g. 'north' or 'south'" << endl;
 
     int playerXLocation = 2;
     int playerYLocation = 0;
@@ -33,6 +29,5 @@ int main() {
             //item handler
         }
     }
-
     return 0;
 }

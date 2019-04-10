@@ -16,11 +16,11 @@ protected:
 
 public:
     Player();
-    Player(std::string playerName, int playerHealth);
-    double GetCarryCapacity(double carryCapacity);
-    int attack(int atkDamage);
-    std::string atkRequest();
-    int playerDamaged(int playerDamage);
+    Player(std::string playerName, int playerHealth, double carryCapacity);
+    virtual double getCarryCapacity(double carryCapacity);
+    virtual int attack();
+    virtual std::string atkRequest();
+    virtual int playerDamaged();
 };
 
 

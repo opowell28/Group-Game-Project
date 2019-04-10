@@ -13,14 +13,9 @@ void CombatSituation::inCombat() {
     //create a combat situation
     CombatSituation combat;
 
-    CombatSituation::playerActions();
-    CombatSituation::enemyActions();
-}
+    std::cout << /*some message to display in combat*/ << std::endl;
 
-void CombatSituation::playerActions() {
-
-}
-
-void CombatSituation::enemyActions() {
-
+    player->atkRequest();
+    player->attack();
+    player->playerDamaged();
 }

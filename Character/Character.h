@@ -15,9 +15,9 @@ protected:
 
 public:
     virtual int getHealth(int health);
-    virtual int Attack(int damage, int opponentHealth);
-    virtual int Heal(int health);
-    virtual int Damaged(int health);
+    virtual int enemyAttack(int damage, int opponentHealth);
+    virtual int enemyHeal(int health);
+    virtual int enemyDamaged(int health);
 
 };
 
