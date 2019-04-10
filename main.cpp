@@ -10,6 +10,8 @@ using namespace std;
 int main() {
 
     MoveHandler MoveHdlr;
+    CombatSituation CombatHdlr;
+
     MoveHdlr.makeMap(5,10,0,2); //5 by 10 map and player starts at 0,2 (middle of 1st row)
 
     //add any necessary controls here
@@ -25,6 +27,11 @@ int main() {
 
         //call function to take directional input
         MoveHdlr.getDirectionInputAndMovePlayer();
+        if (enemyInRoom) {
+            CombatHdlr.inCombat();
+        } else if (itemInRoom) {
+            //item handler
+        }
     }
 
     return 0;
