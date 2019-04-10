@@ -8,6 +8,26 @@
 #include <string>
 #include <vector>
 
+//Room class allows properties for individual rooms to be set
+class Room {
+protected:
+    std::string roomName = "";
+    int xcoordinate;
+    int ycoordinate;
+    std::string enemy;
+    bool isEmpty;
+    bool visitedBefore;
+
+public:
+    Room(int x, int y, std::string roomName, std::string enemy, bool isEmpty, bool visitedBefore);
+    //run any events for the room
+    void runRoomEvents();
+    int getX();
+    int getY();
+};
+
+
+
 //TODO: set maxX and maxY, initialize xcoord and ycoord to 0
 class MoveHandler {
 private:
@@ -20,6 +40,7 @@ private:
         int x;
         int y;
     };
+    std::vector<Room> roomsWithEnemy;
     std::vector<room> visitedRooms;
 
 public:
@@ -28,6 +49,9 @@ public:
     void makeMap(int X, int Y, int startingX, int startingY);
 
     void getDirectionInputAndMovePlayer(); //handles user input and controls directional movement
+
+    void fillWorldWithEnemies();
+    bool isThereAnEnemyInRoom(int x, int y);
 
     //functions move player to adjacent rooms
     void movePlayerRight();
@@ -40,22 +64,6 @@ public:
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
 
-};
-
-//whereas map holds all the rooms, Room class allows
-// properties for individual rooms to be set
-class Room {
-protected:
-    std::string roomName = "";
-    int xcoordinate;
-    int ycoordinate;
-    bool isEmpty;
-    bool visitedBefore;
-
-public:
-    Room(int x, int y, std::string roomName, bool isEmpty, bool visitedBefore);
-    //run any events for the room
-    void runRoomEvents();
 };
 
 

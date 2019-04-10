@@ -149,20 +149,42 @@ void MoveHandler::RunStoryEvent(int x, int y) {
     }
 }
 
+void MoveHandler::fillWorldWithEnemies() {
+    //repeat these 2 lines for every room
+    Room room_0_3(0, 0, "0,3", "slime", false, false);
+    roomsWithEnemy.push_back(room_0_3);
+}
 
-
-
+bool MoveHandler::isThereAnEnemyInRoom(int x, int y) {
+    for (int i = 0; i <= roomsWithEnemy.size(); i++) {
+        for (int j = 0; j <= roomsWithEnemy.size(); j++) {
+            if ((XCoordinate == roomsWithEnemy[i].getX()) && (YCoordinate == roomsWithEnemy[i].getY())) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
 
 
 
 
 //room object with variables
-Room::Room(int x, int y, string roomName, bool isEmpty, bool visitedBefore) {
+Room::Room(int x, int y, string roomName, string enemy, bool isEmpty, bool visitedBefore) {
     this->xcoordinate = x;
     this->ycoordinate = y;
     this->roomName = roomName;
+    this->enemy = enemy;
     this->isEmpty = isEmpty;
     this->visitedBefore = visitedBefore;
+}
+
+int Room::getX() {
+    return xcoordinate;
+}
+
+int Room::getY() {
+    return ycoordinate;
 }
 
 void Room::runRoomEvents() {
