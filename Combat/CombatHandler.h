@@ -7,14 +7,15 @@
 
 #include <string>
 
+//create a player abject and assign it to a pointer
+Player player1("Player 1", 50, 100.0);
+Player* player = &player1;
+
 class CombatSituation {
 protected:
-    std::string combatCommands;
 
 public:
     void inCombat();
-    void playerActions();
-    void enemyActions();
 };
 
 #endif //INC_4_GROUPPROJECT_COMBATHANDLER_H

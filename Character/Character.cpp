@@ -9,7 +9,7 @@ int Character::getHealth(int health) {
     return health;
 }
 
-int Character::Attack(int damage, int opponentHealth) {
+int Character::enemyAttack(int damage, int opponentHealth) {
     //generate random damage between 1 and 5
     srand((unsigned)time(0));
     for(int index = 0; index < 1; index++) {
@@ -21,13 +21,13 @@ int Character::Attack(int damage, int opponentHealth) {
     return opponentHealth;
 }
 
-int Character::Heal(int health) {
+int Character::enemyHeal(int health) {
     this->health += health;
     return this->health;
 }
 
 //TODO: base damage off what weapon is being carried
-int Character::Damaged(int health) {
+int Character::enemyDamaged(int health) {
     //removes between 1 and 10 from player's health
     srand((unsigned)time(0));
     for(int index = 0; index < 1; index++) {

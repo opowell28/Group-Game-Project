@@ -8,21 +8,24 @@
 Player::Player() {
     this->playerName = "";
     this->playerHealth = 0;
+    this->carryCapacity = 0.0;
 }
 
 //player object with parameters
-Player::Player(std::string playerName, int playerHealth) {
+Player::Player(std::string playerName, int playerHealth, double carryCapacity) {
     this->playerName = playerName;
     this->playerHealth = playerHealth;
+    this->carryCapacity = carryCapacity;
 }
 
 //get the players carry capacity
-double Player::GetCarryCapacity(double carryCapacity) {
+double Player::getCarryCapacity(double carryCapacity) {
     carryCapacity = this->carryCapacity;
     return carryCapacity;
 }
 
-int Player::attack(int atkDamage) {
+int Player::attack() {
+    int atkDamage;
     //generate number between 1 and 5 for light damage
     if (atkStrength == "light" || atkStrength == "Light") {
         srand((unsigned)time(0));
@@ -31,7 +34,7 @@ int Player::attack(int atkDamage) {
             return atkDamage;
         }
     }
-        //generate random number between 6 and 10 for heavy damage
+    //generate random number between 6 and 10 for heavy damage
     else if (atkStrength == "heavy" || atkStrength == "Heavy") {
         srand((unsigned)time(0));
         for(int index = 0; index < 1; index++) {
@@ -48,7 +51,8 @@ std::string Player::atkRequest() {
 }
 
 //damage function which lowers players health
-int Player::playerDamaged(int playerDamage) {
+int Player::playerDamaged() {
+    int playerDamage
     //removes between 1 and 10 from player's health
     srand((unsigned)time(0));
     for(int index = 0; index < 1; index++) {
