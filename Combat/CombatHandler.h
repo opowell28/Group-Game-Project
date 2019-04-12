@@ -7,13 +7,11 @@
 
 #include <string>
 
-//create a player abject and assign it to a pointer
+//create a player object and assign it to a pointer
 Player player1("Player 1", 50, 100.0);
 Player* player = &player1;
 
 class CombatSituation {
-protected:
-
 public:
     void inCombat();
 };

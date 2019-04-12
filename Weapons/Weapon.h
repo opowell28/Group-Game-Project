@@ -6,6 +6,8 @@
 #define INC_4_GROUPPROJECT_WEAPON_H
 
 #include <string>
+#include <vector>
+#include "../Player/Player.h"
 
 
 class Inventory {
@@ -14,6 +16,9 @@ protected:
     double maxWeight;
     //current carry weight
     double currentWeight;
+public:
+    //vector to hold inventory items
+    std::vector<std::string> playerInventory;
 };
 
 class Weapon: public Inventory {

@@ -13,6 +13,7 @@ void CombatSituation::inCombat() {
     //create a combat situation
     CombatSituation combat;
 
+
     std::cout << /*some message to display in combat*/ << std::endl;
 
     player->atkRequest();

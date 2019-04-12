@@ -11,6 +11,7 @@ int main() {
 
     MoveHandler MoveHdlr;
     CombatSituation CombatHdlr;
+    player; //create a player object using the pointer to player1 in CombatHandler
 
     MoveHdlr.makeMap(5,10,0,2); //5 by 10 map and player starts at 0,2 (middle of 1st row)
     MoveHdlr.fillWorldWithEnemies(); //fills vector of rooms with enemies

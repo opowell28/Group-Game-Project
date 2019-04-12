@@ -48,11 +48,12 @@ int Player::attack() {
 std::string Player::atkRequest() {
     std::cout << "Heavy or light attack? Enter 'heavy' or 'light' " << std::endl;
     getline(std::cin, this->atkStrength);
+    return atkStrength;
 }
 
 //damage function which lowers players health
 int Player::playerDamaged() {
-    int playerDamage
+    int playerDamage;
     //removes between 1 and 10 from player's health
     srand((unsigned)time(0));
     for(int index = 0; index < 1; index++) {
