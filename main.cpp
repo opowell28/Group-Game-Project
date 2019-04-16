@@ -16,12 +16,11 @@ int main() {
 
     MoveHdlr.makeMap(5,10,2,0); //5 by 10 map and player starts at 0,2 (middle of 1st row)
     MoveHdlr.fillWorldWithEnemies(); //fills vector of rooms with enemies
-    int playerXLocation = 2;
-    int playerYLocation = 0;
 
     //main game loop
     while(!gameOver) {
-        MoveHdlr.RunStoryEvent(playerXLocation, playerYLocation);
+        //print out story event for room (story is located at the bottom of MoveHandler.cpp)
+        MoveHdlr.RunStoryEvent(MoveHdlr.getX(), MoveHdlr.getY());
 
         //call function to take directional input
         MoveHdlr.getDirectionInputAndMovePlayer();
@@ -34,7 +33,7 @@ int main() {
         }
 
         if (/* there is an item to pick up */) {
-            //item handler
+            //item handler      if we decide to do this
         }
 
         if (/* the game is over (presumably after defeating boss) */) {

@@ -139,23 +139,6 @@ bool MoveHandler::checkIfVisitedBefore(int x, int y) {
     return false;        //return false otherwise
 }
 
-//function contains list of story events for each room coordinate that has a story event
-void MoveHandler::RunStoryEvent(int x, int y) {
-
-    //TODO: make more if statements like this for every room we want something to happen in
-    if ((x == 0) && (y == 0)) {
-        //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
-        if (checkIfVisitedBefore(x, y) == false) {
-            cout << "[room story element]";
-
-            //add to visited rooms vector now that story events are over
-            addToVisitedVector(x, y);
-        }
-
-    } else if ((x == 0) && (y == -1)) {
-
-    }
-}
 
 void MoveHandler::fillWorldWithEnemies() {
     //repeat these 2 lines for every room
@@ -212,25 +195,49 @@ string Room::getEnemy() {
     return enemy;
 }
 
-/*
-void Room::runRoomEvents() {
-    //upon entering a new room, if we want player to fight an enemy,
-    // pick up an item, or something else, we could call the necessary
-    // functions from here. We could also print out story elements which
-    // are connected to certain rooms from here.
+//function contains list of story events for each room coordinate that has a story event
+void MoveHandler::RunStoryEvent(int x, int y) {
 
+    //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
+    if (checkIfVisitedBefore(x, y) == false) {
 
-    if (isEmpty == false && visitedBefore == false) {
-        if(xcoordinate > 0 && ycoordinate > 0) {
-            visitedBefore = true;
-            //call other functions here
+        //   --ROOM BY ROOM STORY EVENTS--
+        //TODO: make more if statements like this for every room we want something to happen in
+
+        if ((x == 2) && (y == 0)) {
+            cout << "You wake up and rub a bruise on your head. You appear to"
+                    " have fallen deep underground. You cannot see where you "
+                    "fell from, but you can see that you are in a small cavern,"
+                    " illuminated by torchlight. There is an opening in front "
+                    "of you leading somewhere else, and one to your left and "
+                    "right as well. What do you do?" << endl;
+        } else if ((x == 1) && (y == 0)) {
+            cout << "This room is the same as the last one. It is empty except "
+                    "for a small object in the corner." << endl;
+            //to simplify the process the player could automatically be awarded this item
+        } else if ((x == 3) && (y == 0)) {
+            cout << "[story element]" << endl;
         }
-    }
-    else if(isEmpty == true) {
-        cout << "This room is empty" << endl;
-    }
-    else if(visitedBefore == true) {
-        cout << "You have already visited this room" << endl;
+
+        addToVisitedVector(x, y);  //add to visited rooms vector now that story events are over
+
+    } else if (checkIfVisitedBefore(x, y) == true){
+        //print room-specific message for if you have already been here
+        printVisitedMessage(x, y);
     }
 }
- */
+
+//function takes room coordinates and prints appropriate visited-before message
+void MoveHandler::printVisitedMessage(int x, int y) {
+    if ((x == 2) && (y == 0)) {
+        cout << "This is where you fell down here. You wish "
+                "you could escape this place" << endl;
+    } else if ((x == 1) && (y == 0)) {
+        cout << "You have already been here. The object in the"
+                " corner is still sitting there" << endl;
+        //default message for all rooms where there is not something unusual
+    } else {
+        cout << "You have already been here" << endl;
+    }
+}
+

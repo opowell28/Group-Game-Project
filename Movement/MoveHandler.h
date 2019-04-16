@@ -68,6 +68,8 @@ public:
     void RunStoryEvent(int x, int y);
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
+    void printVisitedMessage(int x, int y);
+
 
 };
 
