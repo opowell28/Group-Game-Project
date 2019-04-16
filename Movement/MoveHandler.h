@@ -22,6 +22,8 @@ public:
     Room(int x, int y, std::string roomName, std::string enemy, bool isEmpty, bool visitedBefore);
     //run any events for the room
     void runRoomEvents();
+
+    std::string getEnemy();
     int getX();
     int getY();
 };
@@ -54,6 +56,7 @@ public:
 
     void fillWorldWithEnemies();
     bool isThereAnEnemyInRoom(int x, int y);
+    std::string getNameOfEnemyInRoom(int x, int y);
 
     //functions move player to adjacent rooms
     void movePlayerRight();

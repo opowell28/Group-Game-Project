@@ -174,6 +174,19 @@ bool MoveHandler::isThereAnEnemyInRoom(int x, int y) {
     return false;
 }
 
+//returns the name of enemy in specified room
+//meant to be run after isThereAnEnemyInRoom
+string MoveHandler::getNameOfEnemyInRoom(int x, int y) {
+    //find the room with specified coordinates
+    for (int i = 0; i <= roomsWithEnemy.size(); i++) {
+        if ((roomsWithEnemy[i].getX() == x) && (roomsWithEnemy[i].getY() == y)) {
+            //return enemy that is there
+            return roomsWithEnemy[i].getEnemy();
+        }
+    }
+    return " ";
+}
+
 
 
 
@@ -195,6 +208,11 @@ int Room::getY() {
     return ycoordinate;
 }
 
+string Room::getEnemy() {
+    return enemy;
+}
+
+/*
 void Room::runRoomEvents() {
     //upon entering a new room, if we want player to fight an enemy,
     // pick up an item, or something else, we could call the necessary
@@ -215,3 +233,4 @@ void Room::runRoomEvents() {
         cout << "You have already visited this room" << endl;
     }
 }
+ */
