@@ -33,6 +33,8 @@ public:
 //TODO: set maxX and maxY, initialize xcoord and ycoord to 0
 class MoveHandler {
 private:
+    MoveHandler();
+
     int XCoordinate;
     int YCoordinate;
     int maxX;
@@ -46,7 +48,7 @@ private:
     std::vector<room> visitedRooms;
 
 public:
-    MoveHandler();
+    MoveHandler& getInstance();
     int getX();
     int getY();
 

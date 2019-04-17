@@ -4,15 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Enemy.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj"
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/Movement/MoveHandler.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj"
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/Weapons/Weapon.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj"
-  "C:/Users/AJ/CLionProjects/Group-Game-Project/main.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/main.cpp.obj"
+  "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.cpp" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Character.cpp.o"
+  "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.cpp" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.o"
+  "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.o"
+  "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Player/Player.cpp" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles/4__groupProject.dir/Player/Player.cpp.o"
+  "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.cpp" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.o"
+  "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/main.cpp" "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/CMakeFiles/4__groupProject.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

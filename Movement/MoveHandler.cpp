@@ -16,6 +16,13 @@ using namespace std;
 //MoveHandler constructor
 MoveHandler::MoveHandler() {}
 
+MoveHandler& MoveHandler::getInstance() {
+
+    static MoveHandler instance;
+    return instance;
+
+}
+
 int MoveHandler::getX() {
     return XCoordinate;
 }
@@ -77,27 +84,27 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
         for (int i : directionInput) {
 
             if ((directionInput[i] == 'n') && (directionInput[i+1] == 'o')
-            && (directionInput[i+2] == 'r') && (directionInput[i+3] == 't')
-            && (directionInput[i+4] == 'h')) {
+                && (directionInput[i+2] == 'r') && (directionInput[i+3] == 't')
+                && (directionInput[i+4] == 'h')) {
 
                 movePlayerUp();
                 moved = true;
 
             } else if ((directionInput[i] == 's') && (directionInput[i+1] == 'o')
-            && (directionInput[i+2] == 'u') && (directionInput[i+3] == 't')
-            && (directionInput[i+4] == 'h')) {
+                       && (directionInput[i+2] == 'u') && (directionInput[i+3] == 't')
+                       && (directionInput[i+4] == 'h')) {
 
                 movePlayerDown();
                 moved = true;
 
             } else if ((directionInput[i] == 'e') && (directionInput[i+1] == 'a')
-                        && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+                       && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
 
                 movePlayerRight();
                 moved = true;
 
             } else if ((directionInput[i] == 'w') && (directionInput[i+1] == 'e')
-                      && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+                       && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
 
                 movePlayerLeft();
                 moved = true;
@@ -159,6 +166,9 @@ void MoveHandler::addToVisitedVector(int xCoordinate, int yCoordinate) {
 
 //function to see if a room has been visited
 bool MoveHandler::checkIfVisitedBefore(int x, int y) {
+    if (visitedRooms.empty()) {
+        return false;
+    }
     for (int i = 0; i <= visitedRooms.size(); i++) {
         if ((visitedRooms[i].x == x) && (visitedRooms[i].y == y)) {
             return true; //return true if it has been visited
@@ -229,6 +239,7 @@ void MoveHandler::RunStoryEvent(int x, int y) {
     //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
     if (checkIfVisitedBefore(x, y) == false) {
 
+        cout << "333" << endl;
         //   --ROOM BY ROOM STORY EVENTS--
         //TODO: make more if statements like this for every room we want something to happen in
 
@@ -268,4 +279,3 @@ void MoveHandler::printVisitedMessage(int x, int y) {
         cout << "You have already been here" << endl;
     }
 }
-

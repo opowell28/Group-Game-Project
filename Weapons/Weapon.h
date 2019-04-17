@@ -12,10 +12,8 @@
 
 class Inventory {
 protected:
-    //max carry weight
-    double maxWeight;
     //current carry weight
-    double currentWeight;
+    double currentCapacity;
 public:
     //vector to hold inventory items
     std::vector<std::string> playerInventory;

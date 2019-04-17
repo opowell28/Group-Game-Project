@@ -6,16 +6,16 @@
 #define INC_4_GROUPPROJECT_PLAYER_H
 
 #include "../Character/Character.h"
+#include "../Weapons/Weapon.h"
 
-class Player: public Character {
+class Player : public Character, public Weapon {
 protected:
     std::string playerName = "";
     double carryCapacity;
-    std::string atkStrength;
-
 public:
     Player();
     Player(std::string playerName, int playerHealth, double carryCapacity);
+    virtual int playerAttack();
     virtual double getCarryCapacity(double carryCapacity);
 };
 
