@@ -6,6 +6,7 @@
 //include CombatHandler.h
 #include "../Combat/CombatHandler.h"
 #include <iostream>
+#include <fstream>
 //#include "../Player/Player.h"
 
 
@@ -45,6 +46,33 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
     while (!moved) {
 
         getline(cin, directionInput);
+
+        //Help code to print commands.
+        string input, cmd;
+        ifstream cmds;
+        cmds.open("Commands.txt");
+
+        vector<string> commands;
+
+        //Reads "Commands" text file to add all commands to the vector.
+        while(!cmds.eof())
+        {
+            getline(cmds, cmd);
+            commands.push_back(cmd);
+        }
+        cmds.close();
+
+
+        //Type "help" to print the "commands" vector.
+        getline(cin, input);
+        if(input == "help" || input == "Help")
+        {
+            for(string s : commands)
+            {
+                cout << s << endl;
+            }
+        }
+
 
         for (int i : directionInput) {
 

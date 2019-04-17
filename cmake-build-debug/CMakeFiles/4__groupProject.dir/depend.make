@@ -17,9 +17,15 @@ CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Character/Character.h
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Player/Player.cpp
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Player/Player.h
 
+CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Character/Character.h
+CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Player/Player.h
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Weapons/Weapon.cpp
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Weapons/Weapon.h
 
+CMakeFiles/4__groupProject.dir/main.cpp.obj: ../Character/Character.h
+CMakeFiles/4__groupProject.dir/main.cpp.obj: ../Combat/CombatHandler.h
 CMakeFiles/4__groupProject.dir/main.cpp.obj: ../Movement/MoveHandler.h
+CMakeFiles/4__groupProject.dir/main.cpp.obj: ../Player/Player.h
+CMakeFiles/4__groupProject.dir/main.cpp.obj: ../Weapons/Weapon.h
 CMakeFiles/4__groupProject.dir/main.cpp.obj: ../main.cpp
 

@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/pwr2s/CLionProjects/Group-Project/Character/Character.cpp" "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
-  "C:/Users/pwr2s/CLionProjects/Group-Project/Combat/CombatHandler.cpp" "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
-  "C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.cpp" "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj"
-  "C:/Users/pwr2s/CLionProjects/Group-Project/Player/Player.cpp" "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"
-  "C:/Users/pwr2s/CLionProjects/Group-Project/Weapons/Weapon.cpp" "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj"
-  "C:/Users/pwr2s/CLionProjects/Group-Project/main.cpp" "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/main.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/Movement/MoveHandler.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/Weapons/Weapon.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/main.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
