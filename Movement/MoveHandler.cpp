@@ -56,27 +56,27 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
         for (int i : directionInput) {
 
             if ((directionInput[i] == 'n') && (directionInput[i+1] == 'o')
-            && (directionInput[i+2] == 'r') && (directionInput[i+3] == 't')
-            && (directionInput[i+4] == 'h')) {
+                && (directionInput[i+2] == 'r') && (directionInput[i+3] == 't')
+                && (directionInput[i+4] == 'h')) {
 
                 movePlayerUp();
                 moved = true;
 
             } else if ((directionInput[i] == 's') && (directionInput[i+1] == 'o')
-            && (directionInput[i+2] == 'u') && (directionInput[i+3] == 't')
-            && (directionInput[i+4] == 'h')) {
+                       && (directionInput[i+2] == 'u') && (directionInput[i+3] == 't')
+                       && (directionInput[i+4] == 'h')) {
 
                 movePlayerDown();
                 moved = true;
 
             } else if ((directionInput[i] == 'e') && (directionInput[i+1] == 'a')
-                        && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+                       && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
 
                 movePlayerRight();
                 moved = true;
 
             } else if ((directionInput[i] == 'w') && (directionInput[i+1] == 'e')
-                      && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+                       && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
 
                 movePlayerLeft();
                 moved = true;
@@ -251,4 +251,3 @@ void MoveHandler::printVisitedMessage(int x, int y) {
         cout << "You have already been here" << endl;
     }
 }
-
