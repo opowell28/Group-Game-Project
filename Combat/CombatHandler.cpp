@@ -20,6 +20,7 @@ void CombatSituation::inCombat() {
     bool InCombat;
     int turn;
     std::string input;
+    //Placeholder Comment
 
     std::cout << MoveHdlr.getNameOfEnemyInRoom(MoveHdlr.getX(), MoveHdlr.getY()) << std::endl;
 
