@@ -3,9 +3,9 @@
 #include "Movement/MoveHandler.h"
 #include "Combat/CombatHandler.h"
 #include "Player/Player.h"
+#include "Character/Character.h"
 
 using namespace std;
-
 
 int main() {
 

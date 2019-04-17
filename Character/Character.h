@@ -18,7 +18,6 @@ public:
     Character(int health, std::string equippedItem, std::string equippedWeapon);
     virtual int getHealth(int characterHealth);
     virtual int enemyAttack(int damage);
-    virtual int enemyDamaged(int characterHealth);
     virtual int enemyHeal(int characterHealth);
 };
 
