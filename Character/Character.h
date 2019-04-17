@@ -9,12 +9,18 @@
 
 class Character {
 protected:
-    int health;
+    int health, strength, dexterity, constitution;
     std::string equippedItem;
     std::string equippedWeapon;
 
 public:
-    virtual int getHealth(int health);
+    virtual int getHealth();
+    virtual int getStrength();
+    virtual void setStrength(int strength);
+    virtual int getDexterity();
+    virtual void setDexterity(int dexterity);
+    virtual int getConstitution();
+    virtual void setConstitution(int constitution);
     virtual int enemyAttack(int damage, int opponentHealth);
     virtual int enemyHeal(int health);
     virtual int enemyDamaged(int health);

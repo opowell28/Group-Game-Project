@@ -4,9 +4,32 @@
 
 #include "Character.h"
 
-int Character::getHealth(int health) {
-    health = this->health;
-    return health;
+int Character::getHealth() {
+    return this->health;
+}
+
+int Character::getStrength() {
+    return this->strength;
+}
+
+void Character::setStrength(int strength) {
+    this->strength = strength;
+}
+
+int Character::getDexterity() {
+    return this->dexterity;
+}
+
+void Character::setDexterity(int dexterity)() {
+    this->dexterity = dexterity;
+}
+
+int Character::getConstitution() {
+    return this->constitution;
+}
+
+void Character::setConstitution(int constitution)() {
+    this->constitution = constitution;
 }
 
 /*

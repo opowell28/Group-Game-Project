@@ -6,36 +6,12 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.cpp
-Character.h
 C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.h
-
-C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.h
-iostream
--
-
-C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.cpp
-../Player/Player.h
-C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.h
-../Character/Character.h
-C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.h
-CombatHandler.h
-C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.h
 iostream
 -
 
 C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.h
 string
--
-
-C:/Users/AJ/CLionProjects/Group-Game-Project/Movement/MoveHandler.cpp
-MoveHandler.h
-C:/Users/AJ/CLionProjects/Group-Game-Project/Movement/MoveHandler.h
-../Combat/CombatHandler.h
-C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.h
-iostream
--
-fstream
 -
 
 C:/Users/AJ/CLionProjects/Group-Game-Project/Movement/MoveHandler.h
@@ -43,10 +19,6 @@ string
 -
 vector
 -
-
-C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.cpp
-Player.h
-C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.h
 
 C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.h
 ../Character/Character.h
