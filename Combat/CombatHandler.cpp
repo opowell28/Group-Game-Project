@@ -14,15 +14,11 @@ void CombatSituation::inCombat() {
 
     //create a combat situation
     CombatSituation combat;
-    MoveHandler MoveHdlr;
     Player player;
     Enemy enemy;
     bool InCombat;
     int turn;
     std::string input;
-    //Placeholder Comment
-
-    std::cout << MoveHdlr.getNameOfEnemyInRoom(MoveHdlr.getX(), MoveHdlr.getY()) << std::endl;
 
     while(InCombat)
     {
