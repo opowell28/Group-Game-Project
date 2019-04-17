@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
-    <generated>
-      <config projectName="4__groupProject" targetName="4__groupProject" />
-    </generated>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -11,23 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="a81ce186-e444-438e-8874-16701259600e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Combat/CombatHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Combat/CombatHandler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weapons/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Weapons/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weapons/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Weapons/Weapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/4__groupProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4__groupProject.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    <list default="true" id="69e82936-b642-4eea-a78e-f7cdb2fd6134" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
     </list>
-=======
-    <list default="true" id="a81ce186-e444-438e-8874-16701259600e" name="Default Changelist" comment="" />
->>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,28 +19,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="240">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-=======
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
->>>>>>> Stashed changes
+            <state relative-caret-position="105">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,43 +37,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Weapons/Weapon.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="662">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-=======
-            <state relative-caret-position="544">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="e#48#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Weapons/Weapon.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="1125">
-              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-=======
-            <state relative-caret-position="259">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
->>>>>>> Stashed changes
+            <state relative-caret-position="90">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding>
-                <element signature="e#48#72#0" expanded="true" />
+                <element signature="e#99#135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,23 +50,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="795">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-=======
-            <state relative-caret-position="68">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
->>>>>>> Stashed changes
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#48#74#0" expanded="true" />
               </folding>
@@ -136,13 +68,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.h">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state>
-              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-=======
-            <state relative-caret-position="748">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
->>>>>>> Stashed changes
+            <state relative-caret-position="240">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="e#135#152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Player/Player.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Player/Player.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding>
+                <element signature="e#121#156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Character/Character.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Character/Character.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+              <folding>
+                <element signature="e#127#146#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,44 +127,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Weapon.h" />
-        <option value="$PROJECT_DIR$/Weapon.cpp" />
-        <option value="$PROJECT_DIR$/Movement/MoveHandler.h" />
-        <option value="$PROJECT_DIR$/Movement/MoveHandler.cpp" />
+        <option value="$PROJECT_DIR$/Combat/CombatHandler.h" />
+        <option value="$PROJECT_DIR$/Character/Character.h" />
         <option value="$PROJECT_DIR$/Combat/CombatHandler.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Weapons/Weapon.h" />
-        <option value="$PROJECT_DIR$/Weapons/Weapon.cpp" />
-        <option value="$PROJECT_DIR$/Combat/CombatHandler.h" />
+        <option value="$PROJECT_DIR$/Player/Player.cpp" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="706" />
-    <option name="y" value="23" />
-    <option name="width" value="734" />
-    <option name="height" value="877" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Character" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
@@ -207,26 +169,23 @@
             <path>
               <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="4__groupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
               <item name="Weapons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Weapons" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -240,283 +199,126 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.4__groupProject">
-    <configuration name="4__groupProject" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="4__groupProject" TARGET_NAME="4__groupProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="4__groupProject" RUN_TARGET_NAME="4__groupProject">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.4__groupProject" />
-      <item itemvalue="Application.Build All" />
-    </list>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a81ce186-e444-438e-8874-16701259600e" name="Default Changelist" comment="" />
-      <created>1550100816044</created>
+      <changelist id="69e82936-b642-4eea-a78e-f7cdb2fd6134" name="Default Changelist" comment="" />
+      <created>1555542395808</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1550100816044</updated>
-      <workItem from="1550100817431" duration="117000" />
-      <workItem from="1550101162021" duration="79000" />
-      <workItem from="1550101260802" duration="1826000" />
-      <workItem from="1550103110819" duration="251000" />
-      <workItem from="1550106767282" duration="47000" />
-      <workItem from="1550106878961" duration="620000" />
-      <workItem from="1550116442466" duration="23000" />
-      <workItem from="1550515012134" duration="656000" />
-      <workItem from="1550516273517" duration="339000" />
-      <workItem from="1550942810797" duration="335000" />
-      <workItem from="1551214697808" duration="3246000" />
-      <workItem from="1551305905163" duration="1474000" />
-      <workItem from="1551466943142" duration="222000" />
-      <workItem from="1551583585274" duration="239000" />
-      <workItem from="1552054376319" duration="310000" />
-      <workItem from="1552674337441" duration="30000" />
-      <workItem from="1552826667037" duration="286000" />
-      <workItem from="1552827298585" duration="569000" />
-      <workItem from="1552856451983" duration="4000" />
-      <workItem from="1553117171504" duration="297000" />
-      <workItem from="1553120196074" duration="1578000" />
+      <updated>1555542395808</updated>
+      <workItem from="1555542397193" duration="979000" />
     </task>
-    <task id="LOCAL-00001" summary="Second commit, no changes made, just keeping a couple files up to date.">
-      <created>1550107732941</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1550107732941</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added two new directories: Movement and Combat, added combat handler class and header file, as well as a movement handler class and header file.">
-      <created>1550515261338</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1550515261338</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added two new directories: Movement and Combat, added combat handler class and header file, as well as a movement handler class and header file.">
-      <created>1550515453278</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1550515453278</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added two new directories: Movement and Combat, added combat handler class and header file, as well as a movement handler class and header file.">
-      <created>1550942961333</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1550942961333</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added Attack and Player classes to combat handler. Gave both classes variables and functions and defined both in CombatHandler.cpp. Added some TODO's to be addressed as progress is made.">
-      <created>1551217897510</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1551217897510</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added enemy class and gave it functions in CombatHandler.cpp">
-      <created>1551306595784</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1551306595784</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Updated name of damaged function to playerDamaged to make its purpose clear.">
-      <created>1551310301505</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1551310301505</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added a damage randomizer function in the combat handler.">
-      <created>1552054668783</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1552054668783</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added functions to generate random damage for heavy and light attacks from the player, as well as a function to generate random damage on the player.">
-      <created>1552827843820</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1552827843820</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added a TODO in MoveHandler.cpp.">
-      <created>1553117474171</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1553117474171</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="23501000" />
-=======
-    <option name="totallyTimeSpent" value="22081000" />
->>>>>>> Stashed changes
+    <option name="totallyTimeSpent" value="979000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33381504" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.73131675" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3299363" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3299363" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Second commit, no changes made, just keeping a couple files up to date." />
-    <MESSAGE value="Added two new directories: Movement and Combat, added combat handler class and header file, as well as a movement handler class and header file." />
-    <MESSAGE value="Added Attack and Player classes to combat handler. Gave both classes variables and functions and defined both in CombatHandler.cpp. Added some TODO's to be addressed as progress is made." />
-    <MESSAGE value="Added enemy class and gave it functions in CombatHandler.cpp" />
-    <MESSAGE value="Updated name of damaged function to playerDamaged to make its purpose clear." />
-    <MESSAGE value="Added a damage randomizer function in the combat handler." />
-    <MESSAGE value="Added functions to generate random damage for heavy and light attacks from the player, as well as a function to generate random damage on the player." />
-    <MESSAGE value="Added a TODO in MoveHandler.cpp." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a TODO in MoveHandler.cpp." />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Classwork/ClassesPractice/CMakeLists.txt" />
-    <entry file="file://$USER_HOME$/Classwork/ClassesPractice/Weapon.h" />
-    <entry file="file://$USER_HOME$/Classwork/ClassesPractice/Weapon.cpp" />
-    <entry file="file://$USER_HOME$/Classwork/ClassesPractice/main.cpp" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Player/Player.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Weapons/Weapon.h">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-=======
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Weapons/Weapon.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="662">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-=======
-        <state relative-caret-position="544">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#121#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.h">
+    <entry file="file://$PROJECT_DIR$/Character/Character.cpp">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="660">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-=======
-        <state relative-caret-position="748">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
->>>>>>> Stashed changes
+        <state relative-caret-position="570">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#135#152#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="795">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-=======
-        <state relative-caret-position="68">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
->>>>>>> Stashed changes
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#48#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Combat/CombatHandler.h">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-=======
-        <state relative-caret-position="459">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="1125">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-=======
-        <state relative-caret-position="259">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="e#48#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Movement/MoveHandler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="e#99#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Character/Character.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#127#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Player/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
         </state>
       </provider>
     </entry>
