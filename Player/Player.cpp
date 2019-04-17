@@ -3,6 +3,7 @@
 //
 
 #include "Player.h"
+#include<time.h>
 
 //empty player object
 Player::Player() {
@@ -23,7 +24,7 @@ double Player::getCarryCapacity(double carryCapacity) {
     carryCapacity = this->carryCapacity;
     return carryCapacity;
 }
-/*
+
 int Player::attack() {
     int atkDamage;
     //generate number between 1 and 5 for light damage
@@ -43,7 +44,7 @@ int Player::attack() {
         }
     }
 }
- */
+
 
 //ask user what strength of attack to perform
 std::string Player::atkRequest() {
@@ -53,7 +54,7 @@ std::string Player::atkRequest() {
 }
 
 //damage function which lowers players health
-/*
+
 int Player::playerDamaged() {
     int playerDamage;
     //removes between 1 and 10 from player's health
@@ -63,4 +64,3 @@ int Player::playerDamaged() {
         return playerDamage;
     }
 }
- */

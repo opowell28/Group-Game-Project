@@ -138,6 +138,9 @@ void MoveHandler::addToVisitedVector(int xCoordinate, int yCoordinate) {
 
 //function to see if a room has been visited
 bool MoveHandler::checkIfVisitedBefore(int x, int y) {
+    if (visitedRooms.empty()) {
+        return false;
+    }
     for (int i = 0; i <= visitedRooms.size(); i++) {
         if ((visitedRooms[i].x == x) && (visitedRooms[i].y == y)) {
             return true; //return true if it has been visited
@@ -208,6 +211,7 @@ void MoveHandler::RunStoryEvent(int x, int y) {
     //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
     if (checkIfVisitedBefore(x, y) == false) {
 
+        cout << "333" << endl;
         //   --ROOM BY ROOM STORY EVENTS--
         //TODO: make more if statements like this for every room we want something to happen in
 
