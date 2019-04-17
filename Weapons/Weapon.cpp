@@ -39,7 +39,7 @@ int Weapon::use() {
 void Weapon::lowerDurability(int i) {
     this->durability -= i;
 }
-
+/*
 void Weapon::pickUp() {
     if (currentWeight + Weapon::weight > maxWeight) {
         cout << "You cannot carry any more. " << endl;
@@ -48,3 +48,4 @@ void Weapon::pickUp() {
         playerInventory.push_back(/*put weapon variable here*/);
     }
 }
+*/
