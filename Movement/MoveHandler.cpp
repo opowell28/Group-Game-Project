@@ -15,6 +15,13 @@ using namespace std;
 //MoveHandler constructor
 MoveHandler::MoveHandler() {}
 
+MoveHandler& MoveHandler::getInstance() {
+
+    static MoveHandler instance;
+    return instance;
+
+}
+
 int MoveHandler::getX() {
     return XCoordinate;
 }
