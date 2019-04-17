@@ -149,6 +149,33 @@ Character/Character.cpp.s:
 	$(MAKE) -f CMakeFiles\4__groupProject.dir\build.make CMakeFiles/4__groupProject.dir/Character/Character.cpp.s
 .PHONY : Character/Character.cpp.s
 
+Character/Enemy.obj: Character/Enemy.cpp.obj
+
+.PHONY : Character/Enemy.obj
+
+# target to build an object file
+Character/Enemy.cpp.obj:
+	$(MAKE) -f CMakeFiles\4__groupProject.dir\build.make CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj
+.PHONY : Character/Enemy.cpp.obj
+
+Character/Enemy.i: Character/Enemy.cpp.i
+
+.PHONY : Character/Enemy.i
+
+# target to preprocess a source file
+Character/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles\4__groupProject.dir\build.make CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.i
+.PHONY : Character/Enemy.cpp.i
+
+Character/Enemy.s: Character/Enemy.cpp.s
+
+.PHONY : Character/Enemy.s
+
+# target to generate assembly for a file
+Character/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles\4__groupProject.dir\build.make CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.s
+.PHONY : Character/Enemy.cpp.s
+
 Combat/CombatHandler.obj: Combat/CombatHandler.cpp.obj
 
 .PHONY : Combat/CombatHandler.obj
@@ -296,6 +323,9 @@ help:
 	@echo ... Character/Character.obj
 	@echo ... Character/Character.i
 	@echo ... Character/Character.s
+	@echo ... Character/Enemy.obj
+	@echo ... Character/Enemy.i
+	@echo ... Character/Enemy.s
 	@echo ... Combat/CombatHandler.obj
 	@echo ... Combat/CombatHandler.i
 	@echo ... Combat/CombatHandler.s

@@ -8,6 +8,10 @@ int Character::getHealth() {
     return this->health;
 }
 
+void Character::setHealth(int health) {
+    this->health = health;
+}
+
 int Character::getStrength() {
     return this->strength;
 }
@@ -32,32 +36,27 @@ void Character::setConstitution(int constitution)() {
     this->constitution = constitution;
 }
 
-/*
-int Character::enemyAttack(int damage, int opponentHealth) {
-    //generate random damage between 1 and 5
-    srand((unsigned)time(0));
-    for(int index = 0; index < 1; index++) {
-        damage = (rand() % 5) + 1;
-        return damage;
-    }
-    //subtract generated damage from opponent's health
-    opponentHealth -= damage;
-    return opponentHealth;
-}
-*/
-int Character::enemyHeal(int health) {
-    this->health += health;
-    return this->health;
+std::string Character::getName() {
+    return this->name;
 }
 
-//TODO: base damage off what weapon is being carried
-/*
-int Character::enemyDamaged(int health) {
-    //removes between 1 and 10 from player's health
-    srand((unsigned)time(0));
-    for(int index = 0; index < 1; index++) {
-        health -= (rand() % 10) + 1;
-        return health;
+void Character::Attack(Character target, int minDamage, int maxDamage, int missChance) {
+    int damage = 0;
+    int miss;
+
+    damage = (minDamage + rand() % maxDamage + 1) * getStrength();
+    miss = rand() % 100 + 1;
+
+    if(miss <= missChance)
+    {
+        std::cout << "The attack misses." << std::endl;
     }
+    else
+    {
+        target.setHealth(target.getHealth() - damage);
+        std::cout << target.getName() << " has been hit for " << std::to_string(damage) << " points." << std::endl;
+    }
+
+
+
 }
- */

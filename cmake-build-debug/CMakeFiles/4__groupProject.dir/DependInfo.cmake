@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
+  "C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Enemy.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj"
   "C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
   "C:/Users/AJ/CLionProjects/Group-Game-Project/Movement/MoveHandler.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj"
   "C:/Users/AJ/CLionProjects/Group-Game-Project/Player/Player.cpp" "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"

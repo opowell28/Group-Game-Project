@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
   "CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
   "CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"
+  "CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj"
   "4__groupProject.pdb"
   "4__groupProject.exe"
   "4__groupProject.exe.manifest"

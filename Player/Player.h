@@ -10,7 +10,6 @@
 class Player: public Character {
 protected:
     std::string playerName = "";
-    int playerHealth = 0;
     double carryCapacity;
     std::string atkStrength;
 
@@ -18,9 +17,6 @@ public:
     Player();
     Player(std::string playerName, int playerHealth, double carryCapacity);
     virtual double getCarryCapacity(double carryCapacity);
-    virtual int attack();
-    virtual std::string atkRequest();
-    virtual int playerDamaged();
 };
 
 

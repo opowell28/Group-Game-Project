@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Character.h">
 			<Option target="4__groupProject"/>
 		</Unit>
+		<Unit filename="C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Enemy.cpp">
+			<Option target="4__groupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/AJ/CLionProjects/Group-Game-Project/Character/Enemy.h">
+			<Option target="4__groupProject"/>
+		</Unit>
 		<Unit filename="C:/Users/AJ/CLionProjects/Group-Game-Project/Combat/CombatHandler.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>
