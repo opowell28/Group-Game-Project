@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/pwr2s/CLionProjects/Group-Project/Character/Character.h
-iostream
+C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.h
+string
 -
 
-C:/Users/pwr2s/CLionProjects/Group-Project/Player/Player.cpp
-Player.h
-C:/Users/pwr2s/CLionProjects/Group-Project/Player/Player.h
-
-C:/Users/pwr2s/CLionProjects/Group-Project/Player/Player.h
-../Character/Character.h
-C:/Users/pwr2s/CLionProjects/Group-Project/Character/Character.h
+C:/Users/pwr2s/CLionProjects/Group-Project/main.cpp
+iostream
+-
+Movement/MoveHandler.h
+C:/Users/pwr2s/CLionProjects/Group-Project/Movement/MoveHandler.h
 

@@ -53,7 +53,6 @@ std::string Player::atkRequest() {
 }
 
 //damage function which lowers players health
-/*
 int Player::playerDamaged() {
     int playerDamage;
     //removes between 1 and 10 from player's health
@@ -63,4 +62,3 @@ int Player::playerDamaged() {
         return playerDamage;
     }
 }
- */

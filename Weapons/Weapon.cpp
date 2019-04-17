@@ -45,7 +45,7 @@ void Weapon::pickUp() {
         cout << "You cannot carry any more. " << endl;
     }
     if (currentWeight + Weapon::weight < maxWeight) {
-        playerInventory.push_back(put weapon variable here);
+        playerInventory.push_back(/*put weapon variable here*/);
     }
 }
 */

@@ -6,19 +6,20 @@
 #define INC_4_GROUPPROJECT_CHARACTER_H
 
 #include <iostream>
+#include "../Player/Player.h"
 
-class Character {
+class Character : public Player {
 protected:
-    int health;
+    int characterHealth;
     std::string equippedItem;
     std::string equippedWeapon;
-
 public:
-    virtual int getHealth(int health);
-    virtual int enemyAttack(int damage, int opponentHealth);
-    virtual int enemyHeal(int health);
-    virtual int enemyDamaged(int health);
-
+    Character();
+    Character(int health, std::string equippedItem, std::string equippedWeapon);
+    virtual int getHealth(int characterHealth);
+    virtual int enemyAttack(int damage);
+    virtual int enemyDamaged(int characterHealth);
+    virtual int enemyHeal(int characterHealth);
 };
 
 

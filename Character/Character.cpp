@@ -4,13 +4,24 @@
 
 #include "Character.h"
 
+Character::Character() {
+    this->characterHealth = 0;
+    this->equippedItem = "";
+    this->equippedWeapon = "";
+}
+
+Character::Character(int health, std::string equippedItem, std::string equippedWeapon) {
+    this->characterHealth = health;
+    this->equippedItem = equippedItem;
+    this->equippedWeapon = equippedWeapon;
+}
+
 int Character::getHealth(int health) {
-    health = this->health;
+    health = this->characterHealth;
     return health;
 }
 
-/*
-int Character::enemyAttack(int damage, int opponentHealth) {
+int Character::enemyAttack(int damage) {
     //generate random damage between 1 and 5
     srand((unsigned)time(0));
     for(int index = 0; index < 1; index++) {
@@ -18,23 +29,11 @@ int Character::enemyAttack(int damage, int opponentHealth) {
         return damage;
     }
     //subtract generated damage from opponent's health
-    opponentHealth -= damage;
-    return opponentHealth;
-}
-*/
-int Character::enemyHeal(int health) {
-    this->health += health;
-    return this->health;
+    playerHealth -= damage;
+    return playerHealth;
 }
 
-//TODO: base damage off what weapon is being carried
-/*
-int Character::enemyDamaged(int health) {
-    //removes between 1 and 10 from player's health
-    srand((unsigned)time(0));
-    for(int index = 0; index < 1; index++) {
-        health -= (rand() % 10) + 1;
-        return health;
-    }
+int Character::enemyHeal(int health) {
+    this->characterHealth += health;
+    return this->characterHealth;
 }
- */

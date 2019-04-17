@@ -17,8 +17,6 @@ CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Character/Character.h
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Player/Player.cpp
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Player/Player.h
 
-CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Character/Character.h
-CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Player/Player.h
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Weapons/Weapon.cpp
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Weapons/Weapon.h
 
