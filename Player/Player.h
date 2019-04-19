@@ -8,7 +8,7 @@
 #include "../Character/Character.h"
 #include "../Weapons/Weapon.h"
 
-class Player {
+class Player : public Character, public Weapon {
 protected:
     int health, strength, dexterity, constitution;
     std::string name;
