@@ -24,7 +24,7 @@ public:
     virtual int getConstitution();
     virtual void setConstitution(int constitution);
     virtual std::string getName();
-    virtual void Attack(Character target, int minDamage, int maxDamage, int missChance);
+    virtual void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 
 };
 

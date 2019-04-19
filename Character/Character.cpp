@@ -40,11 +40,11 @@ std::string Character::getName() {
     return this->name;
 }
 
-void Character::Attack(Character target, int minDamage, int maxDamage, int missChance) {
+void Character::Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
     int damage = 0;
     int miss;
 
-    damage = (minDamage + rand() % maxDamage + 1) * getStrength();
+    damage = ((minDamage + rand() % maxDamage + 1) * getStrength()) + weaponDamage;
     miss = rand() % 100 + 1;
 
     if(miss <= missChance)

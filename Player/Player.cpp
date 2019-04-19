@@ -23,7 +23,7 @@ double Player::getCarryCapacity(double carryCapacity) {
     carryCapacity = this->carryCapacity;
     return carryCapacity;
 }
-/*
+/*    IT MAY NOT BE NECESSARY TO USE THIS INSTEAD OF Character::attack
 int Player::attack() {
     int atkDamage;
     //generate number between 1 and 5 for light damage

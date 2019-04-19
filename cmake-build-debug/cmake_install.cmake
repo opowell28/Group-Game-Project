@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-# Install script for directory: C:/Users/AJ/CLionProjects/Group-Game-Project
-=======
-# Install script for directory: /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject
->>>>>>> origin/master
+# Install script for directory: C:/Users/pwr2s/CLionProjects/Group-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/4__groupProject")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,9 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
-file(WRITE "C:/Users/AJ/CLionProjects/Group-Game-Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> origin/master
+file(WRITE "C:/Users/pwr2s/CLionProjects/Group-Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

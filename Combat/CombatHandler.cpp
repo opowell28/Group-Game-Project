@@ -9,31 +9,50 @@
 #include "CombatHandler.h"
 #include <iostream>
 
+CombatHandler::CombatHandler() {}
+
+CombatHandler& CombatHandler::getInstance() {
+
+    static CombatHandler instance;
+    return instance;
+
+}
+
 //call this function when entering a combat situation in a room in moveHandler
-void CombatSituation::inCombat() {
+void CombatHandler::inCombat(Player player, Enemy enemy) {
 
     //create a combat situation
-    CombatSituation combat;
-    Player player;
-    Enemy enemy;
-    bool InCombat;
-    int turn;
+    //CombatSituation combat;    this may not be necessary
+
+    bool InCombat = true;
+    int turn = 1;
     std::string input;
+
+    std::cout << "You have entered into battle with " << enemy.getName() << "." << std::endl
+              << "Draw a weapon:" << std::endl;
+    getWeaponChoiceAndEquipt(); //TODO: make this function. Since player inherits weapon it will need to change attributes of the player
 
     while(InCombat)
     {
-        if(turn % 0)
+        if(turn % 2 == 1) //player goes when turn is odd
         {
+            std::cout << "Your turn. Do you do a light or heavy attack?" << std::endl;
+
             getline(std::cin, input);
 
-            if(input == "light" || input == "Light")
+            if((input == "light") || (input == "Light"))
             {
-                player.Attack(enemy, 5, 10, 10);
+                player.Attack(enemy, 5, 10, 10, player.use()); //attack must factor in additional damage from the weapon
             }
 
-            else if(input == "heavy" || input == "Heavy")
+            else if((input == "heavy") || (input == "Heavy"))
             {
-                player.Attack(enemy, 10, 20, 20);
+                player.Attack(enemy, 10, 20, 20, player.use());
+            }
+
+            else if((input == "help") || (input == "Help"))
+            {
+                //TODO: make function to print the help commands
             }
 
             else
@@ -44,15 +63,14 @@ void CombatSituation::inCombat() {
 
         else
         {
-            enemy.Attack(player, 5, 20, 10);
+            enemy.Attack(player, 5, 20, 10, 0); //TODO: make these attributes of individual enemies that would be passed in instead of constant values
         }
 
         turn++;
 
-        if(enemy.getHealth() <= 0 || player.getHealth() <= 0)
+        if((enemy.getHealth() <= 0) || (player.getHealth() <= 0))
         {
             InCombat = false;
         }
     }
-
 }

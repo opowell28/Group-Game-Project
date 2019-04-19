@@ -11,7 +11,10 @@ int main() {
 
     MoveHandler *MoveHdlr;
     MoveHdlr = &MoveHdlr->getInstance();
-    CombatSituation CombatHdlr;
+
+    CombatHandler *CombatHdlr;
+    CombatHdlr = &CombatHdlr->getInstance();
+
     bool gameOver = false;
     //player; //create a player object using the pointer to player1 in CombatHandler
 
@@ -32,7 +35,7 @@ int main() {
 
             //this needs to be able to start a combat situation with the specific monster that is in that room
             // according to what is in vector MoveHandler::roomsWithEnemies
-            CombatHdlr.inCombat(/* MoveHdlr.getNameOfEnemyInRoom(MoveHdlr.getX(), MoveHdlr.getY()) */); //suggestion for possible implementation
+            CombatHdlr->inCombat(/* MoveHdlr.getNameOfEnemyInRoom(MoveHdlr.getX(), MoveHdlr.getY()) */); //suggestion for possible implementation
         }
 
         /*
@@ -42,7 +45,7 @@ int main() {
         */
 
         /*
-        if (the game is over (presumably after defeating boss)) {
+        if (the game is over (presumably after defeating boss or when players health is zero)) {
             gameOver = true;
         }
         */
