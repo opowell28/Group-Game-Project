@@ -4,24 +4,45 @@
 
 #include "Player.h"
 
-//empty player object
-Player::Player() {
-    this->playerName = "";
-    this->playerHealth = 0;
-    this->carryCapacity = 0.0;
+int Player::getHealth() {
+    return this->health;
 }
 
-//player object with parameters
-Player::Player(std::string playerName, int playerHealth, double carryCapacity) {
-    this->playerName = playerName;
-    this->playerHealth = playerHealth;
-    this->carryCapacity = carryCapacity;
+void Player::setHealth(int health) {
+    this->health = health;
+}
+
+int Player::getStrength() {
+    return this->strength;
+}
+
+void Player::setStrength(int strength) {
+    this->strength = strength;
+}
+
+int Player::getDexterity() {
+    return this->dexterity;
+}
+
+void Player::setDexterity(int dexterity) {
+    this->dexterity = dexterity;
+}
+
+int Player::getConstitution() {
+    return this->constitution;
+}
+
+void Player::setConstitution(int constitution) {
+    this->constitution = constitution;
+}
+
+std::string Player::getName() {
+    return this->name;
 }
 
 //get the players carry capacity
 double Player::getCarryCapacity(double carryCapacity) {
-    carryCapacity = this->carryCapacity;
-    return carryCapacity;
+    return this->carryCapacity;
 }
 /*    IT MAY NOT BE NECESSARY TO USE THIS INSTEAD OF Character::attack
 int Player::attack() {

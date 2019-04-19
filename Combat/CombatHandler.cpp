@@ -9,6 +9,7 @@
 #include "CombatHandler.h"
 #include <iostream>
 
+//create a singleton of CombatHandler
 CombatHandler::CombatHandler() {}
 
 CombatHandler& CombatHandler::getInstance() {

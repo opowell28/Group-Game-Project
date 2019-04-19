@@ -8,13 +8,21 @@
 #include "../Character/Character.h"
 #include "../Weapons/Weapon.h"
 
-class Player : public Character, public Weapon {
+class Player {
 protected:
-    std::string playerName = "";
+    int health, strength, dexterity, constitution;
+    std::string name;
     double carryCapacity;
 public:
-    Player();
-    Player(std::string playerName, int playerHealth, double carryCapacity);
+    virtual int getHealth();
+    virtual void setHealth(int health);
+    virtual int getStrength();
+    virtual void setStrength(int strength);
+    virtual int getDexterity();
+    virtual void setDexterity(int dexterity);
+    virtual int getConstitution();
+    virtual void setConstitution(int constitution);
+    virtual std::string getName();
     virtual int playerAttack();
     virtual double getCarryCapacity(double carryCapacity);
 };
