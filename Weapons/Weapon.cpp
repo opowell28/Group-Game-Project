@@ -30,8 +30,7 @@ Weapon::~Weapon() {
 
 //weapon's use function which lowers durability by 1 and returns the damage done
 int Weapon::use() {
-    //TODO: possibly add ability to randomly generate durability drop on a small range
-    lowerDurability(1);
+    lowerDurability(1, 5);
     return this->defaultDamage;
 }
 
@@ -40,8 +39,8 @@ std::string Weapon::getName() {
 }
 
 //function which lowers durability by the amount passed to i
-void Weapon::lowerDurability(int i) {
-    this->durability -= i;
+void Weapon::lowerDurability(int min, int max) {
+    this->durability -= (min + rand() % max + 1);
 }
 /*
 void Weapon::pickUp() {

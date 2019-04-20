@@ -12,8 +12,8 @@
 class Room {
 protected:
     std::string roomName = "";
-    int xcoordinate;
-    int ycoordinate;
+    int xcoordinate = 0;
+    int ycoordinate = 0;
     std::string enemy;
     bool isEmpty;
     bool visitedBefore;
@@ -30,7 +30,7 @@ public:
 
 
 
-//TODO: set maxX and maxY, initialize xcoord and ycoord to 0
+//TODO: set maxX and maxY
 class MoveHandler {
 private:
     MoveHandler();

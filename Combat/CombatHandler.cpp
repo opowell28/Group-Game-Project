@@ -8,6 +8,9 @@
 #include "../Movement/MoveHandler.h"
 #include "CombatHandler.h"
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
 
 //create a singleton of CombatHandler
 CombatHandler::CombatHandler() {}
@@ -53,7 +56,32 @@ void CombatHandler::inCombat(Player player, Enemy enemy) {
 
             else if((input == "help") || (input == "Help"))
             {
-                //TODO: make function to print the help commands
+                //Help code to print commands.
+                std::string input, cmd;
+                std::ifstream cmds;
+                cmds.open("Commands.txt");
+
+                std::vector<std::string> commands;
+
+                //Reads "Commands" text file to add all commands to the vector.
+                while(!cmds.eof())
+                {
+                    getline(cmds, cmd);
+                    commands.push_back(cmd);
+                }
+                cmds.close();
+
+
+                //Type "help" to print the "commands" vector.
+                getline(std::cin, input);
+                if(input == "help" || input == "Help")
+                {
+                    for(std::string s : commands)
+                    {
+                        std::cout << s << std::endl;
+                    }
+                }
+
             }
 
             else

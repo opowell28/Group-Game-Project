@@ -21,7 +21,7 @@ public:
     ~Weapon();
     std::string getName();
     int use();
-    void lowerDurability(int i);
+    void lowerDurability(int min, int max);
     void pickUp();
 };
 
