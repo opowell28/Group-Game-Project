@@ -35,7 +35,7 @@ int Weapon::use() {
     return this->defaultDamage;
 }
 
-std::string Weapon::getName() {
+std::string Weapon::getWeaponName() {
     return this->name;
 }
 

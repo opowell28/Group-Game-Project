@@ -24,7 +24,8 @@ public:
     virtual void setDexterity(int dexterity);
     virtual int getConstitution();
     virtual void setConstitution(int constitution);
-    virtual std::string getName();
+    virtual std::string setPlayerName(std::string name);
+    virtual std::string getPlayerName();
     virtual std::string getWeaponChoiceAndEquip(Player player);
     virtual int playerAttack();
     virtual double getCarryCapacity(double carryCapacity);

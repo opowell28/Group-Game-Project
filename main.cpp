@@ -12,7 +12,7 @@ int main() {
     Player player1;
     Player* player = &player1;
 
-    player1.setName("Player 1"); //maybe allow user to decide this
+    player1.setPlayerName("Player 1"); //maybe allow user to decide this
     player1.setHealth(100);      //maybe allow this to be determined by previously-selected difficulty mode
     player1.setStrength(50);     //maybe allow this to be determined by previously-selected difficulty mode
 
@@ -41,7 +41,7 @@ int main() {
 
             //this needs to be able to start a combat situation with the specific monster that is in that room
             // according to what is in vector MoveHandler::roomsWithEnemies
-            CombatHdlr->inCombat(/* MoveHdlr.getNameOfEnemyInRoom(MoveHdlr.getX(), MoveHdlr.getY()) */); //suggestion for possible implementation
+            CombatHdlr->inCombat(Player->getName(), MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())); //suggestion for possible implementation
         }
 
         /*

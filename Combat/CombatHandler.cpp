@@ -43,7 +43,7 @@ void CombatHandler::inCombat(Player player, Enemy enemy) {
 
             if((input == "light") || (input == "Light"))
             {
-                player.Attack(enemy, defaultDamage, defaultDamage + dexterity, 10, player.use()); //attack must factor in additional damage from the weapon
+                player.Attack(enemy, defaultDamage, defaultDamage + dexterity, 10, player.use()); //this function defines the target, minimum and maximum damage, and the chance of missing
             }
 
             else if((input == "heavy") || (input == "Heavy"))
