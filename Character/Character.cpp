@@ -36,6 +36,18 @@ void Character::setConstitution(int constitution)() {
     this->constitution = constitution;
 }
 
+std::string Character::getEquiptedWeapon() {
+    return this->equippedWeapon;
+}
+
+void Character::setEquiptedWeapon(std::string weaponName) {
+    this->equippedWeapon = weaponName;
+}
+
+void Character::setName(std::string name) {
+    this->name = name;
+}
+
 std::string Character::getName() {
     return this->name;
 }

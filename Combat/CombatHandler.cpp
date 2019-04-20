@@ -29,9 +29,9 @@ void CombatHandler::inCombat(Player player, Enemy enemy) {
     int turn = 1;
     std::string input;
 
-    std::cout << "You have entered into battle with " << enemy.getName() << "." << std::endl
-              << "Draw a weapon:" << std::endl;
-    getWeaponChoiceAndEquip(); //TODO: make this function. Since player inherits weapon it will need to change attributes of the player
+    std::cout << "You have entered into battle with " << enemy.getName() << "." << std::endl;
+
+    getWeaponChoiceAndEquip(player);
 
     while(InCombat)
     {

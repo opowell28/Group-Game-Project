@@ -7,12 +7,13 @@
 
 #include <string>
 #include <vector>
+#include "../Weapons/Weapon.h"
 
 class Inventory {
 protected:
     double currentCapacity;
 public:
-    std::vector<std::string> playerInventory;
+    std::vector<Weapon> playerInventory; //IF WE DECIDE TO ADD OTHER KINDS OF ITEMS, THIS WILL BE A VECTOR OF ITEMS INSTEAD OF WEAPONS
 };
 
 

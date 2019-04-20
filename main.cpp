@@ -9,6 +9,13 @@ using namespace std;
 
 int main() {
 
+    Player player1;
+    Player* player = &player1;
+
+    player1.setName("Player 1"); //maybe allow user to decide this
+    player1.setHealth(100);      //maybe allow this to be determined by previously-selected difficulty mode
+    player1.setStrength(50);     //maybe allow this to be determined by previously-selected difficulty mode
+
     MoveHandler *MoveHdlr;
     MoveHdlr = &MoveHdlr->getInstance();
 
@@ -16,7 +23,6 @@ int main() {
     CombatHdlr = &CombatHdlr->getInstance();
 
     bool gameOver = false;
-    //player; //create a player object using the pointer to player1 in CombatHandler
 
     MoveHdlr->makeMap(5,10,2,0); //5 by 10 map and player starts at 0,2 (middle of 1st row)
     MoveHdlr->fillWorldWithEnemies(); //fills vector of rooms with enemies

@@ -35,6 +35,10 @@ int Weapon::use() {
     return this->defaultDamage;
 }
 
+std::string Weapon::getName() {
+    return this->name;
+}
+
 //function which lowers durability by the amount passed to i
 void Weapon::lowerDurability(int i) {
     this->durability -= i;

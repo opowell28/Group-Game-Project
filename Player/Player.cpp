@@ -44,8 +44,35 @@ double Player::getCarryCapacity(double carryCapacity) {
     return this->carryCapacity;
 }
 
-std::string Player::getWeaponChoiceAndEquip() {
-    std::getline(std::cin, weaponChoice);
+//equip a weapon to the player
+std::string Player::getWeaponChoiceAndEquip(Player player) {
+
+    //if there is something in the inventory:
+    if (!player.playerInventory.empty()) {
+        std::string userInput;
+
+        std::cout << "Draw a weapon:" << std::endl;
+
+        //print a list of what is in the inventory
+        for (int i = 0; i <= player.playerInventory.size(); i++) {
+            //IF WE DECIDE TO ADD OTHER ITEMS THIS WILL NEED CHANGED SO THAT NON-WEAPON ITEMS ARE NOT DISPLAYED
+            std::cout << i+1 << ".   " << playerInventory[i].getName() << std::endl;
+        }
+        std::cout << "Enter any other key to fight with your bare hands." << std::endl;
+
+        std::getline(std::cin, userInput);
+
+        //see if the number entered corresponds to an inventory spot with a weapon
+        for (int j = 0; j <= userInput.size(); j++) {
+            if (std::to_string(userInput[j]) == std::to_string(j+1)) {
+                player.setEquiptedWeapon(playerInventory[userInput[j-1]].getName());
+                break;
+            }
+        }
+    } else {
+        std::cout << "You don't have any weapons." << std::endl;
+    }
+
 }
 
 /*    IT MAY NOT BE NECESSARY TO USE THIS INSTEAD OF Character::attack

@@ -19,6 +19,7 @@ public:
     Weapon();
     Weapon(int defaultDamage, std::string name, int durability, float weight);
     ~Weapon();
+    std::string getName();
     int use();
     void lowerDurability(int i);
     void pickUp();

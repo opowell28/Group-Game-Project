@@ -7,9 +7,11 @@
 
 #include "../Character/Character.h"
 #include "../Weapons/Weapon.h"
+#include "../Inventory/Inventory.h"
 
-class Player : public Character, public Weapon {
+class Player : public Character, public Weapon, public Inventory {
 protected:
+
     int health, strength, dexterity, constitution;
     std::string name, weaponChoice;
     double carryCapacity;
@@ -23,7 +25,7 @@ public:
     virtual int getConstitution();
     virtual void setConstitution(int constitution);
     virtual std::string getName();
-    virtual std::string getWeaponChoiceAndEquip();
+    virtual std::string getWeaponChoiceAndEquip(Player player);
     virtual int playerAttack();
     virtual double getCarryCapacity(double carryCapacity);
 };
