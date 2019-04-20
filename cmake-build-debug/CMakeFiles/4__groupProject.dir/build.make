@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\pwr2s\CLionProjects\Group-Project
+CMAKE_SOURCE_DIR = C:\Users\AJ\CLionProjects\Group-Game-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/4__groupProject.dir/depend.make
@@ -58,107 +58,107 @@ include CMakeFiles/4__groupProject.dir/flags.make
 
 CMakeFiles/4__groupProject.dir/main.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/4__groupProject.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\main.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/4__groupProject.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\main.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\main.cpp
 
 CMakeFiles/4__groupProject.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\main.cpp > CMakeFiles\4__groupProject.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\main.cpp > CMakeFiles\4__groupProject.dir\main.cpp.i
 
 CMakeFiles/4__groupProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\main.cpp -o CMakeFiles\4__groupProject.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\main.cpp -o CMakeFiles\4__groupProject.dir\main.cpp.s
 
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj: ../Weapons/Weapon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Weapons\Weapon.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Weapons\Weapon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Weapons\Weapon.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Weapons\Weapon.cpp
 
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Weapons\Weapon.cpp > CMakeFiles\4__groupProject.dir\Weapons\Weapon.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Weapons\Weapon.cpp > CMakeFiles\4__groupProject.dir\Weapons\Weapon.cpp.i
 
 CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Weapons/Weapon.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Weapons\Weapon.cpp -o CMakeFiles\4__groupProject.dir\Weapons\Weapon.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Weapons\Weapon.cpp -o CMakeFiles\4__groupProject.dir\Weapons\Weapon.cpp.s
 
 CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj: ../Movement/MoveHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Movement\MoveHandler.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Movement\MoveHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Movement\MoveHandler.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Movement\MoveHandler.cpp
 
 CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Movement\MoveHandler.cpp > CMakeFiles\4__groupProject.dir\Movement\MoveHandler.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Movement\MoveHandler.cpp > CMakeFiles\4__groupProject.dir\Movement\MoveHandler.cpp.i
 
 CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Movement/MoveHandler.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Movement\MoveHandler.cpp -o CMakeFiles\4__groupProject.dir\Movement\MoveHandler.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Movement\MoveHandler.cpp -o CMakeFiles\4__groupProject.dir\Movement\MoveHandler.cpp.s
 
 CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj: ../Combat/CombatHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Combat\CombatHandler.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Combat\CombatHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Combat\CombatHandler.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Combat\CombatHandler.cpp
 
 CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Combat\CombatHandler.cpp > CMakeFiles\4__groupProject.dir\Combat\CombatHandler.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Combat\CombatHandler.cpp > CMakeFiles\4__groupProject.dir\Combat\CombatHandler.cpp.i
 
 CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Combat\CombatHandler.cpp -o CMakeFiles\4__groupProject.dir\Combat\CombatHandler.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Combat\CombatHandler.cpp -o CMakeFiles\4__groupProject.dir\Combat\CombatHandler.cpp.s
 
 CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj: ../Character/Character.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Character\Character.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Character\Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/4__groupProject.dir/Character/Character.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Character\Character.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Character\Character.cpp
 
 CMakeFiles/4__groupProject.dir/Character/Character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Character/Character.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Character\Character.cpp > CMakeFiles\4__groupProject.dir\Character\Character.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Character\Character.cpp > CMakeFiles\4__groupProject.dir\Character\Character.cpp.i
 
 CMakeFiles/4__groupProject.dir/Character/Character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Character/Character.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Character\Character.cpp -o CMakeFiles\4__groupProject.dir\Character\Character.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Character\Character.cpp -o CMakeFiles\4__groupProject.dir\Character\Character.cpp.s
 
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj: ../Player/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Player\Player.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Player\Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/4__groupProject.dir/Player/Player.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Player\Player.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Player\Player.cpp
 
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Player/Player.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Player\Player.cpp > CMakeFiles\4__groupProject.dir\Player\Player.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Player\Player.cpp > CMakeFiles\4__groupProject.dir\Player\Player.cpp.i
 
 CMakeFiles/4__groupProject.dir/Player/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Player/Player.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Player\Player.cpp -o CMakeFiles\4__groupProject.dir\Player\Player.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Player\Player.cpp -o CMakeFiles\4__groupProject.dir\Player\Player.cpp.s
 
 CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj: ../Character/Enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Character\Enemy.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Character\Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Character\Enemy.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Character\Enemy.cpp
 
 CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Character\Enemy.cpp > CMakeFiles\4__groupProject.dir\Character\Enemy.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Character\Enemy.cpp > CMakeFiles\4__groupProject.dir\Character\Enemy.cpp.i
 
 CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Character/Enemy.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Character\Enemy.cpp -o CMakeFiles\4__groupProject.dir\Character\Enemy.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Character\Enemy.cpp -o CMakeFiles\4__groupProject.dir\Character\Enemy.cpp.s
 
 CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.obj: CMakeFiles/4__groupProject.dir/flags.make
 CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.obj: ../Inventory/Inventory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Inventory\Inventory.cpp.obj -c C:\Users\pwr2s\CLionProjects\Group-Project\Inventory\Inventory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\4__groupProject.dir\Inventory\Inventory.cpp.obj -c C:\Users\AJ\CLionProjects\Group-Game-Project\Inventory\Inventory.cpp
 
 CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pwr2s\CLionProjects\Group-Project\Inventory\Inventory.cpp > CMakeFiles\4__groupProject.dir\Inventory\Inventory.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\AJ\CLionProjects\Group-Game-Project\Inventory\Inventory.cpp > CMakeFiles\4__groupProject.dir\Inventory\Inventory.cpp.i
 
 CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\pwr2s\CLionProjects\Group-Project\Inventory\Inventory.cpp -o CMakeFiles\4__groupProject.dir\Inventory\Inventory.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\AJ\CLionProjects\Group-Game-Project\Inventory\Inventory.cpp -o CMakeFiles\4__groupProject.dir\Inventory\Inventory.cpp.s
 
 # Object files for target 4__groupProject
 4__groupProject_OBJECTS = \
@@ -186,7 +186,7 @@ CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.s: cmake_force
 4__groupProject.exe: CMakeFiles/4__groupProject.dir/linklibs.rsp
 4__groupProject.exe: CMakeFiles/4__groupProject.dir/objects1.rsp
 4__groupProject.exe: CMakeFiles/4__groupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable 4__groupProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable 4__groupProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\4__groupProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -199,6 +199,6 @@ CMakeFiles/4__groupProject.dir/clean:
 .PHONY : CMakeFiles/4__groupProject.dir/clean
 
 CMakeFiles/4__groupProject.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\pwr2s\CLionProjects\Group-Project C:\Users\pwr2s\CLionProjects\Group-Project C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug C:\Users\pwr2s\CLionProjects\Group-Project\cmake-build-debug\CMakeFiles\4__groupProject.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\AJ\CLionProjects\Group-Game-Project C:\Users\AJ\CLionProjects\Group-Game-Project C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug C:\Users\AJ\CLionProjects\Group-Game-Project\cmake-build-debug\CMakeFiles\4__groupProject.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/4__groupProject.dir/depend
 
