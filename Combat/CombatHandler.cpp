@@ -43,12 +43,12 @@ void CombatHandler::inCombat(Player player, Enemy enemy) {
 
             if((input == "light") || (input == "Light"))
             {
-                player.Attack(enemy, 5, 10, 10, player.use()); //attack must factor in additional damage from the weapon
+                player.Attack(enemy, defaultDamage, defaultDamage + dexterity, 10, player.use()); //attack must factor in additional damage from the weapon
             }
 
             else if((input == "heavy") || (input == "Heavy"))
             {
-                player.Attack(enemy, 10, 20, 20, player.use());
+                player.Attack(enemy, defaultDamage + 5, defaultDamage + dexterity + 5, 20, player.use());
             }
 
             else if((input == "help") || (input == "Help"))

@@ -10,12 +10,8 @@
 #include "../Player/Player.h"
 #include "../Character/Enemy.h"
 
-//create a player object and assign it to a pointer     MOVED TO MAIN
-/*
-Player player1("Player 1", 50, 100.0);
-Player* player = &player1;
-*/
-class CombatHandler : public Character, public Player {
+
+class CombatHandler : virtual public Character, virtual public Player, virtual public Weapon {
 private:
     CombatHandler();
 protected:

@@ -9,7 +9,7 @@
 #include "../Weapons/Weapon.h"
 #include "../Inventory/Inventory.h"
 
-class Player : public Character, public Weapon, public Inventory {
+class Player : virtual public Character, virtual public Weapon, virtual public Inventory {
 protected:
 
     int health, strength, dexterity, constitution;

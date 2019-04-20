@@ -9,7 +9,7 @@
 #include <vector>
 #include "../Player/Player.h"
 
-class Weapon: public Inventory {
+class Weapon: virtual public Inventory {
 protected:
     int defaultDamage;
     std::string name;

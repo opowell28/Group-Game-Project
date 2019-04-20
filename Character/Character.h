@@ -23,8 +23,8 @@ public:
     virtual void setDexterity(int dexterity);
     virtual int getConstitution();
     virtual void setConstitution(int constitution);
-    virtual std::string getEquiptedWeapon();
-    virtual void setEquiptedWeapon(std::string weaponName);
+    virtual std::string getEquippedWeapon();
+    virtual void setEquippedWeapon(std::string weaponName);
     virtual void setName(std::string name);
     virtual std::string getName();
     virtual void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);

@@ -36,11 +36,11 @@ void Character::setConstitution(int constitution)() {
     this->constitution = constitution;
 }
 
-std::string Character::getEquiptedWeapon() {
+std::string Character::getEquippedWeapon() {
     return this->equippedWeapon;
 }
 
-void Character::setEquiptedWeapon(std::string weaponName) {
+void Character::setEquippedWeapon(std::string weaponName) {
     this->equippedWeapon = weaponName;
 }
 

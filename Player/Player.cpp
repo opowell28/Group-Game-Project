@@ -65,7 +65,7 @@ std::string Player::getWeaponChoiceAndEquip(Player player) {
         //see if the number entered corresponds to an inventory spot with a weapon
         for (int j = 0; j <= userInput.size(); j++) {
             if (std::to_string(userInput[j]) == std::to_string(j+1)) {
-                player.setEquiptedWeapon(playerInventory[userInput[j-1]].getName());
+                player.setEquippedWeapon(playerInventory[userInput[j-1]].getName());
                 break;
             }
         }
