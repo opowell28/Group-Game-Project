@@ -40,10 +40,14 @@ std::string Player::getName() {
     return this->name;
 }
 
-//get the players carry capacity
 double Player::getCarryCapacity(double carryCapacity) {
     return this->carryCapacity;
 }
+
+std::string Player::getWeaponChoiceAndEquip() {
+    std::getline(std::cin, weaponChoice);
+}
+
 /*    IT MAY NOT BE NECESSARY TO USE THIS INSTEAD OF Character::attack
 int Player::attack() {
     int atkDamage;

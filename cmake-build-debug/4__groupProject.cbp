@@ -98,6 +98,12 @@
 		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h">
 			<Option target="4__groupProject"/>
 		</Unit>
+		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Inventory/Inventory.cpp">
+			<Option target="4__groupProject"/>
+		</Unit>
+		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Inventory/Inventory.h">
+			<Option target="4__groupProject"/>
+		</Unit>
 		<Unit filename="/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp">
 			<Option target="4__groupProject"/>
 		</Unit>

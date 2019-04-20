@@ -9,16 +9,6 @@
 #include <vector>
 #include "../Player/Player.h"
 
-
-class Inventory {
-protected:
-    //current carry weight
-    double currentCapacity;
-public:
-    //vector to hold inventory items
-    std::vector<std::string> playerInventory;
-};
-
 class Weapon: public Inventory {
 protected:
     int defaultDamage;

@@ -11,7 +11,7 @@
 class Player : public Character, public Weapon {
 protected:
     int health, strength, dexterity, constitution;
-    std::string name;
+    std::string name, weaponChoice;
     double carryCapacity;
 public:
     virtual int getHealth();
@@ -23,6 +23,7 @@ public:
     virtual int getConstitution();
     virtual void setConstitution(int constitution);
     virtual std::string getName();
+    virtual std::string getWeaponChoiceAndEquip();
     virtual int playerAttack();
     virtual double getCarryCapacity(double carryCapacity);
 };

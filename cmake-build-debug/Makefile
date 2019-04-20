@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.62/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.69/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.62/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
+RM = "/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.69/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProje
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.62/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.69/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.62/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/owen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/191.6707.69/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -204,6 +204,33 @@ Combat/CombatHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Combat/CombatHandler.cpp.s
 .PHONY : Combat/CombatHandler.cpp.s
 
+Inventory/Inventory.o: Inventory/Inventory.cpp.o
+
+.PHONY : Inventory/Inventory.o
+
+# target to build an object file
+Inventory/Inventory.cpp.o:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.o
+.PHONY : Inventory/Inventory.cpp.o
+
+Inventory/Inventory.i: Inventory/Inventory.cpp.i
+
+.PHONY : Inventory/Inventory.i
+
+# target to preprocess a source file
+Inventory/Inventory.cpp.i:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.i
+.PHONY : Inventory/Inventory.cpp.i
+
+Inventory/Inventory.s: Inventory/Inventory.cpp.s
+
+.PHONY : Inventory/Inventory.s
+
+# target to generate assembly for a file
+Inventory/Inventory.cpp.s:
+	$(MAKE) -f CMakeFiles/4__groupProject.dir/build.make CMakeFiles/4__groupProject.dir/Inventory/Inventory.cpp.s
+.PHONY : Inventory/Inventory.cpp.s
+
 Movement/MoveHandler.o: Movement/MoveHandler.cpp.o
 
 .PHONY : Movement/MoveHandler.o
@@ -330,6 +357,9 @@ help:
 	@echo "... Combat/CombatHandler.o"
 	@echo "... Combat/CombatHandler.i"
 	@echo "... Combat/CombatHandler.s"
+	@echo "... Inventory/Inventory.o"
+	@echo "... Inventory/Inventory.i"
+	@echo "... Inventory/Inventory.s"
 	@echo "... Movement/MoveHandler.o"
 	@echo "... Movement/MoveHandler.i"
 	@echo "... Movement/MoveHandler.s"
