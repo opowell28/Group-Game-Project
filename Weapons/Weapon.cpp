@@ -4,6 +4,9 @@
 
 #include "Weapon.h"
 #include <iostream>
+#include <string>
+#include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -28,7 +31,7 @@ Weapon::~Weapon() {
     cout << "Destroying weapon" << this->name << endl;
 }
 
-//weapon's use function which lowers durability by 1 and returns the damage done
+//weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done
 int Weapon::use() {
     lowerDurability(1, 5);
     return this->defaultDamage;
@@ -42,13 +45,27 @@ std::string Weapon::getWeaponName() {
 void Weapon::lowerDurability(int min, int max) {
     this->durability -= (min + rand() % max + 1);
 }
-/*
+
 void Weapon::pickUp() {
-    if (currentWeight + Weapon::weight > maxWeight) {
-        cout << "You cannot carry any more. " << endl;
+    if (currentCapacity + Weapon::weight > carryCapacity) {
+        cout << "You cannot carry any more items, you will exceed your carry capacity of " << carryCapacity << ". " << endl;
     }
-    if (currentWeight + Weapon::weight < maxWeight) {
+    if (currentCapacity + Weapon::weight < carryCapacity) {
         playerInventory.push_back(/*put weapon variable here*/);
     }
 }
-*/
+
+//define weapons like this
+Weapon* flimsyDagger = Weapon* (3, "Flimsy Dagger", 17, 4.0);
+Weapon* weakSword = Weapon* (8, "Weak Sword", 25, 8.0);
+
+//store weapons in this map, which stores all of the stats of each weapon with a key that should be the same as the weapons name
+void Weapon::fillWeaponMap() const{
+    allWeapons[flimsyDagger] = 0;
+    allWeapons[weakSword] = 1;
+}
+
+//use this function to return the weapon by passing its name as it was defined (e.g. 'flimsyDagger') and return all stats
+Weapon* Weapon::getWeaponStats(std::string weaponName) {
+    return allWeapons.find(weaponName)->first;
+}

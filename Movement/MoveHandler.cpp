@@ -179,9 +179,14 @@ bool MoveHandler::checkIfVisitedBefore(int x, int y) {
 
 
 void MoveHandler::fillWorldWithEnemies() {
-    //repeat these 2 lines for every room
-    Room room_0_3(0, 0, "0,3", "slime", false, false);
+    //repeat these 2 lines for every room containing an enemy, leave an empty string in std::string weaponName for rooms with no weapons
+    Room room_0_3(0, 0, "0,3", "slime", "", false, false);
     roomsWithEnemy.push_back(room_0_3);
+}
+
+void MoveHandler::fillRoomsWithItems() {
+    Room room_1_0(1, 0, "1,0", "", "flimsyDagger", false, false);
+    roomsWithItem.push_back(room_1_0);
 }
 
 bool MoveHandler::isThereAnEnemyInRoom(int x, int y) {
@@ -212,7 +217,7 @@ string MoveHandler::getNameOfEnemyInRoom(int x, int y) {
 
 
 //room object with variables
-Room::Room(int x, int y, string roomName, string enemy, bool isEmpty, bool visitedBefore) {
+Room::Room(int x, int y, string roomName, string enemy, string weapon, bool isEmpty, bool visitedBefore) {
     this->xcoordinate = x;
     this->ycoordinate = y;
     this->roomName = roomName;

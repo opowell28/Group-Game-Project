@@ -7,9 +7,10 @@
 
 #include <string>
 #include <vector>
+#include "../Weapons/Weapon.h"
 
 //Room class allows properties for individual rooms to be set
-class Room {
+class Room : virtual public Weapon {
 protected:
     std::string roomName = "";
     int xcoordinate = 0;
@@ -17,9 +18,10 @@ protected:
     std::string enemy;
     bool isEmpty;
     bool visitedBefore;
+    std::string weaponName;
 
 public:
-    Room(int x, int y, std::string roomName, std::string enemy, bool isEmpty, bool visitedBefore);
+    Room(int x, int y, std::string roomName, std::string enemy, std::string weaponName, bool isEmpty, bool visitedBefore);
     //run any events for the room
     void runRoomEvents();
 
@@ -45,6 +47,7 @@ private:
         int y;
     };
     std::vector<Room> roomsWithEnemy;
+    std::vector<Room> roomsWithItem;
     std::vector<room> visitedRooms;
 
 public:
@@ -57,6 +60,7 @@ public:
     void getDirectionInputAndMovePlayer(); //handles user input and controls directional movement
 
     void fillWorldWithEnemies();
+    void fillRoomsWithItems();
     bool isThereAnEnemyInRoom(int x, int y);
     std::string getNameOfEnemyInRoom(int x, int y);
 

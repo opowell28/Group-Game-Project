@@ -22,10 +22,14 @@ int main() {
     CombatHandler *CombatHdlr;
     CombatHdlr = &CombatHdlr->getInstance();
 
+    Weapon *weapon;
+
     bool gameOver = false;
 
     MoveHdlr->makeMap(5,10,2,0); //5 by 10 map and player starts at 0,2 (middle of 1st row)
     MoveHdlr->fillWorldWithEnemies(); //fills vector of rooms with enemies
+    MoveHdlr->fillRoomsWithItems(); //fills vector of rooms with items and weapons
+    weapon->fillWeaponMap(); //fills allWeapons map with every weapon in the game
 
     //main game loop
     while(!gameOver) {
@@ -41,7 +45,7 @@ int main() {
 
             //this needs to be able to start a combat situation with the specific monster that is in that room
             // according to what is in vector MoveHandler::roomsWithEnemies
-            CombatHdlr->inCombat(player1, MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())); //suggestion for possible implementation
+            CombatHdlr->inCombat(player1, MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY()));
         }
 
         /*

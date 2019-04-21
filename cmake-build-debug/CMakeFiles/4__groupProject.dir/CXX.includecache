@@ -35,6 +35,12 @@ CombatHandler.h
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
 iostream
 -
+fstream
+-
+vector
+-
+string
+-
 
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Combat/CombatHandler.h
 string
@@ -45,6 +51,18 @@ string
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Player/Player.h
 ../Character/Enemy.h
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Enemy.h
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Inventory/Inventory.cpp
+Inventory.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Inventory/Inventory.h
+
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Inventory/Inventory.h
+string
+-
+vector
+-
+../Weapons/Weapon.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
 
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Movement/MoveHandler.cpp
 MoveHandler.h
@@ -71,6 +89,8 @@ Player.h
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Character/Character.h
 ../Weapons/Weapon.h
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.h
+../Inventory/Inventory.h
+/Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Inventory/Inventory.h
 
 /Users/owen/Documents/AdvancedCandC++/Projects/4) GroupProject/Weapons/Weapon.cpp
 Weapon.h
