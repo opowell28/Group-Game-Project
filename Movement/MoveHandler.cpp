@@ -239,7 +239,6 @@ void MoveHandler::RunStoryEvent(int x, int y) {
     //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
     if (checkIfVisitedBefore(x, y) == false) {
 
-        cout << "333" << endl;
         //   --ROOM BY ROOM STORY EVENTS--
         //TODO: make more if statements like this for every room we want something to happen in
 
@@ -252,8 +251,9 @@ void MoveHandler::RunStoryEvent(int x, int y) {
                     "right as well. What do you do?" << endl;
         } else if ((x == 1) && (y == 0)) {
             cout << "This room is the same as the last one. It is empty except "
-                    "for a small object in the corner." << endl;
-            //to simplify the process the player could automatically be awarded this item
+                    "for a small object in the corner. Do you want to pick it up?" << endl;
+            //if yes, add weapon to inventory and remove this room from roomsWithWeapons vector
+
         } else if ((x == 3) && (y == 0)) {
             cout << "[story element]" << endl;
         }
@@ -270,10 +270,15 @@ void MoveHandler::RunStoryEvent(int x, int y) {
 void MoveHandler::printVisitedMessage(int x, int y) {
     if ((x == 2) && (y == 0)) {
         cout << "This is where you fell down here. You wish "
-                "you could escape this place" << endl;
+                "you could climb back up and escape this place" << endl;
     } else if ((x == 1) && (y == 0)) {
+        //if this room is in roomsWithWeapons:
         cout << "You have already been here. The object in the"
-                " corner is still sitting there" << endl;
+                " corner is still sitting there. Do you want to "
+                "pick it up now?" << endl;
+        //otherwise print the default message below
+
+
         //default message for all rooms where there is not something unusual
     } else {
         cout << "You have already been here" << endl;

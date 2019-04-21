@@ -18,7 +18,8 @@ protected:
     std::string atkStrength;
 public:
     CombatHandler& getInstance();
-    virtual void inCombat(Player player, Enemy enemy);
+    virtual void inCombat(Player player, std::string enemyName);
+    virtual Enemy createEnemyObjectFromName(std::string enemyName);
 };
 
 #endif //INC_4_GROUPPROJECT_COMBATHANDLER_H

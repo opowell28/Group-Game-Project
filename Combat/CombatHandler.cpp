@@ -22,17 +22,24 @@ CombatHandler& CombatHandler::getInstance() {
 
 }
 
-//call this function when entering a combat situation in a room in moveHandler
-void CombatHandler::inCombat(Player player, Enemy enemy) {
+Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
+    if (enemyName == "wolf") {
+        return Enemy("wolf", 50, 10);
+    } else if (enemyName == "[other enemy names]") {
+        //TODO: replicate the above return statement for all types of enemies
+    }
+}
 
-    //create a combat situation
-    //CombatSituation combat;    this may not be necessary
+//call this function when entering a combat situation in a room in moveHandler
+void CombatHandler::inCombat(Player player, std::string enemyName) {
+
+    Enemy Opponent = createEnemyObjectFromName(enemyName);
 
     bool InCombat = true;
     int turn = 1;
     std::string input;
 
-    std::cout << "You have entered into battle with " << enemy.getName() << "." << std::endl;
+    std::cout << "You have entered into battle with " << Opponent.getName() << "." << std::endl;
 
     getWeaponChoiceAndEquip(player);
 
@@ -46,12 +53,12 @@ void CombatHandler::inCombat(Player player, Enemy enemy) {
 
             if((input == "light") || (input == "Light"))
             {
-                player.Attack(enemy, defaultDamage, defaultDamage + dexterity, 10, player.use()); //this function defines the target, minimum and maximum damage, and the chance of missing
+                player.Attack(Opponent, defaultDamage, defaultDamage + dexterity, 10, player.use()); //this function defines the target, minimum and maximum damage, and the chance of missing
             }
 
             else if((input == "heavy") || (input == "Heavy"))
             {
-                player.Attack(enemy, defaultDamage + 5, defaultDamage + dexterity + 5, 20, player.use());
+                player.Attack(Opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, player.use());
             }
 
             else if((input == "help") || (input == "Help"))

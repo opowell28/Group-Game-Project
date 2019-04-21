@@ -24,7 +24,7 @@ int Character::getDexterity() {
     return this->dexterity;
 }
 
-void Character::setDexterity(int dexterity)() {
+void Character::setDexterity(int dexterity) {
     this->dexterity = dexterity;
 }
 
@@ -32,7 +32,7 @@ int Character::getConstitution() {
     return this->constitution;
 }
 
-void Character::setConstitution(int constitution)() {
+void Character::setConstitution(int constitution) {
     this->constitution = constitution;
 }
 

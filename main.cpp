@@ -41,7 +41,7 @@ int main() {
 
             //this needs to be able to start a combat situation with the specific monster that is in that room
             // according to what is in vector MoveHandler::roomsWithEnemies
-            CombatHdlr->inCombat(Player->getName(), MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())); //suggestion for possible implementation
+            CombatHdlr->inCombat(player1, MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())); //suggestion for possible implementation
         }
 
         /*

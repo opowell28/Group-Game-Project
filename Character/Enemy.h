@@ -11,6 +11,9 @@ class Enemy: public Character {
 protected:
     std::string enemyName;
 
+public:
+    Enemy(std::string name, int health, int stregnth);
+
 
 };
 
