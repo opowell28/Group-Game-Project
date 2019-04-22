@@ -4,6 +4,20 @@
 
 #include "Player.h"
 
+Player::Player() {
+    this->name = "Player 1";
+    this->health = 100;
+    this->strength = 50;
+    this->dexterity = 0;
+}
+
+Player::Player(std::string name, int health, int strength, int dexterity) {
+    this->name = name;
+    this->health = health;
+    this->strength = strength;
+    this->dexterity = dexterity;
+}
+
 int Player::getHealth() {
     return this->health;
 }
@@ -70,6 +84,9 @@ std::string Player::getWeaponChoiceAndEquip(Player player) {
         for (int j = 0; j <= userInput.size(); j++) {
             if (std::to_string(userInput[j]) == std::to_string(j+1)) {
                 player.setEquippedWeapon(playerInventory[userInput[j-1]].getWeaponName());
+                Enemy e = Enemy("w",1,1);
+                player.Attack(e, 1,1,1,1);
+                player.setName("s");
                 break;
             }
         }

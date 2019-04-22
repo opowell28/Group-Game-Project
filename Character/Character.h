@@ -17,6 +17,9 @@ protected:
     std::string equippedWeapon;
 
 public:
+    Character();
+    Character(std::string name, int health, int strength, int dexterity);
+
     virtual int getHealth();
     virtual void setHealth(int health);
     virtual int getStrength();
@@ -28,9 +31,10 @@ public:
     virtual std::string getEquippedWeapon();
     virtual void setEquippedWeapon(std::string weaponName);
     virtual void setName(std::string name);
-    virtual std::string getName();
-    virtual void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
-    virtual void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+
+    std::string getName();
+    void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 
 
 };

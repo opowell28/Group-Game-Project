@@ -4,6 +4,20 @@
 
 #include "Character.h"
 
+Character::Character() {
+    this->name = "Player 1";
+    this->health = 100;
+    this->strength = 50;
+    this->dexterity = 0;
+}
+
+Character::Character(std::string name, int health, int strength, int dexterity) {
+    this->name = name;
+    this->health = health;
+    this->strength = strength;
+    this->dexterity = dexterity;
+}
+
 int Character::getHealth() {
     return this->health;
 }

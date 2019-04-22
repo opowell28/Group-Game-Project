@@ -9,26 +9,30 @@
 #include "../Weapons/Weapon.h"
 #include "../Inventory/Inventory.h"
 
-class Player : virtual public Character, virtual public Weapon, virtual public Inventory {
+class Player : public Character, public Weapon, public Inventory {
 protected:
-
+/*   these dont need to be redeclared
     int health, strength, dexterity, constitution;
     std::string name, weaponChoice;
+    */
     double carryCapacity;
 public:
-    virtual int getHealth();
-    virtual void setHealth(int health);
-    virtual int getStrength();
-    virtual void setStrength(int strength);
-    virtual int getDexterity();
-    virtual void setDexterity(int dexterity);
-    virtual int getConstitution();
-    virtual void setConstitution(int constitution);
-    virtual std::string setPlayerName(std::string name);
-    virtual std::string getPlayerName();
-    virtual std::string getWeaponChoiceAndEquip(Player player);
-    virtual int playerAttack();
-    virtual double getCarryCapacity(double carryCapacity);
+    Player();
+    Player(std::string name, int health, int strength, int dexterity);
+
+    int getHealth();
+    void setHealth(int health);
+    int getStrength();
+    void setStrength(int strength);
+    int getDexterity();
+    void setDexterity(int dexterity);
+    int getConstitution();
+    void setConstitution(int constitution);
+    std::string setPlayerName(std::string name);
+    std::string getPlayerName();
+    std::string getWeaponChoiceAndEquip(Player player);
+    int playerAttack();
+    double getCarryCapacity(double carryCapacity);
 };
 
 

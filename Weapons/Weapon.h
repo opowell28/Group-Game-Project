@@ -11,12 +11,13 @@
 
 class Weapon: virtual public Inventory, virtual public Player {
 protected:
-    int defaultDamage;
     std::string weaponName;
+    int defaultDamage;
     int durability;
     float weight;
     std::map<reference_wrapper<Weapon*, std::string>> allWeapons; //map of all weapons in the game, use reference_wrapper to allow references to objects to be stored
 public:
+
     Weapon();
     Weapon(int defaultDamage, std::string name, int durability, float weight);
     ~Weapon();
