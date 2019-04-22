@@ -56,16 +56,20 @@ void Weapon::pickUp() {
 }
 
 //define weapons like this
-Weapon* flimsyDagger = Weapon* (3, "Flimsy Dagger", 17, 4.0);
-Weapon* weakSword = Weapon* (8, "Weak Sword", 25, 8.0);
+Weapon* flimsyDagger = new Weapon (3, "Flimsy Dagger", 17, 4.0);
+Weapon* weakSword = new Weapon (8, "Weak Sword", 25, 8.0);
 
-//store weapons in this map, which stores all of the stats of each weapon with a key that should be the same as the weapons name
-void Weapon::fillWeaponMap() const{
-    allWeapons[flimsyDagger] = 0;
-    allWeapons[weakSword] = 1;
+//add previously defined weapons to the allWeapons vector
+void Weapon::fillWeaponVector() {
+    allWeapons.push_back(flimsyDagger);
+    allWeapons.push_back(weakSword);
 }
 
-//use this function to return the weapon by passing its name as it was defined (e.g. 'flimsyDagger') and return all stats
+//go through vector checking if the weaponName passed to the function is equal to a weapon in the vector, and if it is, return the weapon's stats at the same index
 Weapon* Weapon::getWeaponStats(std::string weaponName) {
-    return allWeapons.find(weaponName)->first;
+    for (int i = 0; i < allWeapons.size(); ++i) {
+        if (allWeapons[i]->getWeaponName() == weaponName) {
+            return allWeapons[i];
+        }
+    }
 }
