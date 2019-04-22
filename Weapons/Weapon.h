@@ -6,16 +6,19 @@
 #define INC_4_GROUPPROJECT_WEAPON_H
 
 #include <string>
+#include <vector>
 #include <map>
+#include "../Inventory/Inventory.h"
 #include "../Player/Player.h"
 
-class Weapon: virtual public Inventory, virtual public Player {
+class Weapon { // REMOVED INHERITANCE FROM PLAYER  :  public Inventory ,  public Player
 protected:
     std::string weaponName;
     int defaultDamage;
     int durability;
     float weight;
-    std::map<reference_wrapper<Weapon*, std::string>> allWeapons; //map of all weapons in the game, use reference_wrapper to allow references to objects to be stored
+    //map should not be here because every weapon created would then have its own map
+    std::map<std::reference_wrapper<Weapon*, std::string>> allWeapons; //map of all weapons in the game, use reference_wrapper to allow references to objects to be stored
 public:
 
     Weapon();

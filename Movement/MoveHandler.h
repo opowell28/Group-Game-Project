@@ -10,7 +10,7 @@
 #include "../Weapons/Weapon.h"
 
 //Room class allows properties for individual rooms to be set
-class Room : virtual public Weapon {
+class Room { //REMOVED INHERITANCE     :  public Weapon
 protected:
     std::string roomName = "";
     int xcoordinate = 0;

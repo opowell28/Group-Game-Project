@@ -66,38 +66,3 @@ std::string Character::getName() {
     return this->name;
 }
 
-//attack function for if an enemy attacks player
-void Character::Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
-    int damage = 0;
-    int miss;
-
-    damage = ((minDamage + rand() % maxDamage + 1) * getStrength()) + weaponDamage;
-    miss = rand() % 100 + 1;
-
-    if(miss <= missChance)
-    {
-        std::cout << "The attack misses." << std::endl;
-    }
-    else
-    {
-        target.setHealth(target.getHealth() - damage);
-        std::cout << target.getPlayerName() << " has been hit for " << std::to_string(damage) << " points." << std::endl;
-    }
-
-}
-
-//attack function for if player attacks enemy
-void Character::Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
-    int damage = 0;
-    int miss;
-
-    damage = ((minDamage + rand() % maxDamage + 1) * getStrength()) + weaponDamage;
-    miss = rand() % 100 + 1;
-
-    if (miss <= missChance) {
-        std::cout << "The attack misses." << std::endl;
-    } else {
-        target.setHealth(target.getHealth() - damage);
-        std::cout << target.getName() << " has been hit for " << std::to_string(damage) << " points." << std::endl;
-    }
-}

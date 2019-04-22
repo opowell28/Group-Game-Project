@@ -7,18 +7,16 @@
 
 #include "../Character/Character.h"
 #include "../Weapons/Weapon.h"
+#include "../Player/Player.h"
 
-class Enemy: virtual public Character, virtual public Weapon{
+class Enemy:  public Character { //REMOVED INHERITANCE   ,  public Weapon
 protected:
-    std::string enemyName;
 
 public:
+    Enemy();
+    Enemy(std::string name, int health, int strength, int dexterity);
 
-    virtual std::string getName();
-    virtual int getHealth();
-    virtual void setHealth(int health);
-
-    Enemy(std::string name, int health, int strength);
+    void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 
 
 };

@@ -6,8 +6,8 @@
 #define INC_4_GROUPPROJECT_CHARACTER_H
 
 #include <iostream>
-#include "../Player/Player.h"
-#include "../Character/Enemy.h"
+//#include "../Player/Player.h"
+//#include "../Character/Enemy.h"
 
 class Character {
 protected:
@@ -20,21 +20,20 @@ public:
     Character();
     Character(std::string name, int health, int strength, int dexterity);
 
-    virtual int getHealth();
-    virtual void setHealth(int health);
-    virtual int getStrength();
-    virtual void setStrength(int strength);
-    virtual int getDexterity();
-    virtual void setDexterity(int dexterity);
-    virtual int getConstitution();
-    virtual void setConstitution(int constitution);
-    virtual std::string getEquippedWeapon();
-    virtual void setEquippedWeapon(std::string weaponName);
-    virtual void setName(std::string name);
-
+    int getHealth();
+    void setHealth(int health);
+    int getStrength();
+    void setStrength(int strength);
+    int getDexterity();
+    void setDexterity(int dexterity);
+    int getConstitution();
+    void setConstitution(int constitution);
+    std::string getEquippedWeapon();
+    void setEquippedWeapon(std::string weaponName);
+    void setName(std::string name);
     std::string getName();
-    void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
-    void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    //void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    //void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 
 
 };

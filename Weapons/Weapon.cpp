@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <algorithm>
+//#include <algorithm>
 
 using namespace std;
 
@@ -28,7 +28,7 @@ Weapon::Weapon(int defaultDamage, std::string name, int durability, float weight
 
 //destructor which prints when weapon is no longer being used and is destroyed
 Weapon::~Weapon() {
-    cout << "Destroying weapon" << this->name << endl;
+    cout << "Destroying weapon" << this->weaponName << endl;
 }
 
 //weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done

@@ -2,11 +2,13 @@
 // Created by Owen Powell on 2019-04-19.
 //
 
-#ifndef INC_4__GROUPPROJECT_INVENTORY_H
-#define INC_4__GROUPPROJECT_INVENTORY_H
+#ifndef INC_4_GROUPPROJECT_INVENTORY_H
+#define INC_4_GROUPPROJECT_INVENTORY_H
 
 #include <string>
 #include <vector>
+
+#include "../Player/Player.h"
 #include "../Weapons/Weapon.h"
 
 class Inventory {

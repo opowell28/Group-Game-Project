@@ -9,9 +9,9 @@
 #include "../Weapons/Weapon.h"
 #include "../Inventory/Inventory.h"
 
-class Player : public Character, public Weapon, public Inventory {
+class Player : public Character, public Inventory { //REMOVED INHERITANCE    , public Weapon
 protected:
-/*   these dont need to be redeclared
+/*   no reason for these to be redeclared
     int health, strength, dexterity, constitution;
     std::string name, weaponChoice;
     */
@@ -19,7 +19,7 @@ protected:
 public:
     Player();
     Player(std::string name, int health, int strength, int dexterity);
-
+/*
     int getHealth();
     void setHealth(int health);
     int getStrength();
@@ -28,11 +28,14 @@ public:
     void setDexterity(int dexterity);
     int getConstitution();
     void setConstitution(int constitution);
-    std::string setPlayerName(std::string name);
-    std::string getPlayerName();
+    std::string setName(std::string name);
+    std::string getName();
+    */
     std::string getWeaponChoiceAndEquip(Player player);
-    int playerAttack();
     double getCarryCapacity(double carryCapacity);
+
+    void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+
 };
 
 
