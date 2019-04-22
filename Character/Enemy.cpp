@@ -4,8 +4,20 @@
 
 #include "Enemy.h"
 
-Enemy::Enemy(std::string name, int health, int stregnth) {
+Enemy::Enemy(std::string name, int health, int strength) {
     this->name = name;
     this->health = health;
-    this->strength = stregnth;
+    this->strength = strength;
+}
+
+std::string Character::getName() {
+    return this->name;
+}
+
+int Enemy::getHealth() {
+    return this->health;
+}
+
+void Enemy::setHealth(int health) {
+    this->health = health;
 }

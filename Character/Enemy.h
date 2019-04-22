@@ -6,13 +6,19 @@
 #define INC_4_GROUPPROJECT_ENEMY_H
 
 #include "../Character/Character.h"
+#include "../Weapons/Weapon.h"
 
-class Enemy: public Character {
+class Enemy: virtual public Character, virtual public Weapon{
 protected:
     std::string enemyName;
 
 public:
-    Enemy(std::string name, int health, int stregnth);
+
+    virtual std::string getName();
+    virtual int getHealth();
+    virtual void setHealth(int health);
+
+    Enemy(std::string name, int health, int strength);
 
 
 };

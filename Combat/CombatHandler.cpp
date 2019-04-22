@@ -41,7 +41,7 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
     std::cout << "You have entered into battle with " << Opponent.getName() << "." << std::endl;
 
-    getWeaponChoiceAndEquip(player);
+    player.getWeaponChoiceAndEquip(player);
 
     while(InCombat)
     {
@@ -99,12 +99,12 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
         else
         {
-            enemy.Attack(player, 5, 20, 10, 0); //TODO: make these attributes of individual enemies that would be passed in instead of constant values
+            Opponent.Attack(player, 5, 20, 10, 0); //TODO: make these attributes of individual enemies that would be passed in instead of constant values
         }
 
         turn++;
 
-        if((enemy.getHealth() <= 0) || (player.getHealth() <= 0))
+        if((Opponent.getHealth() <= 0) || (player.getHealth() <= 0))
         {
             InCombat = false;
         }

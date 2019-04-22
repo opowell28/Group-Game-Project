@@ -6,6 +6,8 @@
 #define INC_4_GROUPPROJECT_CHARACTER_H
 
 #include <iostream>
+#include "../Player/Player.h"
+#include "../Character/Enemy.h"
 
 class Character {
 protected:
@@ -27,7 +29,9 @@ public:
     virtual void setEquippedWeapon(std::string weaponName);
     virtual void setName(std::string name);
     virtual std::string getName();
-    virtual void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    virtual void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    virtual void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+
 
 };
 

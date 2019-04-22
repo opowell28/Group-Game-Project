@@ -13,7 +13,7 @@ using namespace std;
 //weapon with empty variables
 Weapon::Weapon() {
     this->defaultDamage = 0;
-    this->name = "";
+    this->weaponName = "";
     this->durability = 0;
     this->weight = 0;
 }
@@ -21,7 +21,7 @@ Weapon::Weapon() {
 //weapon with defined variables
 Weapon::Weapon(int defaultDamage, std::string name, int durability, float weight) {
     this->defaultDamage = defaultDamage;
-    this->name = name;
+    this->weaponName = name;
     this->durability = durability;
     this->weight = weight;
 }
@@ -38,7 +38,7 @@ int Weapon::use() {
 }
 
 std::string Weapon::getWeaponName() {
-    return this->name;
+    return this->weaponName;
 }
 
 //function which lowers durability by the amount passed to i
