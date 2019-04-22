@@ -24,7 +24,7 @@ CombatHandler& CombatHandler::getInstance() {
 
 Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
     if (enemyName == "wolf") {
-        return Enemy("wolf", 50, 10);
+        return Enemy("wolf", 50, 10, 10);
     } else if (enemyName == "[other enemy names]") {
         //TODO: replicate the above return statement for all types of enemies
     }

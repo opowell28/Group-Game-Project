@@ -23,13 +23,15 @@ int main() {
     CombatHdlr = &CombatHdlr->getInstance();
 
     Weapon *weapon;
+    Enemy *enemy;
 
     bool gameOver = false;
 
     MoveHdlr->makeMap(5,10,2,0); //5 by 10 map and player starts at 0,2 (middle of 1st row)
     MoveHdlr->fillWorldWithEnemies(); //fills vector of rooms with enemies
     MoveHdlr->fillRoomsWithItems(); //fills vector of rooms with items and weapons
-    weapon->fillWeaponMap(); //fills allWeapons map with every weapon in the game
+    weapon->fillWeaponMap(); //fills allWeapons map with every weapon that is defined
+    enemy->fillEnemyMap(); //fills allEnemies map with every enemy that is defined
 
     //main game loop
     while(!gameOver) {
