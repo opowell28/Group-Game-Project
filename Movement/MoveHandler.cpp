@@ -6,6 +6,7 @@
 #include "../Combat/CombatHandler.h"
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 
 using namespace std;
@@ -178,13 +179,13 @@ bool MoveHandler::checkIfVisitedBefore(int x, int y) {
 
 void MoveHandler::fillWorldWithEnemies() {
     //repeat these 2 lines for every room containing an enemy, leave an empty string in std::string weaponName for rooms with no weapons
-    Room room_0_3(0, 0, "0,3", "slime", "", false, false);
+    Room room_0_3(0, 3, "0,3", "slime", "", false, false);
     roomsWithEnemy.push_back(room_0_3);
 }
 
 void MoveHandler::fillRoomsWithItems() {
-    Room room_1_0(1, 0, "1,0", "", "flimsyDagger", false, false);
-    roomsWithItem.push_back(room_1_0);
+    Room room_2_0(2, 0, "1,0", "", "flimsyDagger", false, false);
+    roomsWithItem.push_back(room_2_0);
 }
 
 bool MoveHandler::isThereAnEnemyInRoom(int x, int y) {
@@ -260,26 +261,34 @@ void MoveHandler::RunStoryEvent(int x, int y) {
             cout << "This room is the same as the last one. It is empty except "
                     "for a small object in the corner. " << endl;
             //take input if user wants to pick up the object
-            getline(std::cin, actionInput);
+            getline(cin, actionInput);
             if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
 
                 flimsyDagger->pickUp();
                 cout << "You pick up the object in the corner and see that it is a small,"
                         "weak-looking dagger. " << endl;
+                //remove the room from the vector of rooms with items
+                roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
             }
-            //if yes, add weapon to inventory and remove this room from roomsWithWeapons vector
 
-        } else if ((x == 3) && (y == 0)) {
+            } else if ((x == 3) && (y == 0)) {
 
-            cout << "This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. " << endl;
+                cout << "This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. " << endl;
 
-        } else if ((x == 4) && y == 0) {
+            } else if ((x == 4) && y == 0) {
+
+                cout << "You walk into the next cavern and see a figure which appears to be a wolf in the shadows. "
+                    "It hears you, turns around and snarls at you. " << endl;
+
+                getline(cin, actionInput);
+                if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
+                   //TODO: create an enemy object and run inCombat here
+                }
+
+            } else if ((x == 5) && (y == 0)) {
 
 
-        } else if ((x == 5) && (y == 0)) {
-
-
-        }
+            }
 
         addToVisitedVector(x, y);  //add to visited rooms vector now that story events are over
 

@@ -4,6 +4,8 @@
 #include "Combat/CombatHandler.h"
 #include "Player/Player.h"
 #include "Character/Character.h"
+#include "Character/Enemy.h"
+#include "Inventory/Inventory.h"
 
 using namespace std;
 

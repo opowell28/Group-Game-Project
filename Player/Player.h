@@ -11,9 +11,13 @@
 #include "../Character/Enemy.h"
 
 class Player : virtual public Character, virtual public Inventory, virtual public Enemy { //REMOVED INHERITANCE    , public Weapon
+
 protected:
+
     double carryCapacity;
+
 public:
+
     Player();
     Player(std::string name, int health, int strength, int dexterity);
     std::string getWeaponChoiceAndEquip(Player player);
