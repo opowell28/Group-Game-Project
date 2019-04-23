@@ -23,10 +23,9 @@ public:
     Weapon(int defaultDamage, std::string name, int durability, float weight);
     ~Weapon();
 
+    std::vector<Weapon*> allWeapons;
     std::string getWeaponName();
     Weapon* getWeaponStats(std::string weaponName);
-    std::vector<Weapon*> allWeapons;
-//    void fillWeaponMap() const;
     void fillWeaponVector();
 
     int use();

@@ -104,8 +104,15 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
         turn++;
 
-        if((Opponent.getHealth() <= 0) || (player.getHealth() <= 0))
+        if(Opponent.getHealth() <= 0)
         {
+            std::cout << "You died " << std::endl;
+            InCombat = false;
+        }
+
+        else if(player.getHealth() <= 0)
+        {
+            std::cout << "You won this fight " << std::endl;
             InCombat = false;
         }
     }
