@@ -13,7 +13,7 @@
 #include "../Character/Enemy.h"
 
 
-class CombatHandler { //REMOVED INHERITANCE    :  public Character,  public Player,  public Weapon
+class CombatHandler : virtual public Character,  virtual public Player, virtual public Weapon { //REMOVED INHERITANCE
 private:
     CombatHandler();
 protected:

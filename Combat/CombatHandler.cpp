@@ -33,13 +33,14 @@ Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
 //call this function when entering a combat situation in a room in moveHandler
 void CombatHandler::inCombat(Player player, std::string enemyName) {
 
-    Enemy Opponent = createEnemyObjectFromName(enemyName);
+    //create an enemy with preset stats
+    Enemy opponent = createEnemyObjectFromName(enemyName);
 
     bool InCombat = true;
     int turn = 1;
     std::string input;
 
-    std::cout << "You have entered into battle with " << Opponent.getName() << "." << std::endl;
+    std::cout << "You have entered into battle with " << opponent.getName() << "." << std::endl;
 
     player.getWeaponChoiceAndEquip(player);
 
@@ -53,12 +54,12 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
             if((input == "light") || (input == "Light"))
             {
-                player.Attack(Opponent, defaultDamage, defaultDamage + dexterity, 10, 10); //this function defines the target, minimum and maximum damage, and the chance of missing
+                player.Attack(opponent, defaultDamage, defaultDamage + dexterity, 10, 10); //this function defines the target, minimum and maximum damage, and the chance of missing
             }
 
             else if((input == "heavy") || (input == "Heavy"))
             {
-                player.Attack(Opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, player.use());
+                player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, player.use());
             }
 
             else if((input == "help") || (input == "Help"))
@@ -99,12 +100,12 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
         else
         {
-            Opponent.Attack(player, 5, 20, 10, 0); //TODO: make these attributes of individual enemies that would be passed in instead of constant values
+            opponent.Attack(player, 5, 20, 10, 0); //TODO: make these attributes of individual enemies that would be passed in instead of constant values
         }
 
         turn++;
 
-        if(Opponent.getHealth() <= 0)
+        if(opponent.getHealth() <= 0)
         {
             std::cout << "You died " << std::endl;
             InCombat = false;

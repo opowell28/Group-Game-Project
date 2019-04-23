@@ -8,8 +8,9 @@
 #include "../Character/Character.h"
 #include "../Weapons/Weapon.h"
 #include "../Inventory/Inventory.h"
+#include "../Character/Enemy.h"
 
-class Player : public Character, public Inventory { //REMOVED INHERITANCE    , public Weapon
+class Player : virtual public Character, virtual public Inventory, virtual public Enemy { //REMOVED INHERITANCE    , public Weapon
 protected:
     double carryCapacity;
 public:

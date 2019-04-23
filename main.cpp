@@ -12,7 +12,7 @@ int main() {
     Player player1;
     Player* player = &player1;
 
-    player1.setPlayerName("Player 1"); //maybe allow user to decide this
+    player1.setName("Player 1"); //maybe allow user to decide this
     player1.setHealth(100);      //maybe allow this to be determined by previously-selected difficulty mode
     player1.setStrength(50);     //maybe allow this to be determined by previously-selected difficulty mode
 
@@ -23,7 +23,7 @@ int main() {
     CombatHdlr = &CombatHdlr->getInstance();
 
     Weapon *weapon;
-    Enemy *enemy;
+//    Enemy *enemy;
 
     bool gameOver = false;
 
@@ -37,7 +37,6 @@ int main() {
     while(!gameOver) {
 
         //print out story event for room (story is located at the bottom of MoveHandler.cpp)
-
         MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY());
 
         //call function to take directional input
@@ -45,7 +44,7 @@ int main() {
 
         if (MoveHdlr->isThereAnEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())) {
 
-            //this needs to be able to start a combat situation with the specific monster that is in that room
+            //this starts a combat situation with the specific monster that is in that room
             // according to what is in vector MoveHandler::roomsWithEnemies
             CombatHdlr->inCombat(player1, MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY()));
         }

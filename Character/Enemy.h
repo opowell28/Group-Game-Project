@@ -10,7 +10,7 @@
 #include "../Weapons/Weapon.h"
 #include "../Player/Player.h"
 
-class Enemy:  public Character { //REMOVED INHERITANCE   ,  public Weapon
+class Enemy: virtual public Character { //REMOVED INHERITANCE   ,  public Weapon
 protected:
 
 public:
