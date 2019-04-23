@@ -36,11 +36,11 @@ int main() {
     //main game loop
     while(!gameOver) {
 
-        //print out story event for room (story is located at the bottom of MoveHandler.cpp)
-        MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY());
-
         //call function to take directional input
         MoveHdlr->getDirectionInputAndMovePlayer();
+
+        //print out story event for room (story is located at the bottom of MoveHandler.cpp)
+        MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY());
 
         if (MoveHdlr->isThereAnEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())) {
 

@@ -51,25 +51,21 @@ void Weapon::pickUp() {
         cout << "You cannot carry any more items, you will exceed your carry capacity of " << carryCapacity << ". " << endl;
     }
     if (currentCapacity + Weapon::weight < carryCapacity) {
-        playerInventory.push_back(/*put weapon variable here*/);
+        playerInventory.push_back();
     }
 }
 
-//define weapons like this
-Weapon* flimsyDagger = new Weapon (3, "Flimsy Dagger", 17, 4.0);
-Weapon* weakSword = new Weapon (8, "Weak Sword", 25, 8.0);
+////add previously defined weapons to the allWeapons vector, may not need this
+//void Weapon::fillWeaponVector() {
+//    allWeapons.push_back(flimsyDagger);
+//    allWeapons.push_back(weakSword);
+//}
 
-//add previously defined weapons to the allWeapons vector
-void Weapon::fillWeaponVector() {
-    allWeapons.push_back(flimsyDagger);
-    allWeapons.push_back(weakSword);
-}
-
-//go through vector checking if the weaponName passed to the function is equal to a weapon in the vector, and if it is, return the weapon's stats at the same index
+//crawl through vector checking if the weaponName passed to the function is equal to a weapon in the vector, and if it is, return the weapon's stats at the same index
 Weapon* Weapon::getWeaponStats(std::string weaponName) {
-    for (int i = 0; i < allWeapons.size(); ++i) {
-        if (allWeapons[i]->getWeaponName() == weaponName) {
-            return allWeapons[i];
+    for (int i = 0; i < playerInventory.size(); ++i) {
+        if (playerInventory[i]->getWeaponName() == weaponName) {
+            return playerInventory[i];
         }
     }
 }

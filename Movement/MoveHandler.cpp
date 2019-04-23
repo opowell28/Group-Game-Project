@@ -3,11 +3,9 @@
 //
 
 #include "MoveHandler.h"
-//include CombatHandler.h
 #include "../Combat/CombatHandler.h"
 #include <iostream>
 #include <fstream>
-//#include "../Player/Player.h"
 
 
 using namespace std;
@@ -247,20 +245,40 @@ void MoveHandler::RunStoryEvent(int x, int y) {
         //   --ROOM BY ROOM STORY EVENTS--
         //TODO: make more if statements like this for every room we want something to happen in
 
+        //the story begins here
         if ((x == 2) && (y == 0)) {
+
             cout << "You wake up and rub a bruise on your head. You appear to"
                     " have fallen deep underground. You cannot see where you "
                     "fell from, but you can see that you are in a small cavern,"
                     " illuminated by torchlight. There is an opening in front "
                     "of you leading somewhere else, and one to your left and "
-                    "right as well. What do you do?" << endl;
+                    "right as well. " << endl;
+
         } else if ((x == 1) && (y == 0)) {
+
             cout << "This room is the same as the last one. It is empty except "
-                    "for a small object in the corner. Do you want to pick it up?" << endl;
+                    "for a small object in the corner. " << endl;
+            //take input if user wants to pick up the object
+            getline(std::cin, actionInput);
+            if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
+
+                flimsyDagger->pickUp();
+                cout << "You pick up the object in the corner and see that it is a small,"
+                        "weak-looking dagger. " << endl;
+            }
             //if yes, add weapon to inventory and remove this room from roomsWithWeapons vector
 
         } else if ((x == 3) && (y == 0)) {
-            cout << "[story element]" << endl;
+
+            cout << "This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. " << endl;
+
+        } else if ((x == 4) && y == 0) {
+
+
+        } else if ((x == 5) && (y == 0)) {
+
+
         }
 
         addToVisitedVector(x, y);  //add to visited rooms vector now that story events are over
@@ -279,8 +297,7 @@ void MoveHandler::printVisitedMessage(int x, int y) {
     } else if ((x == 1) && (y == 0)) {
         //if this room is in roomsWithWeapons:
         cout << "You have already been here. The object in the"
-                " corner is still sitting there. Do you want to "
-                "pick it up now?" << endl;
+                " corner is still sitting there. " << endl;
         //otherwise print the default message below
 
 

@@ -33,7 +33,7 @@ public:
 
 
 //TODO: set maxX and maxY
-class MoveHandler {
+class MoveHandler : virtual public Inventory, virtual public Weapon {
 private:
     MoveHandler();
 
@@ -41,7 +41,8 @@ private:
     int YCoordinate;
     int maxX;
     int maxY;
-    std::string directionInput; //gets user input for direction
+    std::string directionInput; //stores user input for direction
+    std::string actionInput; //gets input for actions other than moving
     struct room {
         int x;
         int y;
