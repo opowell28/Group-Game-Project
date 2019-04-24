@@ -341,7 +341,6 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player
             printStory("This room is the same as the last one. It is empty except "
                        "for a small object in the corner. ");
 
-
             //take input if user wants to pick up the object
             pickUpItemOrNot(1, 0, "You pick up the object in the corner and see that it is a small,"
                                   "weak-looking dagger. ");
@@ -365,19 +364,48 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player
 
         } else if ((x == 0) && (y == 0)) {
             printStory("This room has only one exit besides the one you came through.");
-        } else if ((x == 0) && (y == 1)) {
 
-        } else if ((x == 1) && (y == 1)) {
+        } else if ((x == 0) && (y == 1)) {
+            printStory("You walk into the next cavern and see a huge bear. It sees you and starts to come toward you, but not very quickly. What do you do?");
+
+            getline(cin, actionInput);
+            if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight bear" || "attack bear") {
+                CombatHndlr->inCombat(*player, "bear");
+            } else {
+                movePlayerLeft();
+                cout << "You ran away. You are now in room 1 1" << endl;
+            }
 
         } else if ((x == 3) && (y == 1)) {
+            printStory("This room is empty except for an axe leaning against the wall. ");
 
+            //take input if user wants to pick up the object
+            pickUpItemOrNot(3, 0, "You pick up the axe.");
         } else if ((x == 2) && (y == 2)) {
+            printStory("This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty, but as you start walking, man-eating bats pour from the hole in the ceiling. You cannot get away in time.");
+            CombatHndlr->inCombat(*player, "bats");
 
         } else if ((x == 4) && (y == 2)) {
+            printStory("This room is empty except for a sword lying on the floor.");
 
         } else if ((x == 1) && (y == 3)) {
 
         } else if ((x == 3) && (y == 3)) {
+            printStory("You walk into the next cavern and see a large wolf. It sees you immediately and starts growling. What do you do?");
+
+            getline(cin, actionInput);
+            if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
+                CombatHndlr->inCombat(*player, "wolf");
+            } else {
+                movePlayerLeft();
+                cout << "You ran away. You are now in room 2 3" << endl;
+            }
+        } else if ((x == 1) && (y == 3)) {
+            printStory("This room is empty except for an axe leaning against the wall. ");
+
+        } else if ((x == 0) && (y == 3)) {
+            printStory("As you walk into the next room you feel a tug on your foot. You immediately notice that it is a tripwire, and your skin begins to sting as dozens of tiny darts pierce you. You take 10 damage.");
+            player->setHealth(player->getHealth() - 15);
 
         } else if ((x == 0) && (y == 4)) {
 
@@ -399,19 +427,15 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player
 
         } else if ((x == 4) && (y == 8)) {
 
-        } else if ((x == 2) && (y == 9)) {
-
-        } else if ((x == 1) && (y == 9)) {
-
-        } else if ((x == 0) && (y == 10)) {
+        } else if ((x == 0) && (y == 9)) {
             printStory("You cannot go forward anymore, but you can see faint light coming from your left.");
-        } else if ((x == 1) && (y == 10)) {
+        } else if ((x == 1) && (y == 9)) {
             printStory("You see light coming through the opening to your right. You can also hear something moving around in there. Something big.");
-        } else if ((x == 2) && (y == 10)) {   //BOSS ROOM
+        } else if ((x == 2) && (y == 9)) {   //BOSS ROOM
 
-        } else if ((x == 3) && (y == 10)) {
+        } else if ((x == 3) && (y == 9)) {
             printStory("You see light coming through the opening to your left. You can also hear something moving around in there. Something big.");
-        } else if ((x == 4) && (y == 10)) {
+        } else if ((x == 4) && (y == 9)) {
             printStory("You cannot go forward anymore, but you can see faint light coming from your right.");
         } else {
             cout << "There is nothing interesting about this room." << endl;

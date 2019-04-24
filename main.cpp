@@ -29,7 +29,7 @@ int main() {
 
     bool gameOver = false;
 
-    MoveHdlr->makeMap(5,10,2,0); //5 by 10 map and player starts at 0,2 (middle of 1st row)
+    MoveHdlr->makeMap(4,9,2,0); //5 by 10 map and player starts at 0,2 (middle of 1st row)
     MoveHdlr->fillWorldWithEnemies(); //fills vector of rooms with enemies
     MoveHdlr->fillRoomsWithItems(); //fills vector of rooms with items and weapons
     weapon->fillWeaponVector(); //fills allWeapons map with every weapon that is defined
