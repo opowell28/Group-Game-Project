@@ -17,11 +17,12 @@ protected:
     int xcoordinate = 0;
     int ycoordinate = 0;
     std::string enemy;
-    bool isEmpty;
     bool visitedBefore;
     std::string weaponName;
 
 public:
+    bool isEmpty;
+
     Room(int x, int y, std::string roomName, std::string enemy, std::string weaponName, bool isEmpty, bool visitedBefore);
     //run any events for the room
     void runRoomEvents();
@@ -77,6 +78,8 @@ public:
     void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr);
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
+    bool weaponInRoom(int x, int y);
+    void pickUpItemOrNot(int x, int y, std::string specificStoryString);
     void printVisitedMessage(int x, int y);
 
 
