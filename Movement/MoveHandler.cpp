@@ -314,13 +314,17 @@ void MoveHandler::pickUpItemOrNot(int x, int y, std::string specificStoryString)
 }
 
 //function contains list of story events for each room coordinate that has a story event
-void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr) {
+void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player *player) {
+
+    //default message prints in all rooms other than starting room
+    if (!((x == 2) && (y == 0))) {
+        cout << "You are in room: " << x << " " << y << endl;
+    }
 
     //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
     if (checkIfVisitedBefore(x, y) == false) {
 
         //   --ROOM BY ROOM STORY EVENTS--
-        //TODO: make more if statements like this for every room we want something to happen in
 
         //the story begins here
         if ((x == 2) && (y == 0)) {
@@ -344,20 +348,25 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr) {
 
         } else if ((x == 3) && (y == 0)) {
 
-            cout << "This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. " << endl;
+            printStory("This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. ");
 
         } else if ((x == 4) && y == 0) {
 
-            cout << "You walk into the next cavern and see a figure, which appears to be a wolf, in the shadows. "
-                    "It hears you, turns around and snarls at you. " << endl;
+            printStory("You walk into the next cavern and see a figure, which appears to be a wolf, in the shadows. "
+                       "It hears you, turns around and snarls at you. What do you do?");
 
             getline(cin, actionInput);
             if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
-                   //TODO: create an enemy object and run inCombat here
+                CombatHndlr->inCombat(*player, "wolf");
+            } else {
+                movePlayerLeft();
+                cout << "You ran away. You are now in room 3 0" << endl;
             }
 
         } else if ((x == 0) && (y == 0)) {
 
+        } else {
+            cout << "There is nothing interesting about this room." << endl;
         }
 
         addToVisitedVector(x, y);  //add to visited rooms vector now that story events are over

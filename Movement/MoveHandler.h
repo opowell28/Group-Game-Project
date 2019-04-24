@@ -75,7 +75,7 @@ public:
 
 
     void printStory(std::string story);
-    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr);
+    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player *player);
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
     bool weaponInRoom(int x, int y);
