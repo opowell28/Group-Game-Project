@@ -8,6 +8,7 @@
 #include <string>
 #include <map>
 #include <algorithm>
+#include "../../Classes.h"
 
 
 class CombatHandler : virtual public Character,  virtual public Player, virtual public Weapon {

@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include "../Combat/CombatHandler.h"
+#include "../../Classes.h"
 
 //Room class allows properties for individual rooms to be set
 class Room : virtual public Weapon {
