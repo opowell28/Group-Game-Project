@@ -378,9 +378,8 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player
 
         } else if ((x == 3) && (y == 1)) {
             printStory("This room is empty except for an axe leaning against the wall. ");
-
-            //take input if user wants to pick up the object
             pickUpItemOrNot(3, 0, "You pick up the axe.");
+
         } else if ((x == 2) && (y == 2)) {
             printStory("This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty, but as you start walking, man-eating bats pour from the hole in the ceiling. You cannot get away in time.");
             CombatHndlr->inCombat(*player, "bats");
@@ -402,36 +401,79 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player
             }
         } else if ((x == 1) && (y == 3)) {
             printStory("This room is empty except for an axe leaning against the wall. ");
+            pickUpItemOrNot(1, 3, "You pick up the axe.");
 
         } else if ((x == 0) && (y == 3)) {
             printStory("As you walk into the next room you feel a tug on your foot. You immediately notice that it is a tripwire, and your skin begins to sting as dozens of tiny darts pierce you. You take 10 damage.");
             player->setHealth(player->getHealth() - 15);
 
         } else if ((x == 0) && (y == 4)) {
-
+            printStory("This cavern is dark. When you begin to walk into it, a skeleton emerges from the darkness and attacks you.");
+            CombatHndlr->inCombat(*player, "skeleton");
         } else if ((x == 2) && (y == 4)) {
+            printStory("This cavern is dark. When you begin to walk into it, a skeleton emerges from the darkness and attacks you.");
+            CombatHndlr->inCombat(*player, "skeleton");
+        } else if ((x == 4) && (y == 4)) {
+            printStory("Upon enterring this room, you notice a strange smell and begin to feel light headed. You quickly leave the room, but not before taking 15 damage. You are now in room 3 4");
+            player->setHealth(player->getHealth() - 15);
+            movePlayerLeft();
 
         } else if ((x == 1) && (y == 5)) {
+            printStory("You walk into the next cavern and see a huge bear. It sees you and starts to come toward you, but not very quickly. What do you do?");
+
+            getline(cin, actionInput);
+            if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight bear" || "attack bear") {
+                CombatHndlr->inCombat(*player, "bear");
+            } else {
+                movePlayerRight();
+                cout << "You ran away. You are now in room 2 5" << endl;
+            }
 
         } else if ((x == 4) && (y == 5)) {
+            printStory("This room is empty except for a sword lying on the floor.");
+            pickUpItemOrNot(4, 5, "You pick up the sword.");
 
         } else if ((x == 3) && (y == 6)) {
+            printStory("In the corner of this room there is a spring of cold water. You drink it and gain 30hp.");
+            player->setHealth(player->getHealth() + 30);
+
+        } else if ((x == 4) && (y == 6)) {
+            printStory("This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty, but as you start walking, man-eating bats pour from the hole in the ceiling. You cannot get away in time.");
+            CombatHndlr->inCombat(*player, "bats");
 
         } else if ((x == 0) && (y == 6)) {
+            printStory("This room is empty except for a crossbow leaning against the wall.");
+            pickUpItemOrNot(0, 6, "You pick up the crossbow.");
 
         } else if ((x == 1) && (y == 7)) {
+            printStory("You walk into the next cavern and see a huge bear. It sees you and starts to come toward you, but not very quickly. What do you do?");
 
-        } else if ((x == 2) && (y == 7)) {
+            getline(cin, actionInput);
+            if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight bear" || "attack bear") {
+                CombatHndlr->inCombat(*player, "bear");
+            } else {
+                movePlayerLeft();
+                cout << "You ran away. You are now in room 0 7" << endl;
+            }
+        } else if ((x == 4) && (y == 7)) {
+            printStory("As you walk into the next room you feel a tug on your foot. You immediately notice that it is a tripwire, and your skin begins to sting as dozens of tiny darts pierce you. You take 10 damage.");
+            player->setHealth(player->getHealth() - 15);
 
         } else if ((x == 3) && (y == 8)) {
+            printStory("This cavern is dark. When you begin to walk into it, a skeleton emerges from the darkness and attacks you.");
+            CombatHndlr->inCombat(*player, "skeleton");
 
-        } else if ((x == 4) && (y == 8)) {
+        } else if ((x == 0) && (y == 8)) {
+            printStory("Upon enterring this room, you notice a strange smell and begin to feel light headed. You quickly leave the room, but not before taking 15 damage. You are now in room 3 4");
+            player->setHealth(player->getHealth() - 15);
+            movePlayerLeft();
 
         } else if ((x == 0) && (y == 9)) {
             printStory("You cannot go forward anymore, but you can see faint light coming from your left.");
         } else if ((x == 1) && (y == 9)) {
             printStory("You see light coming through the opening to your right. You can also hear something moving around in there. Something big.");
         } else if ((x == 2) && (y == 9)) {   //BOSS ROOM
+            printStory("");
 
         } else if ((x == 3) && (y == 9)) {
             printStory("You see light coming through the opening to your left. You can also hear something moving around in there. Something big.");
