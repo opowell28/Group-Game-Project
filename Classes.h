@@ -86,9 +86,12 @@ public:
 
     virtual std::string getWeaponName();
     virtual Weapon* getWeaponStats(std::string weaponName);
+    virtual int getWeaponDamage();
 
     virtual int use();
     virtual void lowerDurability(int min, int max);
+
+    std::vector<Weapon*> playerInventory;
 
 };
 

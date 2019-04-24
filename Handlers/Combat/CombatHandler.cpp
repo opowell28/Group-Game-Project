@@ -28,9 +28,14 @@ Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
     } else if (enemyName == "bear") {
         return Enemy("bear", 75, 20, 10);
 
-    } else if (enemyName == "") {
+    } else if (enemyName == "bats") {
+        return Enemy("bats", 30, 10, 10);
 
-    }
+    } else if (enemyName == "skeleton") {
+        return Enemy("skeleton", 50, 25, 10);
+
+    } else if (enemyName == "Golem") {
+        return Enemy("Golem", 250, 25, 10);
 
 }
 
@@ -60,7 +65,7 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
                     player.Attack(opponent, defaultDamage, defaultDamage + dexterity, 10,
                                   10); //this function defines the target, minimum and maximum damage, and the chance of missing
                 } else if ((input == "heavy") || (input == "Heavy")) {
-                    player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20,);
+                    player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, getWeaponStats(getWeaponDamage()));
                 } else if ((input == "help") || (input == "Help")) {
                     //Help code to print commands.
                     std::string input, cmd;

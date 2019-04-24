@@ -204,6 +204,10 @@ void Weapon::lowerDurability(int min, int max) {
     this->durability -= (min + rand() % max + 1);
 }
 
+int Weapon::getWeaponDamage() {
+    return this->defaultDamage;
+}
+
 ////add previously defined weapons to the allWeapons vector, may not need this
 //void Weapon::fillWeaponVector() {
 //    allWeapons.push_back(flimsyDagger);

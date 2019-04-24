@@ -492,7 +492,8 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player
         } else if ((x == 1) && (y == 9)) {
             printStory("You see light coming through the opening to your right. You can also hear something moving around in there. Something big.");
         } else if ((x == 2) && (y == 9)) {   //BOSS ROOM
-            printStory("");
+            printStory("Golem");
+            CombatHndlr->inCombat(*player, "Golem");
 
         } else if ((x == 3) && (y == 9)) {
             printStory("You see light coming through the opening to your left. You can also hear something moving around in there. Something big.");
