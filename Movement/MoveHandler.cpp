@@ -282,7 +282,7 @@ string Room::getEnemy() {
 }
 
 //function splits string into different rows so it can be read easier and words are not split when printed
-void printStory(string story) {
+void MoveHandler::printStory(string story) {
     int counter = 0;
     for (int i = 0; i <= story.size(); i++) {
         cout << story[i];
@@ -293,6 +293,24 @@ void printStory(string story) {
         }
     }
     cout << endl;
+}
+
+void MoveHandler::pickUpItemOrNot(int x, int y, std::string specificStoryString) {
+    getline(cin, actionInput);
+    if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
+
+        flimsyDagger->pickUp();
+        printStory(specificStoryString);
+
+        for (int i = 0; i <= roomsWithItem.size(); i++) {
+            if ((roomsWithItem[i].getX() == x) && (roomsWithItem[i].getY() == y)) {
+                roomsWithItem[i].isEmpty = true;
+            }
+        }
+
+        //remove the room from the vector of rooms with items
+        //roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
+    }
 }
 
 //function contains list of story events for each room coordinate that has a story event
@@ -321,35 +339,26 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr) {
 
 
             //take input if user wants to pick up the object
-            getline(cin, actionInput);
-            if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
+            pickUpItemOrNot(1, 0, "You pick up the object in the corner and see that it is a small,"
+                                  "weak-looking dagger. ");
 
-                flimsyDagger->pickUp();
-                printStory("You pick up the object in the corner and see that it is a small,"
-                           "weak-looking dagger. ");
+        } else if ((x == 3) && (y == 0)) {
 
-                //remove the room from the vector of rooms with items
-                roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
-            }
+            cout << "This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. " << endl;
 
-            } else if ((x == 3) && (y == 0)) {
+        } else if ((x == 4) && y == 0) {
 
-                cout << "This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty. " << endl;
-
-            } else if ((x == 4) && y == 0) {
-
-                cout << "You walk into the next cavern and see a figure, which appears to be a wolf, in the shadows. "
+            cout << "You walk into the next cavern and see a figure, which appears to be a wolf, in the shadows. "
                     "It hears you, turns around and snarls at you. " << endl;
 
-                getline(cin, actionInput);
-                if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
+            getline(cin, actionInput);
+            if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
                    //TODO: create an enemy object and run inCombat here
-                }
-
-            } else if ((x == 5) && (y == 0)) {
-
-
             }
+
+        } else if ((x == 0) && (y == 0)) {
+
+        }
 
         addToVisitedVector(x, y);  //add to visited rooms vector now that story events are over
 
@@ -357,6 +366,18 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr) {
         //print room-specific message for if you have already been here
         printVisitedMessage(x, y);
     }
+}
+
+//return true if there is a weapon in the room with the specified coordinates
+bool MoveHandler::weaponInRoom(int x, int y) {
+    for (int i = 0; i <= roomsWithItem.size(); i++) {
+        if ((roomsWithItem[i].getX() == x) && (roomsWithItem[i].getY() == y)) {
+            if (roomsWithItem[i].isEmpty == false) {
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 //function takes room coordinates and prints appropriate visited-before message
@@ -367,23 +388,22 @@ void MoveHandler::printVisitedMessage(int x, int y) {
 
     } else if ((x == 1) && (y == 0)) {
         //if this room is in roomsWithWeapons:
-        printStory("You have already been here. The object in the"
-                   " corner is still sitting there.");
-        //take input if user wants to pick up the object
-        getline(cin, actionInput);
-        if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
+        if (weaponInRoom(1, 0)) {
+            printStory("You have already been here. The object in the"
+                       " corner is still sitting there.");
+            //take input if user wants to pick up the object
+            pickUpItemOrNot(1, 0, "You pick up the object in the corner and see that it is a small,"
+                                  "weak-looking dagger. ");
 
-            flimsyDagger->pickUp();
-            printStory("You pick up the object in the corner and see that it is a small,"
-                       "weak-looking dagger. ");
-
-            //remove the room from the vector of rooms with items
-            roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
+        } else {
+            cout << "You have already been here" << endl;
         }
-        //otherwise print the default message below
 
-        //default message for all rooms where there is not something unusual
+            //otherwise print the default message below
+
+            //default message for all rooms where there is not something unusual
     } else {
-        cout << "You have already been here" << endl;
+            cout << "You have already been here" << endl;
     }
+
 }
