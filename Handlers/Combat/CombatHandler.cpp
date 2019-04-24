@@ -37,6 +37,7 @@ Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
     } else if (enemyName == "Golem") {
         return Enemy("Golem", 250, 25, 10);
 
+    }
 }
 
 //call this function when entering a combat situation in a room in moveHandler
