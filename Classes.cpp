@@ -183,7 +183,7 @@ Weapon::Weapon(int defaultDamage, std::string name, int durability, float weight
 
 //destructor which prints when weapon is no longer being used and is destroyed
 Weapon::~Weapon() {
-    std::cout << this->weaponName << "broke. " << std::endl;
+    std::cout << this->weaponName << " broke. " << std::endl;
 }
 
 //weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done
