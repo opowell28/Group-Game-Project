@@ -2,6 +2,8 @@
 // Created by Owen Powell on 2019-02-13.
 //
 
+#pragma once
+
 #ifndef INC_4_GROUPPROJECT_WEAPON_H
 #define INC_4_GROUPPROJECT_WEAPON_H
 
