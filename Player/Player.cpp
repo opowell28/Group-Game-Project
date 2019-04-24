@@ -55,7 +55,7 @@ std::string Player::getWeaponChoiceAndEquip(Player player) {
 
 }
 
-//attack function for if player attacks enemy
+//attack function
 void Player::Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
     int damage = 0;
     int miss;

@@ -12,10 +12,13 @@
 
 class Enemy: virtual public Character { //REMOVED INHERITANCE   ,  public Weapon
 protected:
+    int enemyWeaponDamage;
 
 public:
     Enemy();
-    Enemy(std::string name, int health, int strength, int dexterity);
+    Enemy(std::string name, int health, int strength, int dexterity, int enemyWeaponDamage);
+
+    int getWeaponDamage();
 
     void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 

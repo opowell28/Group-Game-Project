@@ -23,11 +23,17 @@ CombatHandler& CombatHandler::getInstance() {
 }
 
 Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
+
     if (enemyName == "wolf") {
-        return Enemy("wolf", 50, 10, 10);
-    } else if (enemyName == "[other enemy names]") {
-        //TODO: replicate the above return statement for all types of enemies
+        return Enemy("wolf", 50, 10, 10, 0);
+
+    } else if (enemyName == "bear") {
+        return Enemy("bear", 75, 20, 10, 0);
+
+    } else if (enemyName == "") {
+
     }
+
 }
 
 //call this function when entering a combat situation in a room in moveHandler
@@ -100,20 +106,20 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
         else
         {
-            opponent.Attack(player, 5, 20, 10, 0); //TODO: make these attributes of individual enemies that would be passed in instead of constant values
+            opponent.Attack(player, opponent.getStrength(), opponent.getStrength() + opponent.getDexterity(), 20 - opponent.getConstitution(), opponent.getWeaponDamage()); //set target, min damage, max damage, miss chance, and weapon damage
         }
 
         turn++;
 
         if(opponent.getHealth() <= 0)
         {
-            std::cout << "You died " << std::endl;
+            std::cout << "You won this fight " << std::endl;
             InCombat = false;
         }
 
         else if(player.getHealth() <= 0)
         {
-            std::cout << "You won this fight " << std::endl;
+            std::cout << "You died " << std::endl;
             InCombat = false;
         }
     }

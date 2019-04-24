@@ -9,13 +9,19 @@ Enemy::Enemy() {
     this->health = 100;
     this->strength = 50;
     this->dexterity = 0;
+    this->enemyWeaponDamage = 0;
 }
 
-Enemy::Enemy(std::string name, int health, int strength, int dexterity) {
+Enemy::Enemy(std::string name, int health, int strength, int dexterity, int enemyWeaponDamage) {
     this->name = name;
     this->health = health;
     this->strength = strength;
     this->dexterity = dexterity;
+    this->enemyWeaponDamage = enemyWeaponDamage;
+}
+
+int Enemy::getWeaponDamage() {
+    return this->enemyWeaponDamage;
 }
 
 //attack function for if an enemy attacks player
