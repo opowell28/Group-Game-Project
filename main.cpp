@@ -42,15 +42,15 @@ int main() {
         MoveHdlr->getDirectionInputAndMovePlayer();
 
         //print out story event for room (story is located at the bottom of MoveHandler.cpp)
-        MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY());
-
+        MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY(), CombatHdlr);
+        /* THIS WILL NOW BE HANDLED IN Movehandler::runstoryevents
         if (MoveHdlr->isThereAnEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())) {
 
             //this starts a combat situation with the specific monster that is in that room
             // according to what is in vector MoveHandler::roomsWithEnemies
             CombatHdlr->inCombat(player1, MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY()));
         }
-
+        */
         /*
         if (there is an item to pick up ) {
             //item handler      if we decide to do this

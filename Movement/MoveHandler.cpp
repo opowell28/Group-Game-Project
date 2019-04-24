@@ -3,7 +3,7 @@
 //
 
 #include "MoveHandler.h"
-#include "../Combat/CombatHandler.h"
+//#include "../Combat/CombatHandler.h"
 #include <iostream>
 #include <fstream>
 #include <algorithm>
@@ -237,8 +237,22 @@ string Room::getEnemy() {
     return enemy;
 }
 
+//function splits string into different rows so it can be read easier and words are not split when printed
+void printStory(string story) {
+    int counter = 0;
+    for (int i = 0; i <= story.size(); i++) {
+        cout << story[i];
+        counter++;
+        if ((story[i] == ' ') && (counter >= 40)) {
+            cout << endl;
+            counter = 0;
+        }
+    }
+    cout << endl;
+}
+
 //function contains list of story events for each room coordinate that has a story event
-void MoveHandler::RunStoryEvent(int x, int y) {
+void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr) {
 
     //check if visited. If not visited, run the story events. Otherwise you are going back through an empty room so nothing happens
     if (checkIfVisitedBefore(x, y) == false) {
@@ -249,24 +263,27 @@ void MoveHandler::RunStoryEvent(int x, int y) {
         //the story begins here
         if ((x == 2) && (y == 0)) {
 
-            cout << "You wake up and rub a bruise on your head. You appear to"
-                    " have fallen deep underground. You cannot see where you "
-                    "fell from, but you can see that you are in a small cavern,"
-                    " illuminated by torchlight. There is an opening in front "
-                    "of you leading somewhere else, and one to your left and "
-                    "right as well. " << endl;
+            printStory("You wake up and rub a bruise on your head. You appear to"
+                       " have fallen deep underground. You cannot see where you "
+                       "fell from, but you can see that you are in a small cavern,"
+                       " illuminated by torchlight. There is an opening in front "
+                       "of you leading somewhere else, and one to your left and "
+                       "right as well. ");
 
         } else if ((x == 1) && (y == 0)) {
 
-            cout << "This room is the same as the last one. It is empty except "
-                    "for a small object in the corner. " << endl;
+            printStory("This room is the same as the last one. It is empty except "
+                       "for a small object in the corner. ");
+
+
             //take input if user wants to pick up the object
             getline(cin, actionInput);
             if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
 
                 flimsyDagger->pickUp();
-                cout << "You pick up the object in the corner and see that it is a small,"
-                        "weak-looking dagger. " << endl;
+                printStory("You pick up the object in the corner and see that it is a small,"
+                           "weak-looking dagger. ");
+
                 //remove the room from the vector of rooms with items
                 roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
             }
@@ -301,14 +318,25 @@ void MoveHandler::RunStoryEvent(int x, int y) {
 //function takes room coordinates and prints appropriate visited-before message
 void MoveHandler::printVisitedMessage(int x, int y) {
     if ((x == 2) && (y == 0)) {
-        cout << "This is where you fell down here. You wish "
-                "you could climb back up and escape this place" << endl;
+        printStory("This is where you fell down here. You wish "
+                   "you could climb back up and escape this place");
+
     } else if ((x == 1) && (y == 0)) {
         //if this room is in roomsWithWeapons:
-        cout << "You have already been here. The object in the"
-                " corner is still sitting there. " << endl;
-        //otherwise print the default message below
+        printStory("You have already been here. The object in the"
+                   " corner is still sitting there.");
+        //take input if user wants to pick up the object
+        getline(cin, actionInput);
+        if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
 
+            flimsyDagger->pickUp();
+            printStory("You pick up the object in the corner and see that it is a small,"
+                       "weak-looking dagger. ");
+
+            //remove the room from the vector of rooms with items
+            roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
+        }
+        //otherwise print the default message below
 
         //default message for all rooms where there is not something unusual
     } else {

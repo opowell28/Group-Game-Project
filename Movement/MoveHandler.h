@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include "../Weapons/Weapon.h"
+#include "../Combat/CombatHandler.h"
 
 //Room class allows properties for individual rooms to be set
 class Room : virtual public Weapon { //REMOVED INHERITANCE     :  public Weapon
@@ -72,7 +73,8 @@ public:
     void movePlayerDown();
 
 
-    void RunStoryEvent(int x, int y);
+    void printStory(std::string story);
+    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr);
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
     void printVisitedMessage(int x, int y);
