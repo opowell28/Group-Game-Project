@@ -47,8 +47,7 @@ void MoveHandler::makeMap(int X, int Y, int startingX, int startingY) {
 void MoveHandler::getDirectionInputAndMovePlayer() {
 
     bool moved = false;
-
-    //TODO: maybe add more possible inputs so that inputs like 'up' and 'left' work too
+    
     while (!moved) {
 
         getline(cin, directionInput);
