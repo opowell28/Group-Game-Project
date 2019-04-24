@@ -1,5 +1,6 @@
-north - Move North
-south - Move South
-east - Move East
-west - Move West
-attack - Attack Enemy
+north, forward, up - Move North
+south, backward, down - Move South
+east, right - Move East
+west, left - Move West
+Light, light - Light Attack
+Heavy, heavy - Heavy Attack
