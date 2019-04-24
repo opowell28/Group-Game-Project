@@ -50,57 +50,39 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
 
     while(InCombat)
     {
+
         if(turn % 2 == 1) //player goes when turn is odd
         {
             std::cout << "Your turn. Do you do a light or heavy attack?" << std::endl;
-
-            getline(std::cin, input);
-
-            if((input == "light") || (input == "Light"))
-            {
-                player.Attack(opponent, defaultDamage, defaultDamage + dexterity, 10, 10); //this function defines the target, minimum and maximum damage, and the chance of missing
-            }
-
-            else if((input == "heavy") || (input == "Heavy"))
-            {
-                player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, player.use());
-            }
-
-            else if((input == "help") || (input == "Help"))
-            {
-                //Help code to print commands.
-                std::string input, cmd;
-                std::ifstream cmds;
-                cmds.open("Commands.txt");
-
-                std::vector<std::string> commands;
-
-                //Reads "Commands" text file to add all commands to the vector.
-                while(!cmds.eof())
-                {
-                    getline(cmds, cmd);
-                    commands.push_back(cmd);
-                }
-                cmds.close();
-
-
-                //Type "help" to print the "commands" vector.
                 getline(std::cin, input);
-                if(input == "help" || input == "Help")
-                {
-                    for(std::string s : commands)
-                    {
+
+                if ((input == "light") || (input == "Light")) {
+                    player.Attack(opponent, defaultDamage, defaultDamage + dexterity, 10,
+                                  10); //this function defines the target, minimum and maximum damage, and the chance of missing
+                } else if ((input == "heavy") || (input == "Heavy")) {
+                    player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20,);
+                } else if ((input == "help") || (input == "Help")) {
+                    //Help code to print commands.
+                    std::string input, cmd;
+                    std::ifstream cmds;
+                    cmds.open("Commands.txt");
+
+                    std::vector<std::string> commands;
+
+                    //Reads "Commands" text file to add all commands to the vector.
+                    while (!cmds.eof()) {
+                        getline(cmds, cmd);
+                        commands.push_back(cmd);
+                    }
+                    cmds.close();
+
+                    for (std::string s : commands) {
                         std::cout << s << std::endl;
                     }
                 }
-
-            }
-
-            else
-            {
-                std::cout << "Please enter a valid attack command. Type 'Help' or 'help' to view a list of commands." << std::endl;
-            }
         }
+
+
 
         else
         {

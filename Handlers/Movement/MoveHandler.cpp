@@ -68,99 +68,118 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
         }
         cmds.close();
 
-
-        //Type "help" to print the "commands" vector.
-        getline(cin, input);
-        if(input == "help" || input == "Help")
-        {
-            for(string s : commands)
-            {
-                cout << s << endl;
-            }
+try {
+    //Type "help" to print the "commands" vector.
+    getline(cin, input);
+    if (input == "help" || input == "Help") {
+        for (string s : commands) {
+            cout << s << endl;
         }
+    }
 
 
-        for (int i : directionInput) { //if the first letter is equal to one of these inputs, check if the rest of the word matches a directional input
+    for (int i : directionInput) { //if the first letter is equal to one of these inputs, check if the rest of the word matches a directional input
 
-            if ((directionInput[i] == 'n') && (directionInput[i+1] == 'o')
-                && (directionInput[i+2] == 'r') && (directionInput[i+3] == 't')
-                && (directionInput[i+4] == 'h')) {
+        if ((directionInput[i] == 'n') && (directionInput[i + 1] == 'o')
+            && (directionInput[i + 2] == 'r') && (directionInput[i + 3] == 't')
+            && (directionInput[i + 4] == 'h')) {
 
-                movePlayerUp();
-                moved = true;
+            movePlayerUp();
+            moved = true;
 
-            } else if ((directionInput[i] == 'f') && (directionInput[i+1] == 'o')
-                      && (directionInput[i+2] == 'r')&& (directionInput[i+3] == 'w')
-                      && (directionInput[i+4] == 'a') && (directionInput[i+5] == 'r')
-                      && (directionInput[i+6] == 'd')) {
+        } else if ((directionInput[i] == 'f') && (directionInput[i + 1] == 'o')
+                   && (directionInput[i + 2] == 'r') && (directionInput[i + 3] == 'w')
+                   && (directionInput[i + 4] == 'a') && (directionInput[i + 5] == 'r')
+                   && (directionInput[i + 6] == 'd')) {
 
-                movePlayerUp();
-                moved = true;
+            movePlayerUp();
+            moved = true;
 
-            } else if ((directionInput[i] == 'u') && (directionInput[i+1] == 'p')) {
+        } else if ((directionInput[i] == 'u') && (directionInput[i + 1] == 'p')) {
 
-                movePlayerUp();
-                moved = true;
-            } else if ((directionInput[i] == 's') && (directionInput[i+1] == 'o')
-                       && (directionInput[i+2] == 'u') && (directionInput[i+3] == 't')
-                       && (directionInput[i+4] == 'h')) {
+            movePlayerUp();
+            moved = true;
+        } else if ((directionInput[i] == 's') && (directionInput[i + 1] == 'o')
+                   && (directionInput[i + 2] == 'u') && (directionInput[i + 3] == 't')
+                   && (directionInput[i + 4] == 'h')) {
 
-                movePlayerDown();
-                moved = true;
+            movePlayerDown();
+            moved = true;
 
-            } else if ((directionInput[i] == 'b') && (directionInput[i+1] == 'a')
-                       && (directionInput[i+2] == 'c')&& (directionInput[i+3] == 'k')
-                       && (directionInput[i+4] == 'w') && (directionInput[i+5] == 'a')
-                       && (directionInput[i+6] == 'r') && (directionInput[i+7] == 'd')) {
+        } else if ((directionInput[i] == 'b') && (directionInput[i + 1] == 'a')
+                   && (directionInput[i + 2] == 'c') && (directionInput[i + 3] == 'k')
+                   && (directionInput[i + 4] == 'w') && (directionInput[i + 5] == 'a')
+                   && (directionInput[i + 6] == 'r') && (directionInput[i + 7] == 'd')) {
 
-                movePlayerDown();
-                moved = true;
+            movePlayerDown();
+            moved = true;
 
-            } else if ((directionInput[i] == 'b') && (directionInput[i+1] == 'a')
-                       && (directionInput[i+2] == 'c')&& (directionInput[i+3] == 'k')) {
+        } else if ((directionInput[i] == 'b') && (directionInput[i + 1] == 'a')
+                   && (directionInput[i + 2] == 'c') && (directionInput[i + 3] == 'k')) {
 
-                movePlayerDown();
-                moved = true;
+            movePlayerDown();
+            moved = true;
 
-            } else if ((directionInput[i] == 'd') && (directionInput[i+1] == 'o')
-                       && (directionInput[i+2] == 'w') && (directionInput[i+3] == 'n')) {
+        } else if ((directionInput[i] == 'd') && (directionInput[i + 1] == 'o')
+                   && (directionInput[i + 2] == 'w') && (directionInput[i + 3] == 'n')) {
 
-                movePlayerDown();
-                moved = true;
+            movePlayerDown();
+            moved = true;
 
-            } else if ((directionInput[i] == 'e') && (directionInput[i+1] == 'a')
-                       && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
-
-                movePlayerRight();
-                moved = true;
-
-            } else if ((directionInput[i] == 'r') && (directionInput[i+1] == 'i')
-                         && (directionInput[i+2] == 'g') && (directionInput[i+3] == 'h')
-                         && (directionInput[i+4] == 't')) {
+        } else if ((directionInput[i] == 'e') && (directionInput[i + 1] == 'a')
+                   && (directionInput[i + 2] == 's') && (directionInput[i + 3] == 't')) {
 
             movePlayerRight();
             moved = true;
 
-            } else if ((directionInput[i] == 'w') && (directionInput[i+1] == 'e')
-                       && (directionInput[i+2] == 's') && (directionInput[i+3] == 't')) {
+        } else if ((directionInput[i] == 'r') && (directionInput[i + 1] == 'i')
+                   && (directionInput[i + 2] == 'g') && (directionInput[i + 3] == 'h')
+                   && (directionInput[i + 4] == 't')) {
 
-                movePlayerLeft();
-                moved = true;
+            movePlayerRight();
+            moved = true;
 
-            } else if ((directionInput[i] == 'l') && (directionInput[i+1] == 'e')
-                          && (directionInput[i+2] == 'f') && (directionInput[i+3] == 't')) {
+        } else if ((directionInput[i] == 'w') && (directionInput[i + 1] == 'e')
+                   && (directionInput[i + 2] == 's') && (directionInput[i + 3] == 't')) {
 
-                movePlayerLeft();
-                moved = true;
+            movePlayerLeft();
+            moved = true;
+
+        } else if ((directionInput[i] == 'l') && (directionInput[i + 1] == 'e')
+                   && (directionInput[i + 2] == 'f') && (directionInput[i + 3] == 't')) {
+
+            movePlayerLeft();
+            moved = true;
+        } else if ((input == "help") || (input == "Help")) {
+            //Help code to print commands.
+            std::string input, cmd;
+            std::ifstream cmds;
+            cmds.open("Commands.txt");
+
+            std::vector<std::string> commands;
+
+            //Reads "Commands" text file to add all commands to the vector.
+            while (!cmds.eof()) {
+                getline(cmds, cmd);
+                commands.push_back(cmd);
             }
+            cmds.close();
 
+            for (std::string s : commands) {
+                std::cout << s << std::endl;
+            }
         }
+    }
+}
+
+catch
+{
+cout << "Please enter a valid movement command. Type 'Help' or 'help' to display a list of commands."
+}
 
         if (!moved) {
             cin.clear();
-            cout << endl << "Invalid input. Please enter a direction: either north, south, east, or west" << endl;
         }
-    }
 }
 
 //move player to room to the right by adding 1 to x coordinate
