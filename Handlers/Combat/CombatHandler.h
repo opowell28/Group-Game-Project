@@ -8,9 +8,9 @@
 #include <string>
 #include <map>
 #include <algorithm>
-#include "../Character/Character.h"
-#include "../Player/Player.h"
-#include "../Character/Enemy.h"
+#include "../../Character/Character.h"
+#include "../../Player/Player.h"
+#include "../../Character/Enemy.h"
 
 
 class CombatHandler : virtual public Character,  virtual public Player, virtual public Weapon {

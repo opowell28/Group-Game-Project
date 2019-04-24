@@ -176,59 +176,86 @@ Character/Enemy.cpp.s:
 	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Character/Enemy.cpp.s
 .PHONY : Character/Enemy.cpp.s
 
-Combat/CombatHandler.obj: Combat/CombatHandler.cpp.obj
+Classes.obj: Classes.cpp.obj
 
-.PHONY : Combat/CombatHandler.obj
-
-# target to build an object file
-Combat/CombatHandler.cpp.obj:
-	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Combat/CombatHandler.cpp.obj
-.PHONY : Combat/CombatHandler.cpp.obj
-
-Combat/CombatHandler.i: Combat/CombatHandler.cpp.i
-
-.PHONY : Combat/CombatHandler.i
-
-# target to preprocess a source file
-Combat/CombatHandler.cpp.i:
-	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Combat/CombatHandler.cpp.i
-.PHONY : Combat/CombatHandler.cpp.i
-
-Combat/CombatHandler.s: Combat/CombatHandler.cpp.s
-
-.PHONY : Combat/CombatHandler.s
-
-# target to generate assembly for a file
-Combat/CombatHandler.cpp.s:
-	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Combat/CombatHandler.cpp.s
-.PHONY : Combat/CombatHandler.cpp.s
-
-Movement/MoveHandler.obj: Movement/MoveHandler.cpp.obj
-
-.PHONY : Movement/MoveHandler.obj
+.PHONY : Classes.obj
 
 # target to build an object file
-Movement/MoveHandler.cpp.obj:
-	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Movement/MoveHandler.cpp.obj
-.PHONY : Movement/MoveHandler.cpp.obj
+Classes.cpp.obj:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Classes.cpp.obj
+.PHONY : Classes.cpp.obj
 
-Movement/MoveHandler.i: Movement/MoveHandler.cpp.i
+Classes.i: Classes.cpp.i
 
-.PHONY : Movement/MoveHandler.i
+.PHONY : Classes.i
 
 # target to preprocess a source file
-Movement/MoveHandler.cpp.i:
-	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Movement/MoveHandler.cpp.i
-.PHONY : Movement/MoveHandler.cpp.i
+Classes.cpp.i:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Classes.cpp.i
+.PHONY : Classes.cpp.i
 
-Movement/MoveHandler.s: Movement/MoveHandler.cpp.s
+Classes.s: Classes.cpp.s
 
-.PHONY : Movement/MoveHandler.s
+.PHONY : Classes.s
 
 # target to generate assembly for a file
-Movement/MoveHandler.cpp.s:
-	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Movement/MoveHandler.cpp.s
-.PHONY : Movement/MoveHandler.cpp.s
+Classes.cpp.s:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Classes.cpp.s
+.PHONY : Classes.cpp.s
+
+Handlers/Combat/CombatHandler.obj: Handlers/Combat/CombatHandler.cpp.obj
+
+.PHONY : Handlers/Combat/CombatHandler.obj
+
+# target to build an object file
+Handlers/Combat/CombatHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Handlers/Combat/CombatHandler.cpp.obj
+.PHONY : Handlers/Combat/CombatHandler.cpp.obj
+
+Handlers/Combat/CombatHandler.i: Handlers/Combat/CombatHandler.cpp.i
+
+.PHONY : Handlers/Combat/CombatHandler.i
+
+# target to preprocess a source file
+Handlers/Combat/CombatHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Handlers/Combat/CombatHandler.cpp.i
+.PHONY : Handlers/Combat/CombatHandler.cpp.i
+
+Handlers/Combat/CombatHandler.s: Handlers/Combat/CombatHandler.cpp.s
+
+.PHONY : Handlers/Combat/CombatHandler.s
+
+# target to generate assembly for a file
+Handlers/Combat/CombatHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Handlers/Combat/CombatHandler.cpp.s
+.PHONY : Handlers/Combat/CombatHandler.cpp.s
+
+Handlers/Movement/MoveHandler.obj: Handlers/Movement/MoveHandler.cpp.obj
+
+.PHONY : Handlers/Movement/MoveHandler.obj
+
+# target to build an object file
+Handlers/Movement/MoveHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Handlers/Movement/MoveHandler.cpp.obj
+.PHONY : Handlers/Movement/MoveHandler.cpp.obj
+
+Handlers/Movement/MoveHandler.i: Handlers/Movement/MoveHandler.cpp.i
+
+.PHONY : Handlers/Movement/MoveHandler.i
+
+# target to preprocess a source file
+Handlers/Movement/MoveHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Handlers/Movement/MoveHandler.cpp.i
+.PHONY : Handlers/Movement/MoveHandler.cpp.i
+
+Handlers/Movement/MoveHandler.s: Handlers/Movement/MoveHandler.cpp.s
+
+.PHONY : Handlers/Movement/MoveHandler.s
+
+# target to generate assembly for a file
+Handlers/Movement/MoveHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\4_groupProject.dir\build.make CMakeFiles/4_groupProject.dir/Handlers/Movement/MoveHandler.cpp.s
+.PHONY : Handlers/Movement/MoveHandler.cpp.s
 
 Player/Player.obj: Player/Player.cpp.obj
 
@@ -326,12 +353,15 @@ help:
 	@echo ... Character/Enemy.obj
 	@echo ... Character/Enemy.i
 	@echo ... Character/Enemy.s
-	@echo ... Combat/CombatHandler.obj
-	@echo ... Combat/CombatHandler.i
-	@echo ... Combat/CombatHandler.s
-	@echo ... Movement/MoveHandler.obj
-	@echo ... Movement/MoveHandler.i
-	@echo ... Movement/MoveHandler.s
+	@echo ... Classes.obj
+	@echo ... Classes.i
+	@echo ... Classes.s
+	@echo ... Handlers/Combat/CombatHandler.obj
+	@echo ... Handlers/Combat/CombatHandler.i
+	@echo ... Handlers/Combat/CombatHandler.s
+	@echo ... Handlers/Movement/MoveHandler.obj
+	@echo ... Handlers/Movement/MoveHandler.i
+	@echo ... Handlers/Movement/MoveHandler.s
 	@echo ... Player/Player.obj
 	@echo ... Player/Player.i
 	@echo ... Player/Player.s

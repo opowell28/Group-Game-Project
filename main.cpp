@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Weapons/Weapon.h"
-#include "Movement/MoveHandler.h"
-#include "Combat/CombatHandler.h"
+#include "Handlers/Movement/MoveHandler.h"
+#include "Handlers/Combat/CombatHandler.h"
 #include "Player/Player.h"
 #include "Character/Character.h"
 #include "Character/Enemy.h"

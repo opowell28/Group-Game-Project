@@ -7,7 +7,7 @@
 
 #include <string>
 #include <vector>
-#include "../Weapons/Weapon.h"
+#include "../../Weapons/Weapon.h"
 #include "../Combat/CombatHandler.h"
 
 //Room class allows properties for individual rooms to be set
