@@ -8,6 +8,7 @@
 #include <iostream>
 
 class Character {
+
 protected:
     int health, strength, dexterity, constitution;
     std::string name;

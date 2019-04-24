@@ -11,8 +11,7 @@ Player::Player():Character() {
     this->dexterity = 0;
 }
 
-Player::Player(std::string name, int health, int strength, int dexterity)
-    :Character(){
+Player::Player(std::string name, int health, int strength, int dexterity) :Character(){
     this->name = name;
     this->health = health;
     this->strength = strength;

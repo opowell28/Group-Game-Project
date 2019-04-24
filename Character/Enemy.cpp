@@ -12,6 +12,7 @@ Enemy::Enemy() {
 }
 
 Enemy::Enemy(std::string name, int health, int strength, int dexterity) {
+
     this->name = name;
     this->health = health;
     this->strength = strength;

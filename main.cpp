@@ -24,7 +24,6 @@ int main() {
     CombatHdlr = &CombatHdlr->getInstance();
 
     Weapon *weapon;
-//    Enemy *enemy;
 
     bool gameOver = false;
 

@@ -14,6 +14,7 @@ public:
 
     Player();
     Player(std::string name, int health, int strength, int dexterity);
+
     std::string getWeaponChoiceAndEquip(Player player);
 
     std::vector<Weapon*> playerInventory;

@@ -14,12 +14,11 @@
 class Enemy: virtual public Character {
 
 public:
+
     Enemy();
     Enemy(std::string name, int health, int strength, int dexterity);
 
     int getWeaponDamage();
-
-
 
 };
 

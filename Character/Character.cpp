@@ -5,6 +5,7 @@
 #include "Character.h"
 
 Character::Character() {
+
     this->name = "Player 1";
     this->health = 100;
     this->strength = 50;
