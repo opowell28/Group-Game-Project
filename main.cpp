@@ -10,17 +10,15 @@ int main() {
     Character player1;
     Character* player = &player1;
 
-    player1.setName("Player 1"); //maybe allow user to decide this
-    player1.setHealth(100);      //maybe allow this to be determined by previously-selected difficulty mode
-    player1.setStrength(50);     //maybe allow this to be determined by previously-selected difficulty mode
+    player1.setName("Player 1"); 
+    player1.setHealth(100);      
+    player1.setStrength(50);     
 
     MoveHandler *MoveHdlr;
     MoveHdlr = &MoveHdlr->getInstance();
 
     CombatHandler *CombatHdlr;
     CombatHdlr = &CombatHdlr->getInstance();
-
-    Weapon *weapon;
 
     bool gameOver = false;
 
@@ -44,12 +42,7 @@ int main() {
             CombatHdlr->inCombat(player1, MoveHdlr->getNameOfEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY()));
         }
         */
-        /*
-        if (there is an item to pick up ) {
-            //item handler      if we decide to do this
-        }
-        */
-
+   
         /*
         if (the game is over (presumably after defeating boss or when players health is zero)) {
             gameOver = true;
