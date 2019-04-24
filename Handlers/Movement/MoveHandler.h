@@ -35,7 +35,7 @@ public:
 
 
 //TODO: set maxX and maxY
-class MoveHandler : virtual public Inventory, virtual public Weapon {
+class MoveHandler : virtual public Weapon {
 private:
     MoveHandler();
 
@@ -75,7 +75,7 @@ public:
 
 
     void printStory(std::string story);
-    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player *player);
+    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Character *player);
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
     bool weaponInRoom(int x, int y);

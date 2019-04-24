@@ -75,6 +75,8 @@ protected:
     //define weapons like this
     Weapon* flimsyDagger = new Weapon (3, "Flimsy Dagger", 17, 4.0);
     Weapon* weakSword = new Weapon (8, "Weak Sword", 25, 8.0);
+    Weapon* axe = new Weapon (12, "Axe", 30, 12.0);
+    Weapon* crossbow = new Weapon (10, "Crossbow", 35, 7.0);
 
 public:
 
@@ -82,10 +84,8 @@ public:
     Weapon(int defaultDamage, std::string name, int durability, float weight);
     ~Weapon();
 
-//    std::vector<Weapon*> allWeapons;
     virtual std::string getWeaponName();
     virtual Weapon* getWeaponStats(std::string weaponName);
-//    virtual void fillWeaponVector();
 
     virtual int use();
     virtual void lowerDurability(int min, int max);
