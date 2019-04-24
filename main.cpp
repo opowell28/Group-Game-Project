@@ -33,7 +33,6 @@ int main() {
     MoveHdlr->fillWorldWithEnemies(); //fills vector of rooms with enemies
     MoveHdlr->fillRoomsWithItems(); //fills vector of rooms with items and weapons
     weapon->fillWeaponVector(); //fills allWeapons map with every weapon that is defined
-    //enemy->fillEnemyMap(); //fills allEnemies map with every enemy that is defined
 
     //main game loop
     while(!gameOver) {
