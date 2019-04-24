@@ -66,3 +66,30 @@ std::string Character::getName() {
     return this->name;
 }
 
+double Character::getCarryCapacity(double carryCapacity) {
+    return this->carryCapacity;
+}
+
+double Character::getCurrentCapacity() {
+    return this->currentCapacity;
+}
+
+void Character::setCurrentCapacity() {
+    this->currentCapacity = currentCapacity;
+}
+
+//attack function
+void Character::Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
+    int damage = 0;
+    int miss;
+
+    damage = ((minDamage + rand() % maxDamage + 1) * getStrength()) + weaponDamage;
+    miss = rand() % 100 + 1;
+
+    if (miss <= missChance) {
+        std::cout << "The attack misses." << std::endl;
+    } else {
+        target.setHealth(target.getHealth() - damage);
+        std::cout << target.getName() << " has been hit for " << std::to_string(damage) << " points." << std::endl;
+    }
+}

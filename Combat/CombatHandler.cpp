@@ -124,3 +124,13 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
         }
     }
 }
+
+
+void CombatHandler::pickUp() {
+    if (currentCapacity + Weapon::weight > carryCapacity) {
+        std::cout << "You cannot carry any more items, you will exceed your carry capacity of " << carryCapacity << ". " << std::endl;
+    }
+    if (currentCapacity + Weapon::weight < carryCapacity) {
+        playerInventory.push_back();
+    }
+}

@@ -5,14 +5,13 @@
 #include "Player/Player.h"
 #include "Character/Character.h"
 #include "Character/Enemy.h"
-#include "Inventory/Inventory.h"
 
 using namespace std;
 
 int main() {
 
-    Player player1;
-    Player* player = &player1;
+    Character player1;
+    Character* player = &player1;
 
     player1.setName("Player 1"); //maybe allow user to decide this
     player1.setHealth(100);      //maybe allow this to be determined by previously-selected difficulty mode

@@ -10,17 +10,15 @@
 #include "../Weapons/Weapon.h"
 #include "../Player/Player.h"
 
-class Enemy: virtual public Character { //REMOVED INHERITANCE   ,  public Weapon
-protected:
-    int enemyWeaponDamage;
+
+class Enemy: virtual public Character {
 
 public:
     Enemy();
-    Enemy(std::string name, int health, int strength, int dexterity, int enemyWeaponDamage);
+    Enemy(std::string name, int health, int strength, int dexterity);
 
     int getWeaponDamage();
 
-    void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 
 
 };

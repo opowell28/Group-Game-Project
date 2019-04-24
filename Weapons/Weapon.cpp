@@ -46,15 +46,6 @@ void Weapon::lowerDurability(int min, int max) {
     this->durability -= (min + rand() % max + 1);
 }
 
-void Weapon::pickUp() {
-    if (currentCapacity + Weapon::weight > carryCapacity) {
-        cout << "You cannot carry any more items, you will exceed your carry capacity of " << carryCapacity << ". " << endl;
-    }
-    if (currentCapacity + Weapon::weight < carryCapacity) {
-        playerInventory.push_back();
-    }
-}
-
 ////add previously defined weapons to the allWeapons vector, may not need this
 //void Weapon::fillWeaponVector() {
 //    allWeapons.push_back(flimsyDagger);

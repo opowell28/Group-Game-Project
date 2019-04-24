@@ -6,8 +6,6 @@
 #define INC_4_GROUPPROJECT_CHARACTER_H
 
 #include <iostream>
-//#include "../Player/Player.h"
-//#include "../Character/Enemy.h"
 
 class Character {
 protected:
@@ -15,6 +13,8 @@ protected:
     std::string name;
     std::string equippedItem;
     std::string equippedWeapon;
+    double carryCapacity;
+    double currentCapacity;
 
 public:
     Character();
@@ -32,9 +32,10 @@ public:
     void setEquippedWeapon(std::string weaponName);
     void setName(std::string name);
     std::string getName();
-    //void Attack(Player target, int minDamage, int maxDamage, int missChance, int weaponDamage);
-    //void Attack(Enemy target, int minDamage, int maxDamage, int missChance, int weaponDamage);
-
+    double getCurrentCapacity();
+    void setCurrentCapacity();
+    double getCarryCapacity(double carryCapacity);
+    void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
 
 };
 

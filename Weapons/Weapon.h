@@ -8,10 +8,9 @@
 #include <string>
 #include <vector>
 #include <map>
-#include "../Inventory/Inventory.h"
 #include "../Player/Player.h"
 
-class Weapon : virtual public Inventory, virtual public Player {
+class Weapon : virtual public Player {
 protected:
 
     std::string weaponName;
@@ -30,13 +29,12 @@ public:
     ~Weapon();
 
 //    std::vector<Weapon*> allWeapons;
-    std::string getWeaponName();
-    Weapon* getWeaponStats(std::string weaponName);
-    void fillWeaponVector();
+    virtual std::string getWeaponName();
+    virtual Weapon* getWeaponStats(std::string weaponName);
+//    virtual void fillWeaponVector();
 
-    int use();
-    void lowerDurability(int min, int max);
-    void pickUp();
+    virtual int use();
+    virtual void lowerDurability(int min, int max);
 
 };
 

@@ -11,7 +11,7 @@
 #include "../Combat/CombatHandler.h"
 
 //Room class allows properties for individual rooms to be set
-class Room : virtual public Weapon { //REMOVED INHERITANCE     :  public Weapon
+class Room : virtual public Weapon {
 protected:
     std::string roomName = "";
     int xcoordinate = 0;

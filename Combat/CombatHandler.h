@@ -13,15 +13,17 @@
 #include "../Character/Enemy.h"
 
 
-class CombatHandler : virtual public Character,  virtual public Player, virtual public Weapon { //REMOVED INHERITANCE
+class CombatHandler : virtual public Character,  virtual public Player, virtual public Weapon {
 private:
     CombatHandler();
 protected:
     std::string atkStrength;
 public:
     CombatHandler& getInstance();
-     void inCombat(Player player, std::string enemyName);
+    void inCombat(Player player, std::string enemyName);
     Enemy createEnemyObjectFromName(std::string enemyName);
+
+    void pickUp();
 };
 
 #endif //INC_4_GROUPPROJECT_COMBATHANDLER_H
