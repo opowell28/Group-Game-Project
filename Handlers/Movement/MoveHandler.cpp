@@ -312,19 +312,21 @@ void MoveHandler::printStory(string story) {
     cout << endl;
 }
 
-void MoveHandler::pickUpItemOrNot(int x, int y, std::string specificStoryString) {
+void MoveHandler::pickUpItemOrNot(Weapon weapon, std::string specificStoryString, Character player) {
     getline(cin, actionInput);
     if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
 
-        flimsyDagger->pickUp();
+        Dagger D;
+        player.playerInventory.push_back(D);
         printStory(specificStoryString);
 
+        /*    NOT USED
         for (int i = 0; i <= roomsWithItem.size(); i++) {
             if ((roomsWithItem[i].getX() == x) && (roomsWithItem[i].getY() == y)) {
                 roomsWithItem[i].isEmpty = true;
             }
         }
-
+        */
         //remove the room from the vector of rooms with items
         //roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
     }
@@ -359,7 +361,7 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
                        "for a small object in the corner. ");
 
             //take input if user wants to pick up the object
-            pickUpItemOrNot(1, 0, "You pick up the object in the corner and see that it is a small,"
+            pickUpItemOrNot(flimsyDagger, "You pick up the object in the corner and see that it is a small,"
                                   "weak-looking dagger. ");
 
         } else if ((x == 3) && (y == 0)) {

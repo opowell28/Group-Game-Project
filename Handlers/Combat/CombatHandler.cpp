@@ -41,10 +41,10 @@ Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
 }
 
 //call this function when entering a combat situation in a room in moveHandler
-void CombatHandler::inCombat(Player player, std::string enemyName) {
+void CombatHandler::inCombat(Character player, std::string enemyName) {
 
     //create an enemy with preset stats
-    Enemy opponent = createEnemyObjectFromName(enemyName);
+    Character opponent = createEnemyObjectFromName(enemyName);
 
     bool InCombat = true;
     int turn = 1;
@@ -66,7 +66,7 @@ void CombatHandler::inCombat(Player player, std::string enemyName) {
                     player.Attack(opponent, defaultDamage, defaultDamage + dexterity, 10,
                                   10); //this function defines the target, minimum and maximum damage, and the chance of missing
                 } else if ((input == "heavy") || (input == "Heavy")) {
-                    player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, getWeaponStats(getWeaponDamage()));
+                    player.Attack(opponent, defaultDamage + 5, defaultDamage + dexterity + 5, 20, getWeaponDamage());
                 } else if ((input == "help") || (input == "Help")) {
                     //Help code to print commands.
                     std::string input, cmd;

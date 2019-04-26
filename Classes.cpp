@@ -88,8 +88,39 @@ void Character::Attack(Character target, int minDamage, int maxDamage, int missC
     }
 }
 
+//equip a weapon to the player
+std::string Character::getWeaponChoiceAndEquip(Character player) {
 
+    //if there is something in the inventory:
+    if (!player.playerInventory.empty()) {
+        std::string userInput;
 
+        std::cout << "Draw a weapon:" << std::endl;
+
+        //print a list of what is in the inventory
+        for (int i = 0; i <= player.playerInventory.size(); i++) {
+            //IF WE DECIDE TO ADD OTHER ITEMS THIS WILL NEED CHANGED SO THAT NON-WEAPON ITEMS ARE NOT DISPLAYED
+            std::cout << i + 1 << ".   " << playerInventory[i]->getWeaponName() << std::endl;
+        }
+        std::cout << "Enter any other key to fight with your bare hands." << std::endl;
+
+        std::getline(std::cin, userInput);
+
+        //see if the number entered corresponds to an inventory spot with a weapon
+        for (int j = 0; j <= userInput.size(); j++) {
+            if (std::to_string(userInput[j]) == std::to_string(j + 1)) {
+                player.setEquippedWeapon(playerInventory[userInput[j - 1]]->getWeaponName());
+
+                break;
+            }
+        }
+    } else {
+        std::cout << "You don't have any weapons." << std::endl;
+    }
+
+}
+
+/*
 //Player Class
 Player::Player():Character() {
     this->name = "Player 1";
@@ -136,9 +167,9 @@ std::string Player::getWeaponChoiceAndEquip(Player player) {
     }
 
 }
+*/
 
-
-
+/*
 //Enemy Class
 Enemy::Enemy() {
     this->name = "Enemy";
@@ -154,7 +185,7 @@ Enemy::Enemy(std::string name, int health, int strength, int dexterity) {
     this->strength = strength;
     this->dexterity = dexterity;
 }
-
+*/
 
 
 //Weapon Class
@@ -178,6 +209,9 @@ Weapon::~Weapon() {
     std::cout << this->weaponName << " broke. " << std::endl;
 }
 
+std::string Weapon::getEquippedWeapon() {
+    return this->equippedWeapon;
+}
 
 //weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done
 int Weapon::use() {
@@ -187,7 +221,6 @@ int Weapon::use() {
     }
     return this->defaultDamage;
 }
-
 
 std::string Weapon::getWeaponName() {
     return this->weaponName;
@@ -215,4 +248,11 @@ Weapon* Weapon::getWeaponStats(std::string weaponName) {
             return playerInventory[i];
         }
     }
+}
+
+Dagger::Dagger() {
+    this->defaultDamage = 3;
+    this->weaponName = "flimsy dagger";
+    this->defaultDamage = 17;
+    this->weight = 4.0;
 }

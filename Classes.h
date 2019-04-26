@@ -10,8 +10,44 @@
 #include <map>
 #include <iostream>
 
+class Weapon { //: virtual public Player
+protected:
 
-class Character {
+    std::string weaponName;
+    int defaultDamage;
+    int durability;
+    float weight;
+
+    //define weapons like this
+    Weapon* flimsyDagger = new Weapon (3, "Flimsy Dagger", 17, 4.0);
+    Weapon* weakSword = new Weapon (8, "Weak Sword", 25, 8.0);
+    Weapon* axe = new Weapon (12, "Axe", 30, 12.0);
+    Weapon* crossbow = new Weapon (10, "Crossbow", 35, 7.0);
+
+public:
+
+    Weapon();
+    Weapon(int defaultDamage, std::string name, int durability, float weight);
+    ~Weapon();
+
+    virtual std::string getEquippedWeapon();
+    virtual std::string getWeaponName();
+    virtual Weapon* getWeaponStats(std::string weaponName);
+    virtual int getWeaponDamage();
+
+    virtual int use();
+    virtual void lowerDurability(int min, int max);
+
+    std::vector<Weapon> playerInventory;
+
+};
+
+class Dagger : virtual Weapon {
+public:
+    Dagger();
+};
+
+class Character : virtual public Weapon {
 
 protected:
     int health, strength, dexterity;
@@ -38,9 +74,11 @@ public:
     void setCurrentCapacity();
     double getCarryCapacity(double carryCapacity);
     void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    std::string getWeaponChoiceAndEquip(Character player);
 
 };
 
+/*
 class Player : virtual public Character {
 
 public:
@@ -60,37 +98,8 @@ public:
     //int getWeaponDamage();
 
 };
+*/
 
-class Weapon : virtual public Player {
-protected:
-
-    std::string weaponName;
-    int defaultDamage;
-    int durability;
-    float weight;
-
-    //define weapons like this
-    Weapon* flimsyDagger = new Weapon (3, "Flimsy Dagger", 17, 4.0);
-    Weapon* weakSword = new Weapon (8, "Weak Sword", 25, 8.0);
-    Weapon* axe = new Weapon (12, "Axe", 30, 12.0);
-    Weapon* crossbow = new Weapon (10, "Crossbow", 35, 7.0);
-
-public:
-
-    Weapon();
-    Weapon(int defaultDamage, std::string name, int durability, float weight);
-    ~Weapon();
-
-    virtual std::string getWeaponName();
-    virtual Weapon* getWeaponStats(std::string weaponName);
-    virtual int getWeaponDamage();
-
-    virtual int use();
-    virtual void lowerDurability(int min, int max);
-
-    std::vector<Weapon*> playerInventory;
-
-};
 
 
 

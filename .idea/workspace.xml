@@ -14,21 +14,12 @@
     <list default="true" id="1ca644be-4aa6-4662-beb1-46b2cf5c9ab4" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classes.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Classes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handlers/Combat/CombatHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Handlers/Combat/CombatHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handlers/Combat/CombatHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Handlers/Combat/CombatHandler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/4__groupProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4__groupProject.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handlers/Movement/MoveHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Handlers/Movement/MoveHandler.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +30,40 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="208">
+                    <caret line="322" column="22" lean-forward="true" selection-start-line="322" selection-start-column="22" selection-end-line="322" selection-end-column="22" />
+                    <folding>
+                      <element signature="e#112#131#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.h">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="338">
+                    <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+                    <folding>
+                      <element signature="e#131#148#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
@@ -51,25 +76,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1" />
-          <entry key="txt" value="4" />
+          <entry key="cpp" value="253" />
+          <entry key="h" value="144" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
-          <entry key="ObjectiveC" value="1" />
+          <entry key="ObjectiveC" value="397" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="1" />
+          <entry key="h" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -77,19 +115,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
+            <state relative-caret-position="-166">
               <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="209" selection-start-line="209" selection-end-line="209" />
+            <state relative-caret-position="268">
+              <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
               <folding>
-                <element signature="e#60#208#0" />
                 <element signature="e#210#407#0" />
                 <element signature="e#409#464#0" />
                 <element signature="e#466#534#0" />
@@ -97,22 +134,12 @@
                 <element signature="e#597#673#0" />
                 <element signature="e#675#736#0" />
                 <element signature="e#738#818#0" />
-                <element signature="e#820#887#0" />
-                <element signature="e#889#981#0" />
-                <element signature="e#983#1062#0" />
                 <element signature="e#1064#1164#0" />
                 <element signature="e#1166#1234#0" />
                 <element signature="e#1236#1295#0" />
                 <element signature="e#1297#1389#0" />
                 <element signature="e#1391#1467#0" />
                 <element signature="e#1469#1554#0" />
-                <element signature="e#1556#2107#0" />
-                <element signature="e#2111#2261#0" />
-                <element signature="e#2263#2466#0" />
-                <element signature="e#3644#3776#0" />
-                <element signature="e#3778#3968#0" />
-                <element signature="e#3972#4111#0" />
-                <element signature="e#4113#4362#0" />
               </folding>
             </state>
           </provider>
@@ -121,32 +148,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="459">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#113#130#0" expanded="true" />
-                <element signature="e#185#1118#1" />
-                <element signature="e#1121#1316#1" />
-                <element signature="e#1319#1482#1" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2907">
-              <caret line="173" column="114" selection-start-line="173" selection-start-column="114" selection-end-line="173" selection-end-column="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -154,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handlers/Combat/CombatHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="153">
+              <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
               <folding>
                 <element signature="e#48#74#0" expanded="true" />
               </folding>
@@ -166,8 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handlers/Combat/CombatHandler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="23">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -180,6 +186,10 @@
       <find>virtual</find>
       <find>map</find>
       <find>playerInventory</find>
+      <find>getWeaponStats</find>
+      <find>flim</find>
+      <find>getWeaponDama</find>
+      <find>getWeaponDa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,12 +213,13 @@
         <option value="$PROJECT_DIR$/Combat/CombatHandler.cpp" />
         <option value="$PROJECT_DIR$/Character/Enemy.h" />
         <option value="$PROJECT_DIR$/Weapons/Weapon.h" />
-        <option value="$PROJECT_DIR$/Handlers/Movement/MoveHandler.h" />
-        <option value="$PROJECT_DIR$/Classes.cpp" />
-        <option value="$PROJECT_DIR$/Classes.h" />
-        <option value="$PROJECT_DIR$/Handlers/Combat/CombatHandler.cpp" />
-        <option value="$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Handlers/Combat/CombatHandler.cpp" />
+        <option value="$PROJECT_DIR$/Handlers/Combat/CombatHandler.h" />
+        <option value="$PROJECT_DIR$/Handlers/Movement/MoveHandler.h" />
+        <option value="$PROJECT_DIR$/Classes.h" />
+        <option value="$PROJECT_DIR$/Classes.cpp" />
+        <option value="$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp" />
       </list>
     </option>
   </component>
@@ -219,46 +230,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-1091" />
-    <option name="width" value="1943" />
-    <option name="height" value="1043" />
+    <option name="x" value="-104" />
+    <option name="y" value="-882" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="4_groupProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="4_groupProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="4_groupProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Handlers" type="462c0819:PsiDirectoryNode" />
-              <item name="Combat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="4_groupProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4) GroupProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Handlers" type="462c0819:PsiDirectoryNode" />
-              <item name="Movement" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -321,7 +302,7 @@
       <workItem from="1556051596565" duration="39000" />
       <workItem from="1556108080045" duration="1998000" />
       <workItem from="1556113880404" duration="2924000" />
-      <workItem from="1556243627790" duration="279000" />
+      <workItem from="1556243627790" duration="9189000" />
     </task>
     <task id="LOCAL-00001" summary="fixed some errors">
       <created>1555908822631</created>
@@ -442,11 +423,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556141572815</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="debugging">
+      <created>1556244008191</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1556244008191</updated>
+    </task>
+    <task id="LOCAL-00019" summary="debugging">
+      <created>1556248774042</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556248774042</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61102000" />
+    <option name="totallyTimeSpent" value="70012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +467,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.430605" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.23131673" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50429183" side_tool="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49570817" weight="0.3253012" />
@@ -502,7 +497,8 @@
     <MESSAGE value="Fixed CMakeLists.txt" />
     <MESSAGE value="Added final two weapons." />
     <MESSAGE value="Ugh" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ugh" />
+    <MESSAGE value="debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/vector" />
@@ -527,56 +523,72 @@
     <entry file="file://$PROJECT_DIR$/Weapons/Weapon.h" />
     <entry file="file://$PROJECT_DIR$/Handlers/Combat/Weapon.cpp" />
     <entry file="file://$PROJECT_DIR$/Handlers/Combat/Weapon.h" />
-    <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Handlers/Combat/CombatHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="153">
+          <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
           <folding>
             <element signature="e#48#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handlers/Combat/CombatHandler.h">
+    <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        <state relative-caret-position="338">
+          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+          <folding>
+            <element signature="e#131#148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Handlers/Combat/CombatHandler.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="23">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="459">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#113#130#0" expanded="true" />
-            <element signature="e#185#1118#1" />
-            <element signature="e#1121#1316#1" />
-            <element signature="e#1319#1482#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="322" column="22" lean-forward="true" selection-start-line="322" selection-start-column="22" selection-end-line="322" selection-end-column="22" />
+          <folding>
+            <element signature="e#112#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="268">
+          <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
           <folding>
-            <element signature="e#60#208#0" />
             <element signature="e#210#407#0" />
             <element signature="e#409#464#0" />
             <element signature="e#466#534#0" />
@@ -584,37 +596,13 @@
             <element signature="e#597#673#0" />
             <element signature="e#675#736#0" />
             <element signature="e#738#818#0" />
-            <element signature="e#820#887#0" />
-            <element signature="e#889#981#0" />
-            <element signature="e#983#1062#0" />
             <element signature="e#1064#1164#0" />
             <element signature="e#1166#1234#0" />
             <element signature="e#1236#1295#0" />
             <element signature="e#1297#1389#0" />
             <element signature="e#1391#1467#0" />
             <element signature="e#1469#1554#0" />
-            <element signature="e#1556#2107#0" />
-            <element signature="e#2111#2261#0" />
-            <element signature="e#2263#2466#0" />
-            <element signature="e#3644#3776#0" />
-            <element signature="e#3778#3968#0" />
-            <element signature="e#3972#4111#0" />
-            <element signature="e#4113#4362#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handlers/Movement/MoveHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="173" column="114" selection-start-line="173" selection-start-column="114" selection-end-line="173" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
         </state>
       </provider>
     </entry>

@@ -79,7 +79,7 @@ public:
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
     bool weaponInRoom(int x, int y);
-    void pickUpItemOrNot(int x, int y, std::string specificStoryString);
+    void pickUpItemOrNot(Weapon weapon, std::string specificStoryString, Character player);
     void printVisitedMessage(int x, int y);
 
 
