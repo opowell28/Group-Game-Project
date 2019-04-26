@@ -94,6 +94,30 @@ public:
 
 };
 
+class Wolf : virtual Character {
+public:
+    Character returnWolf();
+};
+
+class Bear : virtual Character {
+public:
+    Character returnBear();
+};
+
+class Bat : virtual Character {
+public:
+    Character returnBat();
+};
+
+class Skeleton : virtual Character {
+public:
+    Character returnSkeleton();
+};
+
+class Boss : virtual Character {
+public:
+    Character returnBoss();
+};
 /*
 class Player : virtual public Character {
 

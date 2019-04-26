@@ -274,3 +274,29 @@ Weapon Crossbow::returnBow() {
     Weapon w(10, "Crossbow", 35, 7.0);
     return w;
 }
+
+
+Character Wolf::returnWolf() {
+    Character w("wolf", 50, 10, 10);
+    return w;
+}
+
+Character Bear::returnBear() {
+    Character b("bear", 75, 20, 10);
+    return b;
+}
+
+Character Bat::returnBat() {
+    Character b("bats", 30, 10, 10);
+    return b;
+}
+
+Character Skeleton::returnSkeleton() {
+    Character s("skeleton", 50, 25, 10);
+    return s;
+}
+
+Character Boss::returnBoss() {
+    Character b("Dire Wolf", 250, 25, 10);
+    return b;
+}

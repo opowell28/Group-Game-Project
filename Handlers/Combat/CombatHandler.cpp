@@ -20,6 +20,7 @@ CombatHandler& CombatHandler::getInstance() {
 
 }
 
+/*
 Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
 
     if (enemyName == "wolf") {
@@ -39,12 +40,30 @@ Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
 
     }
 }
+*/
 
 //call this function when entering a combat situation in a room in moveHandler
 void CombatHandler::inCombat(Character player, std::string enemyName) {
 
     //create an enemy with preset stats
-    Character opponent = createEnemyObjectFromName(enemyName);
+    //Character opponent = createEnemyObjectFromName(enemyName);
+    Character opponent;
+    if (enemyName == "wolf") {
+        Wolf w;
+        opponent = w.returnWolf();
+    } else if (enemyName == "bear") {
+        Bear b;
+        opponent = b.returnBear();
+    } else if (enemyName == "bat") {
+        Bat b;
+        opponent = b.returnBat();
+    } else if (enemyName == "skeleton") {
+        Skeleton s;
+        opponent = s.returnSkeleton();
+    } else if (enemyName == "boss") {
+        Boss b;
+        opponent = b.returnBoss();
+    }
 
     bool InCombat = true;
     int turn = 1;
@@ -92,7 +111,7 @@ void CombatHandler::inCombat(Character player, std::string enemyName) {
 
         else
         {
-            opponent.Attack(player, opponent.getStrength(), opponent.getStrength() + opponent.getDexterity(), 20 - opponent.getConstitution(), opponent.getWeaponDamage()); //set target, min damage, max damage, miss chance, and weapon damage
+            opponent.Attack(player, opponent.getStrength(), opponent.getStrength() + opponent.getDexterity(), 20, 0); //set target, min damage, max damage, miss chance, and weapon damage
         }
 
         turn++;
@@ -111,7 +130,7 @@ void CombatHandler::inCombat(Character player, std::string enemyName) {
     }
 }
 
-
+/*
 void CombatHandler::pickUp() {
     if (currentCapacity + Weapon::weight > carryCapacity) {
         std::cout << "You cannot carry any more items, you will exceed your carry capacity of " << carryCapacity << ". " << std::endl;
@@ -120,3 +139,4 @@ void CombatHandler::pickUp() {
         playerInventory.push_back();
     }
 }
+ */
