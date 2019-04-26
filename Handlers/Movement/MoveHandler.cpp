@@ -171,7 +171,7 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
         }
 
         catch (...) {
-            cout << "Please enter a valid movement command. Type 'Help' or 'help' to display a list of commands."
+            cout << "Please enter a valid movement command. Type 'Help' or 'help' to display a list of commands.";
         }
 
         if (!moved) {
