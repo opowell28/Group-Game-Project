@@ -331,7 +331,7 @@ void MoveHandler::pickUpItemOrNot(int x, int y, std::string specificStoryString)
 }
 
 //function contains list of story events for each room coordinate that has a story event
-void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Player *player) {
+void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Character *player) {
 
     //default message prints in all rooms other than starting room
     if (!((x == 2) && (y == 0))) {

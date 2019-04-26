@@ -44,14 +44,6 @@ void Character::setDexterity(int dexterity) {
     this->dexterity = dexterity;
 }
 
-int Character::getConstitution() {
-    return this->constitution;
-}
-
-void Character::setConstitution(int constitution) {
-    this->constitution = constitution;
-}
-
 std::string Character::getEquippedWeapon() {
     return this->equippedWeapon;
 }
@@ -186,6 +178,7 @@ Weapon::~Weapon() {
     std::cout << this->weaponName << " broke. " << std::endl;
 }
 
+
 //weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done
 int Weapon::use() {
     lowerDurability(1, 5);
@@ -194,6 +187,7 @@ int Weapon::use() {
     }
     return this->defaultDamage;
 }
+
 
 std::string Weapon::getWeaponName() {
     return this->weaponName;

@@ -10,12 +10,12 @@
 #include <map>
 #include <iostream>
 
+
 class Character {
 
 protected:
-    int health, strength, dexterity, constitution;
+    int health, strength, dexterity;
     std::string name;
-    std::string equippedItem;
     std::string equippedWeapon;
     double carryCapacity;
     double currentCapacity;
@@ -30,8 +30,6 @@ public:
     void setStrength(int strength);
     int getDexterity();
     void setDexterity(int dexterity);
-    int getConstitution();
-    void setConstitution(int constitution);
     std::string getEquippedWeapon();
     void setEquippedWeapon(std::string weaponName);
     void setName(std::string name);
@@ -56,11 +54,10 @@ public:
 class Enemy: virtual public Character {
 
 public:
-
     Enemy();
     Enemy(std::string name, int health, int strength, int dexterity);
 
-    int getWeaponDamage();
+    //int getWeaponDamage();
 
 };
 
@@ -94,6 +91,7 @@ public:
     std::vector<Weapon*> playerInventory;
 
 };
+
 
 
 
