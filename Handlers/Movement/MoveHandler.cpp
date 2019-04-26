@@ -301,41 +301,41 @@ void MoveHandler::printStory(string story) {
     cout << endl;
 }
 
-void MoveHandler::pickUpItemOrNot(std::string weaponName, std::string specificStoryString, Character player) {
+void MoveHandler::pickUpItemOrNot(int x, int y, std::string weaponName, std::string specificStoryString, Character *player) {
     getline(cin, actionInput);
     if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
 
         if (weaponName == "flimsyDagger") {
             Dagger D;
-            player.playerInventory.push_back(D.returnDagger());
+            player->playerInventory.push_back(D.returnDagger());
         } else if (weaponName == "weakSword") {
             Sword S;
-            player.playerInventory.push_back(S.returnSword());
-        } else if (weaponName == "Axe") {
+            player->playerInventory.push_back(S.returnSword());
+        } else if (weaponName == "axe") {
             Axe A;
-            player.playerInventory.push_back(A.returnAxe());
-        } else if (weaponName == "Crossbow") {
+            player->playerInventory.push_back(A.returnAxe());
+        } else if (weaponName == "crossbow") {
             Crossbow B;
-            player.playerInventory.push_back(B.returnBow());
+            player->playerInventory.push_back(B.returnBow());
         }
 
         printStory(specificStoryString);
 
-        /*    NOT USED
         for (int i = 0; i <= roomsWithItem.size(); i++) {
             if ((roomsWithItem[i].getX() == x) && (roomsWithItem[i].getY() == y)) {
                 roomsWithItem[i].isEmpty = true;
             }
         }
-        */
+
         //remove the room from the vector of rooms with items
         //roomsWithItem.erase(remove(roomsWithItem.begin(), roomsWithItem.end(), Room room_2_0), roomsWithItem.end());
     }
 }
 
 //function contains list of story events for each room coordinate that has a story event
-void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Character *player) {
+void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Character *player, bool gameOver) {
 
+    gameOver = false;
     //default message prints in all rooms other than starting room
     if (!((x == 2) && (y == 0))) {
         cout << "You are in room: " << x << " " << y << endl;
@@ -362,8 +362,8 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
                        "for a small object in the corner. ");
 
             //take input if user wants to pick up the object
-            pickUpItemOrNot(flimsyDagger, "You pick up the object in the corner and see that it is a small,"
-                                  "weak-looking dagger. ");
+            pickUpItemOrNot(1, 0, "flimsyDagger", "You pick up the object in the corner and see that it is a small,"
+                                  "weak-looking dagger. ", player);
 
         } else if ((x == 3) && (y == 0)) {
 
@@ -376,7 +376,7 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
             getline(cin, actionInput);
             if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
-                CombatHndlr->inCombat(*player, "wolf");
+                CombatHndlr->inCombat(*player, "wolf", gameOver);
             } else {
                 movePlayerLeft();
                 cout << "You ran away. You are now in room 3 0" << endl;
@@ -390,7 +390,7 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
             getline(cin, actionInput);
             if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight bear" || "attack bear") {
-                CombatHndlr->inCombat(*player, "bear");
+                CombatHndlr->inCombat(*player, "bear", gameOver);
             } else {
                 movePlayerLeft();
                 cout << "You ran away. You are now in room 1 1" << endl;
@@ -398,11 +398,11 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
         } else if ((x == 3) && (y == 1)) {
             printStory("This room is empty except for an axe leaning against the wall. ");
-            pickUpItemOrNot(3, 0, "You pick up the axe.");
+            pickUpItemOrNot(3, 1, "axe", "You pick up the axe.", player);
 
         } else if ((x == 2) && (y == 2)) {
             printStory("This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty, but as you start walking, man-eating bats pour from the hole in the ceiling. You cannot get away in time.");
-            CombatHndlr->inCombat(*player, "bats");
+            CombatHndlr->inCombat(*player, "bats", gameOver);
 
         } else if ((x == 4) && (y == 2)) {
             printStory("This room is empty except for a sword lying on the floor.");
@@ -414,14 +414,14 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
             getline(cin, actionInput);
             if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight wolf" || "attack wolf") {
-                CombatHndlr->inCombat(*player, "wolf");
+                CombatHndlr->inCombat(*player, "wolf", gameOver);
             } else {
                 movePlayerLeft();
                 cout << "You ran away. You are now in room 2 3" << endl;
             }
         } else if ((x == 1) && (y == 3)) {
             printStory("This room is empty except for an axe leaning against the wall. ");
-            pickUpItemOrNot(1, 3, "You pick up the axe.");
+            pickUpItemOrNot(1, 3, "axe", "You pick up the axe.", player);
 
         } else if ((x == 0) && (y == 3)) {
             printStory("As you walk into the next room you feel a tug on your foot. You immediately notice that it is a tripwire, and your skin begins to sting as dozens of tiny darts pierce you. You take 10 damage.");
@@ -429,10 +429,10 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
         } else if ((x == 0) && (y == 4)) {
             printStory("This cavern is dark. When you begin to walk into it, a skeleton emerges from the darkness and attacks you.");
-            CombatHndlr->inCombat(*player, "skeleton");
+            CombatHndlr->inCombat(*player, "skeleton", gameOver);
         } else if ((x == 2) && (y == 4)) {
             printStory("This cavern is dark. When you begin to walk into it, a skeleton emerges from the darkness and attacks you.");
-            CombatHndlr->inCombat(*player, "skeleton");
+            CombatHndlr->inCombat(*player, "skeleton", gameOver);
         } else if ((x == 4) && (y == 4)) {
             printStory("Upon enterring this room, you notice a strange smell and begin to feel light headed. You quickly leave the room, but not before taking 15 damage. You are now in room 3 4");
             player->setHealth(player->getHealth() - 15);
@@ -443,7 +443,7 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
             getline(cin, actionInput);
             if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight bear" || "attack bear") {
-                CombatHndlr->inCombat(*player, "bear");
+                CombatHndlr->inCombat(*player, "bear", gameOver);
             } else {
                 movePlayerRight();
                 cout << "You ran away. You are now in room 2 5" << endl;
@@ -451,7 +451,7 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
         } else if ((x == 4) && (y == 5)) {
             printStory("This room is empty except for a sword lying on the floor.");
-            pickUpItemOrNot(4, 5, "You pick up the sword.");
+            pickUpItemOrNot(4, 5, "weakSword", "You pick up the sword.", player);
 
         } else if ((x == 3) && (y == 6)) {
             printStory("In the corner of this room there is a spring of cold water. You drink it and gain 30hp.");
@@ -459,18 +459,18 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
         } else if ((x == 4) && (y == 6)) {
             printStory("This room has a dirt floor, and is lit only by a small hole in the high ceiling. It appears to be empty, but as you start walking, man-eating bats pour from the hole in the ceiling. You cannot get away in time.");
-            CombatHndlr->inCombat(*player, "bats");
+            CombatHndlr->inCombat(*player, "bats", gameOver);
 
         } else if ((x == 0) && (y == 6)) {
             printStory("This room is empty except for a crossbow leaning against the wall.");
-            pickUpItemOrNot(0, 6, "You pick up the crossbow.");
+            pickUpItemOrNot(0, 6, "crossBow", "You pick up the crossbow.", player);
 
         } else if ((x == 1) && (y == 7)) {
             printStory("You walk into the next cavern and see a huge bear. It sees you and starts to come toward you, but not very quickly. What do you do?");
 
             getline(cin, actionInput);
             if (actionInput == "fight" || actionInput == "attack" || actionInput == "draw weapon" || "fight bear" || "attack bear") {
-                CombatHndlr->inCombat(*player, "bear");
+                CombatHndlr->inCombat(*player, "bear", gameOver);
             } else {
                 movePlayerLeft();
                 cout << "You ran away. You are now in room 0 7" << endl;
@@ -481,10 +481,10 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
         } else if ((x == 3) && (y == 8)) {
             printStory("This cavern is dark. When you begin to walk into it, a skeleton emerges from the darkness and attacks you.");
-            CombatHndlr->inCombat(*player, "skeleton");
+            CombatHndlr->inCombat(*player, "skeleton", gameOver);
 
         } else if ((x == 0) && (y == 8)) {
-            printStory("Upon enterring this room, you notice a strange smell and begin to feel light headed. You quickly leave the room, but not before taking 15 damage. You are now in room 3 4");
+            printStory("Upon entering this room, you notice a strange smell and begin to feel light headed. You quickly leave the room, but not before taking 15 damage. You are now in room 3 4");
             player->setHealth(player->getHealth() - 15);
             movePlayerLeft();
 
@@ -493,8 +493,12 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
         } else if ((x == 1) && (y == 9)) {
             printStory("You see light coming through the opening to your right. You can also hear something moving around in there. Something big.");
         } else if ((x == 2) && (y == 9)) {   //BOSS ROOM
-            printStory("Golem");
-            CombatHndlr->inCombat(*player, "Golem");
+            printStory(" ");
+            CombatHndlr->inCombat(*player, "boss", gameOver);
+            if (player->getHealth() > 0) {
+                gameOver = true;
+                printStory("end");
+            }
 
         } else if ((x == 3) && (y == 9)) {
             printStory("You see light coming through the opening to your left. You can also hear something moving around in there. Something big.");
@@ -508,7 +512,7 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
 
     } else if (checkIfVisitedBefore(x, y) == true){
         //print room-specific message for if you have already been here
-        printVisitedMessage(x, y);
+        printVisitedMessage(x, y, player);
     }
 }
 
@@ -525,7 +529,7 @@ bool MoveHandler::weaponInRoom(int x, int y) {
 }
 
 //function takes room coordinates and prints appropriate visited-before message
-void MoveHandler::printVisitedMessage(int x, int y) {
+void MoveHandler::printVisitedMessage(int x, int y, Character *player) {
     if ((x == 2) && (y == 0)) {
         printStory("This is where you fell down here. You wish "
                    "you could climb back up and escape this place");
@@ -536,8 +540,8 @@ void MoveHandler::printVisitedMessage(int x, int y) {
             printStory("You have already been here. The object in the"
                        " corner is still sitting there.");
             //take input if user wants to pick up the object
-            pickUpItemOrNot(1, 0, "You pick up the object in the corner and see that it is a small,"
-                                  "weak-looking dagger. ");
+            pickUpItemOrNot(1, 0, "flimsyDagger", "You pick up the object in the corner and see that it is a small,"
+                                                  "weak-looking dagger. ", player);
 
         } else {
             cout << "You have already been here" << endl;

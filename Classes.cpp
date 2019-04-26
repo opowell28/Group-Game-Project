@@ -89,7 +89,7 @@ void Character::Attack(Character target, int minDamage, int maxDamage, int missC
 }
 
 //equip a weapon to the player
-std::string Character::getWeaponChoiceAndEquip(Character player) {
+void Character::getWeaponChoiceAndEquip(Character player) {
 
     //if there is something in the inventory:
     if (!player.playerInventory.empty()) {
@@ -100,7 +100,7 @@ std::string Character::getWeaponChoiceAndEquip(Character player) {
         //print a list of what is in the inventory
         for (int i = 0; i <= player.playerInventory.size(); i++) {
             //IF WE DECIDE TO ADD OTHER ITEMS THIS WILL NEED CHANGED SO THAT NON-WEAPON ITEMS ARE NOT DISPLAYED
-            std::cout << i + 1 << ".   " << playerInventory[i]->getWeaponName() << std::endl;
+            std::cout << i + 1 << ".   " << playerInventory[i].getWeaponName() << std::endl;
         }
         std::cout << "Enter any other key to fight with your bare hands." << std::endl;
 
@@ -109,7 +109,7 @@ std::string Character::getWeaponChoiceAndEquip(Character player) {
         //see if the number entered corresponds to an inventory spot with a weapon
         for (int j = 0; j <= userInput.size(); j++) {
             if (std::to_string(userInput[j]) == std::to_string(j + 1)) {
-                player.setEquippedWeapon(playerInventory[userInput[j - 1]]->getWeaponName());
+                player.setEquippedWeapon(playerInventory[userInput[j - 1]].getWeaponName());
 
                 break;
             }
@@ -209,10 +209,7 @@ Weapon::~Weapon() {
     std::cout << this->weaponName << " broke. " << std::endl;
 }
 
-std::string Weapon::getEquippedWeapon() {
-    return this->equippedWeapon;
-}
-
+/*
 //weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done
 int Weapon::use() {
     lowerDurability(1, 5);
@@ -221,6 +218,7 @@ int Weapon::use() {
     }
     return this->defaultDamage;
 }
+*/
 
 std::string Weapon::getWeaponName() {
     return this->weaponName;
@@ -241,14 +239,17 @@ int Weapon::getWeaponDamage() {
 //    allWeapons.push_back(weakSword);
 //}
 
+/*
 //crawl through vector checking if the weaponName passed to the function is equal to a weapon in the vector, and if it is, return the weapon's stats at the same index
 Weapon* Weapon::getWeaponStats(std::string weaponName) {
     for (int i = 0; i < playerInventory.size(); ++i) {
-        if (playerInventory[i]->getWeaponName() == weaponName) {
+        if (playerInventory[i].getWeaponName() == weaponName) {
             return playerInventory[i];
         }
     }
 }
+ */
+
 /*
 Dagger::Dagger() {
     this->defaultDamage = 3;

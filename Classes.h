@@ -30,7 +30,6 @@ public:
     Weapon(int defaultDamage, std::string name, int durability, float weight);
     ~Weapon();
 
-    virtual std::string getEquippedWeapon();
     virtual std::string getWeaponName();
     virtual Weapon* getWeaponStats(std::string weaponName);
     virtual int getWeaponDamage();
@@ -90,7 +89,7 @@ public:
     void setCurrentCapacity();
     double getCarryCapacity(double carryCapacity);
     void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
-    std::string getWeaponChoiceAndEquip(Character player);
+    void getWeaponChoiceAndEquip(Character player);
 
 };
 

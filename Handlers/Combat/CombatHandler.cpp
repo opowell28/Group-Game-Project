@@ -43,7 +43,7 @@ Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
 */
 
 //call this function when entering a combat situation in a room in moveHandler
-void CombatHandler::inCombat(Character player, std::string enemyName) {
+void CombatHandler::inCombat(Character player, std::string enemyName, bool lost) {
 
     //create an enemy with preset stats
     //Character opponent = createEnemyObjectFromName(enemyName);
@@ -65,6 +65,7 @@ void CombatHandler::inCombat(Character player, std::string enemyName) {
         opponent = b.returnBoss();
     }
 
+    lost = false;
     bool InCombat = true;
     int turn = 1;
     std::string input;
@@ -126,6 +127,7 @@ void CombatHandler::inCombat(Character player, std::string enemyName) {
         {
             std::cout << "You died " << std::endl;
             InCombat = false;
+            lost = true;
         }
     }
 }

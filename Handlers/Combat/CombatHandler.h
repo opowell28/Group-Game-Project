@@ -14,11 +14,10 @@
 class CombatHandler : virtual public Character, virtual public Weapon { // virtual public Player,
 private:
     CombatHandler();
-protected:
-    std::string atkStrength;
+
 public:
     CombatHandler& getInstance();
-    void inCombat(Character player, std::string enemyName);
+    void inCombat(Character player, std::string enemyName, bool lost);
     Character createEnemyObjectFromName(std::string enemyName);
 
     void pickUp();

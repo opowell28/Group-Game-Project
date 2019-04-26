@@ -75,12 +75,12 @@ public:
 
 
     void printStory(std::string story);
-    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Character *player);
+    void RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Character *player, bool gameOver);
     void addToVisitedVector(int x, int y);
     bool checkIfVisitedBefore(int x, int y);
     bool weaponInRoom(int x, int y);
-    void pickUpItemOrNot(std::string weaponName, std::string specificStoryString, Character player);
-    void printVisitedMessage(int x, int y);
+    void pickUpItemOrNot(int x, int y, std::string weaponName, std::string specificStoryString, Character *player);
+    void printVisitedMessage(int x, int y, Character *player);
 
 
 };
