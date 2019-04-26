@@ -44,8 +44,24 @@ public:
 
 class Dagger : virtual Weapon {
 public:
-    Dagger();
+    Weapon returnDagger();
 };
+
+class Sword : virtual  Weapon {
+public:
+    Weapon returnSword();
+};
+
+class Axe : virtual Weapon {
+public:
+    Weapon returnAxe();
+};
+
+class Crossbow : virtual Weapon {
+public:
+    Weapon returnBow();
+};
+
 
 class Character : virtual public Weapon {
 

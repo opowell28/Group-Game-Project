@@ -249,10 +249,28 @@ Weapon* Weapon::getWeaponStats(std::string weaponName) {
         }
     }
 }
-
+/*
 Dagger::Dagger() {
     this->defaultDamage = 3;
     this->weaponName = "flimsy dagger";
     this->defaultDamage = 17;
     this->weight = 4.0;
+}
+*/
+//classes used as a way to create and return a weapon with desired attributes
+Weapon Dagger::returnDagger() {
+    Weapon w(3, "flimsy dagger", 17, 4.0);
+    return w;
+}
+Weapon Sword::returnSword() {
+    Weapon w(8, "Weak Sword", 25, 8.0);
+    return w;
+}
+Weapon Axe::returnAxe() {
+    Weapon w(12, "Axe", 30, 12.0);
+    return w;
+}
+Weapon Crossbow::returnBow() {
+    Weapon w(10, "Crossbow", 35, 7.0);
+    return w;
 }

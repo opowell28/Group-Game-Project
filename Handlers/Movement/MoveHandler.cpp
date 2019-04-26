@@ -286,17 +286,6 @@ Room::Room(int x, int y, string roomName, string enemy, string weapon, bool isEm
     this->visitedBefore = visitedBefore;
 }
 
-int Room::getX() {
-    return xcoordinate;
-}
-
-int Room::getY() {
-    return ycoordinate;
-}
-
-string Room::getEnemy() {
-    return enemy;
-}
 
 //function splits string into different rows so it can be read easier and words are not split when printed
 void MoveHandler::printStory(string story) {
@@ -312,12 +301,24 @@ void MoveHandler::printStory(string story) {
     cout << endl;
 }
 
-void MoveHandler::pickUpItemOrNot(Weapon weapon, std::string specificStoryString, Character player) {
+void MoveHandler::pickUpItemOrNot(std::string weaponName, std::string specificStoryString, Character player) {
     getline(cin, actionInput);
     if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
 
-        Dagger D;
-        player.playerInventory.push_back(D);
+        if (weaponName == "flimsyDagger") {
+            Dagger D;
+            player.playerInventory.push_back(D.returnDagger());
+        } else if (weaponName == "weakSword") {
+            Sword S;
+            player.playerInventory.push_back(S.returnSword());
+        } else if (weaponName == "Axe") {
+            Axe A;
+            player.playerInventory.push_back(A.returnAxe());
+        } else if (weaponName == "Crossbow") {
+            Crossbow B;
+            player.playerInventory.push_back(B.returnBow());
+        }
+
         printStory(specificStoryString);
 
         /*    NOT USED
