@@ -249,6 +249,7 @@ void MoveHandler::fillRoomsWithItems() {
     roomsWithItem.push_back(room_2_0);
 }
 
+/*
 bool MoveHandler::isThereAnEnemyInRoom(int x, int y) {
     for (int i = 0; i <= roomsWithEnemy.size(); i++) {
         for (int j = 0; j <= roomsWithEnemy.size(); j++) {
@@ -272,7 +273,7 @@ string MoveHandler::getNameOfEnemyInRoom(int x, int y) {
     }
     return " ";
 }
-
+*/
 
 
 
@@ -284,6 +285,14 @@ Room::Room(int x, int y, string roomName, string enemy, string weapon, bool isEm
     this->enemy = enemy;
     this->isEmpty = isEmpty;
     this->visitedBefore = visitedBefore;
+}
+
+int Room::getX() {
+    return this->xcoordinate;
+}
+
+int Room::getY() {
+    return this->ycoordinate;
 }
 
 

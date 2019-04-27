@@ -6,14 +6,17 @@
 using namespace std;
 
 int main() {
+    std::cout << "test";
 
-    Character player1;
-    Character* player = &player1;
+    Character player1("Player 1", 100, 50, 10);
+    //Character* player = &player1;
+    std::cout << "test";
 
-    player1.setName("Player 1"); 
+    /*
+    player1.setName("Player 1");
     player1.setHealth(100);      
-    player1.setStrength(50);     
-
+    player1.setStrength(50);
+*/
     MoveHandler *MoveHdlr;
     MoveHdlr = &MoveHdlr->getInstance();
 
@@ -33,7 +36,7 @@ int main() {
         MoveHdlr->getDirectionInputAndMovePlayer();
 
         //print out story event for room
-        MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY(), CombatHdlr, player, gameOver);
+        //MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY(), CombatHdlr, player, gameOver);
         /* THIS WILL NOW BE HANDLED IN Movehandler::runstoryevents
         if (MoveHdlr->isThereAnEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())) {
 

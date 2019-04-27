@@ -18,9 +18,9 @@ private:
 public:
     CombatHandler& getInstance();
     void inCombat(Character player, std::string enemyName, bool lost);
-    Character createEnemyObjectFromName(std::string enemyName);
+    //Character createEnemyObjectFromName(std::string enemyName);
 
-    void pickUp();
+    //void pickUp();
 };
 
 #endif //INC_4_GROUPPROJECT_COMBATHANDLER_H

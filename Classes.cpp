@@ -13,8 +13,8 @@ Character::Character() {
     this->dexterity = 0;
 }
 
-Character::Character(std::string name, int health, int strength, int dexterity) {
-    this->name = name;
+Character::Character(std::string playerName, int health, int strength, int dexterity) {
+    this->name = playerName;
     this->health = health;
     this->strength = strength;
     this->dexterity = dexterity;

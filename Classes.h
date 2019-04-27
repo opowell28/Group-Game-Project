@@ -31,10 +31,10 @@ public:
     ~Weapon();
 
     virtual std::string getWeaponName();
-    virtual Weapon* getWeaponStats(std::string weaponName);
+    //virtual Weapon* getWeaponStats(std::string weaponName);
     virtual int getWeaponDamage();
 
-    virtual int use();
+    //virtual int use();
     virtual void lowerDurability(int min, int max);
 
     std::vector<Weapon> playerInventory;
@@ -69,11 +69,11 @@ protected:
     std::string name;
     std::string equippedWeapon;
     double carryCapacity;
-    double currentCapacity;
+    //double currentCapacity;
 
 public:
     Character();
-    Character(std::string name, int health, int strength, int dexterity);
+    Character(std::string playerName, int health, int strength, int dexterity);
 
     int getHealth();
     void setHealth(int health);

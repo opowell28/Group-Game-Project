@@ -12,6 +12,7 @@
 
 //Room class allows properties for individual rooms to be set
 class Room : virtual public Weapon {
+
 protected:
     std::string roomName = "";
     int xcoordinate = 0;
@@ -24,17 +25,11 @@ public:
     bool isEmpty;
 
     Room(int x, int y, std::string roomName, std::string enemy, std::string weaponName, bool isEmpty, bool visitedBefore);
-    //run any events for the room
-    void runRoomEvents();
-
-    std::string getEnemy();
     int getX();
     int getY();
+
 };
 
-
-
-//TODO: set maxX and maxY
 class MoveHandler : virtual public Weapon {
 private:
     MoveHandler();
