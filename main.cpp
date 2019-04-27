@@ -5,11 +5,15 @@
 
 using namespace std;
 
-int main() {
-    std::cout << "test";
 
-    Character player1("Player 1", 100, 50, 10);
-    //Character* player = &player1;
+
+int main() {
+
+    //test Test(1,2);
+    //Character player2();
+
+    Character player1("Player 1", 100, 50, 10, " ");
+    Character* player = &player1;
     std::cout << "test";
 
     /*
@@ -36,7 +40,7 @@ int main() {
         MoveHdlr->getDirectionInputAndMovePlayer();
 
         //print out story event for room
-        //MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY(), CombatHdlr, player, gameOver);
+        MoveHdlr->RunStoryEvent(MoveHdlr->getX(), MoveHdlr->getY(), CombatHdlr, player, gameOver);
         /* THIS WILL NOW BE HANDLED IN Movehandler::runstoryevents
         if (MoveHdlr->isThereAnEnemyInRoom(MoveHdlr->getX(), MoveHdlr->getY())) {
 

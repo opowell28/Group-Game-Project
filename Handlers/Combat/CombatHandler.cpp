@@ -20,27 +20,6 @@ CombatHandler& CombatHandler::getInstance() {
 
 }
 
-/*
-Enemy CombatHandler::createEnemyObjectFromName(std::string enemyName) {
-
-    if (enemyName == "wolf") {
-        return Enemy("wolf", 50, 10, 10);
-
-    } else if (enemyName == "bear") {
-        return Enemy("bear", 75, 20, 10);
-
-    } else if (enemyName == "bats") {
-        return Enemy("bats", 30, 10, 10);
-
-    } else if (enemyName == "skeleton") {
-        return Enemy("skeleton", 50, 25, 10);
-
-    } else if (enemyName == "Golem") {
-        return Enemy("Golem", 250, 25, 10);
-
-    }
-}
-*/
 
 //call this function when entering a combat situation in a room in moveHandler
 void CombatHandler::inCombat(Character player, std::string enemyName, bool lost) {

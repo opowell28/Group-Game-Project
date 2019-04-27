@@ -4,6 +4,16 @@
 
 #include "Classes.h"
 
+/*
+test::test() {
+    one = 1;
+    two = 2;
+}
+test::test(int o, int t) {
+    one = o;
+    two = t;
+}
+*/
 //Character Class
 Character::Character() {
 
@@ -11,13 +21,15 @@ Character::Character() {
     this->health = 100;
     this->strength = 50;
     this->dexterity = 0;
+    this->equippedWeapon = "";
 }
 
-Character::Character(std::string playerName, int health, int strength, int dexterity) {
+Character::Character(std::string playerName, int health, int strength, int dexterity, std::string equippedWeapon){
     this->name = playerName;
     this->health = health;
     this->strength = strength;
     this->dexterity = dexterity;
+    this->equippedWeapon = equippedWeapon;
 }
 
 int Character::getHealth() {
@@ -59,7 +71,7 @@ void Character::setName(std::string name) {
 std::string Character::getName() {
     return this->name;
 }
-
+/*
 double Character::getCarryCapacity(double carryCapacity) {
     return this->carryCapacity;
 }
@@ -71,7 +83,7 @@ double Character::getCurrentCapacity() {
 void Character::setCurrentCapacity() {
     this->currentCapacity = currentCapacity;
 }
-
+*/
 //attack function
 void Character::Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
     int damage = 0;
@@ -278,26 +290,26 @@ Weapon Crossbow::returnBow() {
 
 
 Character Wolf::returnWolf() {
-    Character w("wolf", 50, 10, 10);
+    Character w("wolf", 50, 10, 10, "");
     return w;
 }
 
 Character Bear::returnBear() {
-    Character b("bear", 75, 20, 10);
+    Character b("bear", 75, 20, 10, "");
     return b;
 }
 
 Character Bat::returnBat() {
-    Character b("bats", 30, 10, 10);
+    Character b("bats", 30, 10, 10, "");
     return b;
 }
 
 Character Skeleton::returnSkeleton() {
-    Character s("skeleton", 50, 25, 10);
+    Character s("skeleton", 50, 25, 10, "");
     return s;
 }
 
 Character Boss::returnBoss() {
-    Character b("Dire Wolf", 250, 25, 10);
+    Character b("Dire Wolf", 250, 25, 10, "");
     return b;
 }

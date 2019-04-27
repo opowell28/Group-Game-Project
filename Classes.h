@@ -18,12 +18,13 @@ protected:
     int durability;
     float weight;
 
+    /*
     //define weapons like this
     Weapon* flimsyDagger = new Weapon (3, "Flimsy Dagger", 17, 4.0);
     Weapon* weakSword = new Weapon (8, "Weak Sword", 25, 8.0);
     Weapon* axe = new Weapon (12, "Axe", 30, 12.0);
     Weapon* crossbow = new Weapon (10, "Crossbow", 35, 7.0);
-
+*/
 public:
 
     Weapon();
@@ -40,6 +41,15 @@ public:
     std::vector<Weapon> playerInventory;
 
 };
+/*
+class test : public Weapon {
+private:
+    int one, two;
+public:
+    test();
+    test(int o, int t);
+};
+ */
 
 class Dagger : virtual Weapon {
 public:
@@ -65,15 +75,15 @@ public:
 class Character : virtual public Weapon {
 
 protected:
-    int health, strength, dexterity;
     std::string name;
+    int health, strength, dexterity;
     std::string equippedWeapon;
-    double carryCapacity;
+    //double carryCapacity;      NOT USED; INVENTORY IS INFINITE
     //double currentCapacity;
 
 public:
     Character();
-    Character(std::string playerName, int health, int strength, int dexterity);
+    Character(std::string playerName, int health, int strength, int dexterity, std::string equippedWeapon);
 
     int getHealth();
     void setHealth(int health);
@@ -85,9 +95,11 @@ public:
     void setEquippedWeapon(std::string weaponName);
     void setName(std::string name);
     std::string getName();
+    /*
     double getCurrentCapacity();
     void setCurrentCapacity();
     double getCarryCapacity(double carryCapacity);
+     */
     void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
     void getWeaponChoiceAndEquip(Character player);
 
