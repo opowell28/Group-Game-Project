@@ -50,8 +50,10 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
     
     while (!moved) {
 
+        cout << "What do you do?" << endl;
         getline(cin, directionInput);
 
+        /*
         //Help code to print commands.
         string input, cmd;
         ifstream cmds;
@@ -65,8 +67,9 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
             commands.push_back(cmd);
         }
         cmds.close();
-
+        */
         try {
+            /*
             //Type "help" to print the "commands" vector.
             getline(cin, input);
             if (input == "help" || input == "Help") {
@@ -74,9 +77,10 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
                     cout << s << endl;
                 }
             }
+            */
 
 
-            for (int i : directionInput) { //if the first letter is equal to one of these inputs, check if the rest of the word matches a directional input
+            for (int i = 0; i <= directionInput.size(); i++) { //if the first letter is equal to one of these inputs, check if the rest of the word matches a directional input
 
                 if ((directionInput[i] == 'n') && (directionInput[i + 1] == 'o')
                     && (directionInput[i + 2] == 'r') && (directionInput[i + 3] == 't')
@@ -148,7 +152,7 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
 
                     movePlayerLeft();
                     moved = true;
-                } else if ((input == "help") || (input == "Help")) {
+                } /*else if ((input == "help") || (input == "Help")) {
                     //Help code to print commands.
                     std::string input, cmd;
                     std::ifstream cmds;
@@ -167,6 +171,7 @@ void MoveHandler::getDirectionInputAndMovePlayer() {
                         std::cout << s << std::endl;
                     }
                 }
+                */
             }
         }
 
@@ -249,7 +254,7 @@ void MoveHandler::fillRoomsWithItems() {
     roomsWithItem.push_back(room_2_0);
 }
 
-/*
+/*      NOT USED
 bool MoveHandler::isThereAnEnemyInRoom(int x, int y) {
     for (int i = 0; i <= roomsWithEnemy.size(); i++) {
         for (int j = 0; j <= roomsWithEnemy.size(); j++) {
@@ -302,7 +307,7 @@ void MoveHandler::printStory(string story) {
     for (int i = 0; i <= story.size(); i++) {
         cout << story[i];
         counter++;
-        if ((story[i] == ' ') && (counter >= 40)) {
+        if ((story[i] == ' ') && (counter >= 60)) {
             cout << endl;
             counter = 0;
         }
@@ -310,6 +315,7 @@ void MoveHandler::printStory(string story) {
     cout << endl;
 }
 
+//call when you enter a room with a weapon to see whether user wants to pick up the weapon or leave it
 void MoveHandler::pickUpItemOrNot(int x, int y, std::string weaponName, std::string specificStoryString, Character *player) {
     getline(cin, actionInput);
     if (actionInput == "pick up" || actionInput == "pick it up" || actionInput == "pick up item") {
@@ -502,11 +508,11 @@ void MoveHandler::RunStoryEvent(int x, int y, CombatHandler *CombatHndlr, Charac
         } else if ((x == 1) && (y == 9)) {
             printStory("You see light coming through the opening to your right. You can also hear something moving around in there. Something big.");
         } else if ((x == 2) && (y == 9)) {   //BOSS ROOM
-            printStory(" ");
+            printStory("You see a staircase leading up, but it is blocked by a massive wolf. You must fight it.");
             CombatHndlr->inCombat(*player, "boss", gameOver);
             if (player->getHealth() > 0) {
                 gameOver = true;
-                printStory("end");
+                printStory("You climb the staircase and emerge onto a grassy hill. You have escaped!");
             }
 
         } else if ((x == 3) && (y == 9)) {
@@ -537,6 +543,7 @@ bool MoveHandler::weaponInRoom(int x, int y) {
     return false;
 }
 
+//   NOT ENOUGH TIME TO FULLY IMPLEMENT THIS
 //function takes room coordinates and prints appropriate visited-before message
 void MoveHandler::printVisitedMessage(int x, int y, Character *player) {
     if ((x == 2) && (y == 0)) {

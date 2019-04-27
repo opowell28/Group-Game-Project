@@ -95,12 +95,12 @@ public:
     void setEquippedWeapon(std::string weaponName);
     void setName(std::string name);
     std::string getName();
-    /*
+    /* NOT USED
     double getCurrentCapacity();
     void setCurrentCapacity();
     double getCarryCapacity(double carryCapacity);
      */
-    void Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage);
+    void Attack(Character &target, int minDamage, int maxDamage, int missChance, int weaponDamage);
     void getWeaponChoiceAndEquip(Character player);
 
 };

@@ -4,24 +4,14 @@
 
 #include "Classes.h"
 
-/*
-test::test() {
-    one = 1;
-    two = 2;
-}
-test::test(int o, int t) {
-    one = o;
-    two = t;
-}
-*/
 //Character Class
 Character::Character() {
 
-    this->name = "Player 1";
+    this->name = "Enemy";
     this->health = 100;
     this->strength = 50;
     this->dexterity = 0;
-    this->equippedWeapon = "";
+    this->equippedWeapon = " ";
 }
 
 Character::Character(std::string playerName, int health, int strength, int dexterity, std::string equippedWeapon){
@@ -71,7 +61,7 @@ void Character::setName(std::string name) {
 std::string Character::getName() {
     return this->name;
 }
-/*
+/* NOT USED
 double Character::getCarryCapacity(double carryCapacity) {
     return this->carryCapacity;
 }
@@ -84,10 +74,13 @@ void Character::setCurrentCapacity() {
     this->currentCapacity = currentCapacity;
 }
 */
-//attack function
-void Character::Attack(Character target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
+
+//attack function uses stats passed in to lower targets health
+void Character::Attack(Character &target, int minDamage, int maxDamage, int missChance, int weaponDamage) {
     int damage = 0;
     int miss;
+
+    std::cout << this->getName() << " attacks " << target.getName()<< std::endl;
 
     damage = ((minDamage + rand() % maxDamage + 1) * getStrength()) + weaponDamage;
     miss = rand() % 100 + 1;
@@ -98,6 +91,7 @@ void Character::Attack(Character target, int minDamage, int maxDamage, int missC
         target.setHealth(target.getHealth() - damage);
         std::cout << target.getName() << " has been hit for " << std::to_string(damage) << " points." << std::endl;
     }
+    std::cout << "target health:" << target.getHealth() << std::endl;
 }
 
 //equip a weapon to the player
@@ -110,8 +104,7 @@ void Character::getWeaponChoiceAndEquip(Character player) {
         std::cout << "Draw a weapon:" << std::endl;
 
         //print a list of what is in the inventory
-        for (int i = 0; i <= player.playerInventory.size(); i++) {
-            //IF WE DECIDE TO ADD OTHER ITEMS THIS WILL NEED CHANGED SO THAT NON-WEAPON ITEMS ARE NOT DISPLAYED
+        for (int i = 0; i < player.playerInventory.size(); i++) {
             std::cout << i + 1 << ".   " << playerInventory[i].getWeaponName() << std::endl;
         }
         std::cout << "Enter any other key to fight with your bare hands." << std::endl;
@@ -132,7 +125,7 @@ void Character::getWeaponChoiceAndEquip(Character player) {
 
 }
 
-/*
+/*   PLAYER CLASS NOT USED. CHARACTER USED INSTEAD
 //Player Class
 Player::Player():Character() {
     this->name = "Player 1";
@@ -148,40 +141,7 @@ Player::Player(std::string name, int health, int strength, int dexterity) :Chara
     this->dexterity = dexterity;
 }
 
-//equip a weapon to the player
-std::string Player::getWeaponChoiceAndEquip(Player player) {
-
-    //if there is something in the inventory:
-    if (!player.playerInventory.empty()) {
-        std::string userInput;
-
-        std::cout << "Draw a weapon:" << std::endl;
-
-        //print a list of what is in the inventory
-        for (int i = 0; i <= player.playerInventory.size(); i++) {
-            //IF WE DECIDE TO ADD OTHER ITEMS THIS WILL NEED CHANGED SO THAT NON-WEAPON ITEMS ARE NOT DISPLAYED
-            std::cout << i + 1 << ".   " << playerInventory[i]->getWeaponName() << std::endl;
-        }
-        std::cout << "Enter any other key to fight with your bare hands." << std::endl;
-
-        std::getline(std::cin, userInput);
-
-        //see if the number entered corresponds to an inventory spot with a weapon
-        for (int j = 0; j <= userInput.size(); j++) {
-            if (std::to_string(userInput[j]) == std::to_string(j + 1)) {
-                player.setEquippedWeapon(playerInventory[userInput[j - 1]]->getWeaponName());
-
-                break;
-            }
-        }
-    } else {
-        std::cout << "You don't have any weapons." << std::endl;
-    }
-
-}
-*/
-
-/*
+/*     ENEMY CLASS NOT USED
 //Enemy Class
 Enemy::Enemy() {
     this->name = "Enemy";
@@ -216,12 +176,13 @@ Weapon::Weapon(int defaultDamage, std::string name, int durability, float weight
     this->weight = weight;
 }
 
-//destructor which prints when weapon is no longer being used and is destroyed
+//destructor
 Weapon::~Weapon() {
-    std::cout << this->weaponName << " broke. " << std::endl;
+    //std::cout << this->weaponName << " broke. " << std::endl;
 }
 
-/*
+
+/* NOT USED
 //weapon's use function which lowers durability by an amount between 1 and 5 and returns the damage done
 int Weapon::use() {
     lowerDurability(1, 5);
@@ -245,7 +206,7 @@ int Weapon::getWeaponDamage() {
     return this->defaultDamage;
 }
 
-////add previously defined weapons to the allWeapons vector, may not need this
+//    NOT USED
 //void Weapon::fillWeaponVector() {
 //    allWeapons.push_back(flimsyDagger);
 //    allWeapons.push_back(weakSword);
@@ -288,7 +249,7 @@ Weapon Crossbow::returnBow() {
     return w;
 }
 
-
+//classes used as a way to create and return an enemy with desired attributes
 Character Wolf::returnWolf() {
     Character w("wolf", 50, 10, 10, "");
     return w;

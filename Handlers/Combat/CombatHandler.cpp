@@ -22,7 +22,7 @@ CombatHandler& CombatHandler::getInstance() {
 
 
 //call this function when entering a combat situation in a room in moveHandler
-void CombatHandler::inCombat(Character player, std::string enemyName, bool lost) {
+void CombatHandler::inCombat(Character &player, std::string enemyName, bool lost) {
 
     //create an enemy with preset stats
     //Character opponent = createEnemyObjectFromName(enemyName);
@@ -95,6 +95,11 @@ void CombatHandler::inCombat(Character player, std::string enemyName, bool lost)
         }
 
         turn++;
+
+
+        std::cout << "player health: " << player.getHealth() << std::endl;
+        std::cout << "opponent health: " << opponent.getHealth() << std::endl;
+
 
         if(opponent.getHealth() <= 0)
         {

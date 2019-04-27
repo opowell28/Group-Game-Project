@@ -59,8 +59,8 @@ public:
 
     void fillWorldWithEnemies();
     void fillRoomsWithItems();
-    bool isThereAnEnemyInRoom(int x, int y);
-    std::string getNameOfEnemyInRoom(int x, int y);
+    //bool isThereAnEnemyInRoom(int x, int y);
+    //std::string getNameOfEnemyInRoom(int x, int y);
 
     //functions move player to adjacent rooms
     void movePlayerRight();

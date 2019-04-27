@@ -17,7 +17,7 @@ private:
 
 public:
     CombatHandler& getInstance();
-    void inCombat(Character player, std::string enemyName, bool lost);
+    void inCombat(Character &player, std::string enemyName, bool lost);
     //Character createEnemyObjectFromName(std::string enemyName);
 
     //void pickUp();
