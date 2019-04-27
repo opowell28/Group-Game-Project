@@ -82,7 +82,7 @@ void Character::Attack(Character &target, int minDamage, int maxDamage, int miss
 
     std::cout << this->getName() << " attacks " << target.getName()<< std::endl;
 
-    damage = ((minDamage + rand() % maxDamage + 1) * getStrength()) + weaponDamage;
+    damage = ((minDamage + rand() % maxDamage + 1) * (getStrength()) + weaponDamage);
     miss = rand() % 100 + 1;
 
     if (miss <= missChance) {
@@ -91,7 +91,6 @@ void Character::Attack(Character &target, int minDamage, int maxDamage, int miss
         target.setHealth(target.getHealth() - damage);
         std::cout << target.getName() << " has been hit for " << std::to_string(damage) << " points." << std::endl;
     }
-    std::cout << "target health:" << target.getHealth() << std::endl;
 }
 
 //equip a weapon to the player
